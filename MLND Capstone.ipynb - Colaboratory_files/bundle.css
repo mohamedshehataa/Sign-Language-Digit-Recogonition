@@ -1,0 +1,6169 @@
+/* Copyright 2018 Google Inc. All Rights Reserved. */
+.CodeMirror{font-family:monospace;height:300px;color:black;direction:ltr}.CodeMirror-lines{padding:4px 0}.CodeMirror pre{padding:0 4px}.CodeMirror-scrollbar-filler,.CodeMirror-gutter-filler{background-color:white}.CodeMirror-gutters{border-right:1px solid #ddd;background-color:#f7f7f7;white-space:nowrap}.CodeMirror-linenumbers{}.CodeMirror-linenumber{padding:0 3px 0 5px;min-width:20px;text-align:right;color:#999;white-space:nowrap}.CodeMirror-guttermarker{color:black}.CodeMirror-guttermarker-subtle{color:#999}.CodeMirror-cursor{border-left:1px solid black;border-right:none;width:0}.CodeMirror div.CodeMirror-secondarycursor{border-left:1px solid silver}.cm-fat-cursor .CodeMirror-cursor{width:auto;border:0!important;background:#7e7}.cm-fat-cursor div.CodeMirror-cursors{z-index:1}.cm-fat-cursor-mark{background-color:rgba(20,255,20,0.5);-webkit-animation:blink 1.06s steps(1) infinite;-moz-animation:blink 1.06s steps(1) infinite;animation:blink 1.06s steps(1) infinite}.cm-animate-fat-cursor{width:auto;border:0;-webkit-animation:blink 1.06s steps(1) infinite;-moz-animation:blink 1.06s steps(1) infinite;animation:blink 1.06s steps(1) infinite;background-color:#7e7}@-moz-keyframes blink{0%{}50%{background-color:transparent}100%{}}@-webkit-keyframes blink{0%{}50%{background-color:transparent}100%{}}@keyframes blink{0%{}50%{background-color:transparent}100%{}}.CodeMirror-overwrite .CodeMirror-cursor{}.cm-tab{display:inline-block;text-decoration:inherit}.CodeMirror-rulers{position:absolute;left:0;right:0;top:-50px;bottom:-20px;overflow:hidden}.CodeMirror-ruler{border-left:1px solid #ccc;top:0;bottom:0;position:absolute}.cm-s-default .cm-header{color:blue}.cm-s-default .cm-quote{color:#090}.cm-negative{color:#d44}.cm-positive{color:#292}.cm-header,.cm-strong{font-weight:bold}.cm-em{font-style:italic}.cm-link{text-decoration:underline}.cm-strikethrough{text-decoration:line-through}.cm-s-default .cm-keyword{color:#708}.cm-s-default .cm-atom{color:#219}.cm-s-default .cm-number{color:#164}.cm-s-default .cm-def{color:#00f}.cm-s-default .cm-variable,.cm-s-default .cm-punctuation,.cm-s-default .cm-property,.cm-s-default .cm-operator{}.cm-s-default .cm-variable-2{color:#05a}.cm-s-default .cm-variable-3,.cm-s-default .cm-type{color:#085}.cm-s-default .cm-comment{color:#a50}.cm-s-default .cm-string{color:#a11}.cm-s-default .cm-string-2{color:#f50}.cm-s-default .cm-meta{color:#555}.cm-s-default .cm-qualifier{color:#555}.cm-s-default .cm-builtin{color:#30a}.cm-s-default .cm-bracket{color:#997}.cm-s-default .cm-tag{color:#170}.cm-s-default .cm-attribute{color:#00c}.cm-s-default .cm-hr{color:#999}.cm-s-default .cm-link{color:#00c}.cm-s-default .cm-error{color:#f00}.cm-invalidchar{color:#f00}.CodeMirror-composing{border-bottom:2px solid}div.CodeMirror span.CodeMirror-matchingbracket{color:#0b0}div.CodeMirror span.CodeMirror-nonmatchingbracket{color:#a22}.CodeMirror-matchingtag{background:rgba(255,150,0,.3)}.CodeMirror-activeline-background{background:#e8f2ff}.CodeMirror{position:relative;overflow:hidden;background:white}.CodeMirror-scroll{overflow:scroll!important;margin-bottom:-30px;margin-right:-30px;padding-bottom:30px;height:100%;outline:none;position:relative}.CodeMirror-sizer{position:relative;border-right:30px solid transparent}.CodeMirror-vscrollbar,.CodeMirror-hscrollbar,.CodeMirror-scrollbar-filler,.CodeMirror-gutter-filler{position:absolute;z-index:6;display:none}.CodeMirror-vscrollbar{right:0;top:0;overflow-x:hidden;overflow-y:scroll}.CodeMirror-hscrollbar{bottom:0;left:0;overflow-y:hidden;overflow-x:scroll}.CodeMirror-scrollbar-filler{right:0;bottom:0}.CodeMirror-gutter-filler{left:0;bottom:0}.CodeMirror-gutters{position:absolute;left:0;top:0;min-height:100%;z-index:3}.CodeMirror-gutter{white-space:normal;height:100%;display:inline-block;vertical-align:top;margin-bottom:-30px}.CodeMirror-gutter-wrapper{position:absolute;z-index:4;background:none!important;border:none!important}.CodeMirror-gutter-background{position:absolute;top:0;bottom:0;z-index:4}.CodeMirror-gutter-elt{position:absolute;cursor:default;z-index:4}.CodeMirror-gutter-wrapper ::selection{background-color:transparent}.CodeMirror-gutter-wrapper ::-moz-selection{background-color:transparent}.CodeMirror-lines{cursor:text;min-height:1px}.CodeMirror pre{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;border-width:0;background:transparent;font-family:inherit;font-size:inherit;margin:0;white-space:pre;word-wrap:normal;line-height:inherit;color:inherit;z-index:2;position:relative;overflow:visible;-webkit-tap-highlight-color:transparent;-webkit-font-variant-ligatures:contextual;font-variant-ligatures:contextual}.CodeMirror-wrap pre{word-wrap:break-word;white-space:pre-wrap;word-break:normal}.CodeMirror-linebackground{position:absolute;left:0;right:0;top:0;bottom:0;z-index:0}.CodeMirror-linewidget{position:relative;z-index:2;padding:0.1px}.CodeMirror-widget{}.CodeMirror-rtl pre{direction:rtl}.CodeMirror-code{outline:none}.CodeMirror-scroll,.CodeMirror-sizer,.CodeMirror-gutter,.CodeMirror-gutters,.CodeMirror-linenumber{-moz-box-sizing:content-box;box-sizing:content-box}.CodeMirror-measure{position:absolute;width:100%;height:0;overflow:hidden;visibility:hidden}.CodeMirror-cursor{position:absolute;pointer-events:none}.CodeMirror-measure pre{position:static}div.CodeMirror-cursors{visibility:hidden;position:relative;z-index:3}.CodeMirror-focused div.CodeMirror-cursors{visibility:visible}.CodeMirror-selected{background:#d9d9d9}.CodeMirror-focused .CodeMirror-selected{background:#d7d4f0}.CodeMirror-crosshair{cursor:crosshair}.CodeMirror-line::selection,.CodeMirror-line>span::selection,.CodeMirror-line>span>span::selection{background:#d7d4f0}.CodeMirror-line::-moz-selection,.CodeMirror-line>span::-moz-selection,.CodeMirror-line>span>span::-moz-selection{background:#d7d4f0}.cm-searching{background-color:#ffa;background-color:rgba(255,255,0,.4)}.cm-force-border{padding-right:.1px}@media print{.CodeMirror div.CodeMirror-cursors{visibility:hidden}}.cm-tab-wrap-hack:after{content:''}span.CodeMirror-selectedtext{background:none}.CodeMirror-dialog{position:absolute;left:0;right:0;background:inherit;z-index:15;padding:.1em .8em;overflow:hidden;color:inherit}.CodeMirror-dialog-top{border-bottom:1px solid #eee;top:0}.CodeMirror-dialog-bottom{border-top:1px solid #eee;bottom:0}.CodeMirror-dialog input{border:none;outline:none;background:transparent;width:20em;color:inherit;font-family:monospace}.CodeMirror-dialog button{font-size:70%}.CodeMirror-fullscreen{position:fixed;top:0;left:0;right:0;bottom:0;height:auto;z-index:9}.CodeMirror-foldmarker{color:blue;text-shadow:#b9f 1px 1px 2px,#b9f -1px -1px 2px,#b9f 1px -1px 2px,#b9f -1px 1px 2px;font-family:arial;line-height:.3;cursor:pointer}.CodeMirror-foldgutter{width:.7em}.CodeMirror-foldgutter-open,.CodeMirror-foldgutter-folded{cursor:pointer}.CodeMirror-foldgutter-open:after{content:"\0025be"}.CodeMirror-foldgutter-folded:after{content:"\0025b8"}.CodeMirror-hints{position:absolute;z-index:10;overflow:hidden;list-style:none;margin:0;padding:2px;-webkit-box-shadow:2px 3px 5px rgba(0,0,0,.2);-moz-box-shadow:2px 3px 5px rgba(0,0,0,.2);box-shadow:2px 3px 5px rgba(0,0,0,.2);border-radius:3px;border:1px solid silver;background:white;font-size:90%;font-family:monospace;max-height:20em;overflow-y:auto}.CodeMirror-hint{margin:0;padding:0 4px;border-radius:2px;white-space:pre;color:black;cursor:pointer}li.CodeMirror-hint-active{background:#08f;color:white}.CodeMirror-completions{position:absolute;z-index:10;overflow:hidden;-webkit-box-shadow:2px 3px 5px rgba(0,0,0,.2);-moz-box-shadow:2px 3px 5px rgba(0,0,0,.2);box-shadow:2px 3px 5px rgba(0,0,0,.2)}.CodeMirror-completions select{background:#fafafa;outline:none;border:none;padding:0;margin:0;font-family:monospace}.CodeMirror-lint-markers{width:16px}.CodeMirror-lint-tooltip{background-color:#ffd;border:1px solid black;border-radius:4px 4px 4px 4px;color:black;font-family:monospace;font-size:10pt;overflow:hidden;padding:2px 5px;position:fixed;white-space:pre;white-space:pre-wrap;z-index:100;max-width:600px;opacity:0;transition:opacity .4s;-moz-transition:opacity .4s;-webkit-transition:opacity .4s;-o-transition:opacity .4s;-ms-transition:opacity .4s}.CodeMirror-lint-mark-error,.CodeMirror-lint-mark-warning{background-position:left bottom;background-repeat:repeat-x}.CodeMirror-lint-mark-error{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg==")}.CodeMirror-lint-mark-warning{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJFhQXEbhTg7YAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAMklEQVQI12NkgIIvJ3QXMjAwdDN+OaEbysDA4MPAwNDNwMCwiOHLCd1zX07o6kBVGQEAKBANtobskNMAAAAASUVORK5CYII=")}.CodeMirror-lint-marker-error,.CodeMirror-lint-marker-warning{background-position:center center;background-repeat:no-repeat;cursor:pointer;display:inline-block;height:16px;width:16px;vertical-align:middle;position:relative}.CodeMirror-lint-message-error,.CodeMirror-lint-message-warning{padding-left:18px;background-position:top left;background-repeat:no-repeat}.CodeMirror-lint-marker-error,.CodeMirror-lint-message-error{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEW7AAC7AACxAAC7AAC7AAAAAAC4AAC5AAD///+7AAAUdclpAAAABnRSTlMXnORSiwCK0ZKSAAAATUlEQVR42mWPOQ7AQAgDuQLx/z8csYRmPRIFIwRGnosRrpamvkKi0FTIiMASR3hhKW+hAN6/tIWhu9PDWiTGNEkTtIOucA5Oyr9ckPgAWm0GPBog6v4AAAAASUVORK5CYII=")}.CodeMirror-lint-marker-warning,.CodeMirror-lint-message-warning{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEX/uwDvrwD/uwD/uwD/uwD/uwD/uwD/uwD/uwD6twD/uwAAAADurwD2tQD7uAD+ugAAAAD/uwDhmeTRAAAADHRSTlMJ8mN1EYcbmiixgACm7WbuAAAAVklEQVR42n3PUQqAIBBFUU1LLc3u/jdbOJoW1P08DA9Gba8+YWJ6gNJoNYIBzAA2chBth5kLmG9YUoG0NHAUwFXwO9LuBQL1giCQb8gC9Oro2vp5rncCIY8L8uEx5ZkAAAAASUVORK5CYII=")}.CodeMirror-lint-marker-multiple{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAACVBMVEUAAAAAAAC/v7914kyHAAAAAXRSTlMAQObYZgAAACNJREFUeNo1ioEJAAAIwmz/H90iFFSGJgFMe3gaLZ0od+9/AQZ0ADosbYraAAAAAElFTkSuQmCC");background-repeat:no-repeat;background-position:right bottom;width:100%;height:100%}.CodeMirror-merge{position:relative;border:1px solid #ddd;white-space:pre}.CodeMirror-merge,.CodeMirror-merge .CodeMirror{height:350px}.CodeMirror-merge-2pane .CodeMirror-merge-pane{width:47%}.CodeMirror-merge-2pane .CodeMirror-merge-gap{width:6%}.CodeMirror-merge-3pane .CodeMirror-merge-pane{width:31%}.CodeMirror-merge-3pane .CodeMirror-merge-gap{width:3.5%}.CodeMirror-merge-pane{display:inline-block;white-space:normal;vertical-align:top}.CodeMirror-merge-pane-rightmost{position:absolute;right:0px;z-index:1}.CodeMirror-merge-gap{z-index:2;display:inline-block;height:100%;-moz-box-sizing:border-box;box-sizing:border-box;overflow:hidden;border-left:1px solid #ddd;border-right:1px solid #ddd;position:relative;background:#f8f8f8}.CodeMirror-merge-scrolllock-wrap{position:absolute;bottom:0;left:50%}.CodeMirror-merge-scrolllock{position:relative;left:-50%;cursor:pointer;color:#555;line-height:1}.CodeMirror-merge-scrolllock:after{content:"\0021db\0000a0\0000a0\0021da"}.CodeMirror-merge-scrolllock.CodeMirror-merge-scrolllock-enabled:after{content:"\0021db\0021da"}.CodeMirror-merge-copybuttons-left,.CodeMirror-merge-copybuttons-right{position:absolute;left:0;top:0;right:0;bottom:0;line-height:1}.CodeMirror-merge-copy{position:absolute;cursor:pointer;color:#44c;z-index:3}.CodeMirror-merge-copy-reverse{position:absolute;cursor:pointer;color:#44c}.CodeMirror-merge-copybuttons-left .CodeMirror-merge-copy{left:2px}.CodeMirror-merge-copybuttons-right .CodeMirror-merge-copy{right:2px}.CodeMirror-merge-r-inserted,.CodeMirror-merge-l-inserted{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12MwuCXy3+CWyH8GBgYGJgYkAABZbAQ9ELXurwAAAABJRU5ErkJggg==);background-position:bottom left;background-repeat:repeat-x}.CodeMirror-merge-r-deleted,.CodeMirror-merge-l-deleted{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12M4Kyb2/6yY2H8GBgYGJgYkAABURgPz6Ks7wQAAAABJRU5ErkJggg==);background-position:bottom left;background-repeat:repeat-x}.CodeMirror-merge-r-chunk{background:#ffffe0}.CodeMirror-merge-r-chunk-start{border-top:1px solid #ee8}.CodeMirror-merge-r-chunk-end{border-bottom:1px solid #ee8}.CodeMirror-merge-r-connect{fill:#ffffe0;stroke:#ee8;stroke-width:1px}.CodeMirror-merge-l-chunk{background:#eef}.CodeMirror-merge-l-chunk-start{border-top:1px solid #88e}.CodeMirror-merge-l-chunk-end{border-bottom:1px solid #88e}.CodeMirror-merge-l-connect{fill:#eef;stroke:#88e;stroke-width:1px}.CodeMirror-merge-l-chunk.CodeMirror-merge-r-chunk{background:#dfd}.CodeMirror-merge-l-chunk-start.CodeMirror-merge-r-chunk-start{border-top:1px solid #4e4}.CodeMirror-merge-l-chunk-end.CodeMirror-merge-r-chunk-end{border-bottom:1px solid #4e4}.CodeMirror-merge-collapsed-widget:before{content:"(...)"}.CodeMirror-merge-collapsed-widget{cursor:pointer;color:#88b;background:#eef;border:1px solid #ddf;font-size:90%;padding:0 3px;border-radius:4px}.CodeMirror-merge-collapsed-line .CodeMirror-gutter-elt{display:none}.CodeMirror-merge{position:relative;border:1px solid #ddd;white-space:pre}.CodeMirror-merge,.CodeMirror-merge .CodeMirror{height:350px}.CodeMirror-merge-2pane .CodeMirror-merge-pane{width:47%}.CodeMirror-merge-2pane .CodeMirror-merge-gap{width:6%}.CodeMirror-merge-3pane .CodeMirror-merge-pane{width:31%}.CodeMirror-merge-3pane .CodeMirror-merge-gap{width:3.5%}.CodeMirror-merge-pane{display:inline-block;white-space:normal;vertical-align:top}.CodeMirror-merge-pane-rightmost{position:absolute;right:0px;z-index:1}.CodeMirror-merge-gap{z-index:2;display:inline-block;height:100%;-moz-box-sizing:border-box;box-sizing:border-box;overflow:hidden;border-left:1px solid #ddd;border-right:1px solid #ddd;position:relative;background:#f8f8f8}.CodeMirror-merge-scrolllock-wrap{position:absolute;bottom:0;left:50%}.CodeMirror-merge-scrolllock{position:relative;left:-50%;cursor:pointer;color:#555;line-height:1}.CodeMirror-merge-copybuttons-left,.CodeMirror-merge-copybuttons-right{position:absolute;left:0;top:0;right:0;bottom:0;line-height:1}.CodeMirror-merge-copy{position:absolute;cursor:pointer;color:#44c;z-index:3}.CodeMirror-merge-copy-reverse{position:absolute;cursor:pointer;color:#44c}.Codemirror-moved-msg{background-color:#f5f5f5;border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding:3px 3px 3px 8px;height:22px;line-height:22px;font-size:13px;font-weight:normal;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}.CodeMirror-merge-copybuttons-left .CodeMirror-merge-copy{left:2px}.CodeMirror-merge-copybuttons-right .CodeMirror-merge-copy{right:2px}.CodeMirror-merge-r-inserted,.CodeMirror-merge-l-inserted{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12MwuCXy3+CWyH8GBgYGJgYkAABZbAQ9ELXurwAAAABJRU5ErkJggg==);background-position:bottom left;background-repeat:repeat-x}.CodeMirror-merge-r-deleted,.CodeMirror-merge-l-deleted{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAGUlEQVQI12M4Kyb2/6yY2H8GBgYGJgYkAABURgPz6Ks7wQAAAABJRU5ErkJggg==);background-position:bottom left;background-repeat:repeat-x}.CodeMirror-merge-r-chunk{background:#ffffe0}.CodeMirror-merge-r-chunk-start{border-top:1px solid #ee8}.CodeMirror-merge-r-chunk-end{border-bottom:1px solid #ee8}.CodeMirror-merge-r-connect{fill:#ffffe0;stroke:#ee8;stroke-width:1px}.CodeMirror-merge-r-chunk-moved{background:rgba(255,255,0,0.4)}.CodeMirror-merge-l-chunk{background:#eef}.CodeMirror-merge-l-chunk-moved{background:rgba(255,255,0,0.4)}.CodeMirror-merge-l-chunk-start{border-top:1px solid #88e}.CodeMirror-merge-l-chunk-end{border-bottom:1px solid #88e}.CodeMirror-merge-l-connect{fill:#eef;stroke:#88e;stroke-width:1px}.CodeMirror-merge-l-chunk.CodeMirror-merge-r-chunk{background:#dfd}.CodeMirror-merge-l-chunk-start.CodeMirror-merge-r-chunk-start{border-top:1px solid #4e4}.CodeMirror-merge-l-chunk-end.CodeMirror-merge-r-chunk-end{border-bottom:1px solid #4e4}.CodeMirror-merge-collapsed-widget:before{content:"(...)"}.CodeMirror-merge-collapsed-widget{cursor:pointer;color:#88b;background:#eef;border:1px solid #ddf;font-size:90%;padding:0 3px;border-radius:4px}.CodeMirror-merge-collapsed-line .CodeMirror-gutter-elt{display:none}.CodeMirror-simplescroll-horizontal div,.CodeMirror-simplescroll-vertical div{position:absolute;background:#ccc;-moz-box-sizing:border-box;box-sizing:border-box;border:1px solid #bbb;border-radius:2px}.CodeMirror-simplescroll-horizontal,.CodeMirror-simplescroll-vertical{position:absolute;z-index:6;background:#eee}.CodeMirror-simplescroll-horizontal{bottom:0;left:0;height:8px}.CodeMirror-simplescroll-horizontal div{bottom:0;height:100%}.CodeMirror-simplescroll-vertical{right:0;top:0;width:8px}.CodeMirror-simplescroll-vertical div{right:0;width:100%}.CodeMirror-overlayscroll .CodeMirror-scrollbar-filler,.CodeMirror-overlayscroll .CodeMirror-gutter-filler{display:none}.CodeMirror-overlayscroll-horizontal div,.CodeMirror-overlayscroll-vertical div{position:absolute;background:#bcd;border-radius:3px}.CodeMirror-overlayscroll-horizontal,.CodeMirror-overlayscroll-vertical{position:absolute;z-index:6}.CodeMirror-overlayscroll-horizontal{bottom:0;left:0;height:6px}.CodeMirror-overlayscroll-horizontal div{bottom:0;height:100%}.CodeMirror-overlayscroll-vertical{right:0;top:0;width:6px}.CodeMirror-overlayscroll-vertical div{right:0;width:100%}.CodeMirror-search-match{background:gold;border-top:1px solid orange;border-bottom:1px solid orange;-moz-box-sizing:border-box;box-sizing:border-box;opacity:.5}.CodeMirror-Tern-completion{padding-left:22px;position:relative;line-height:1.5}.CodeMirror-Tern-completion:before{position:absolute;left:2px;bottom:2px;border-radius:50%;font-size:12px;font-weight:bold;height:15px;width:15px;line-height:16px;text-align:center;color:white;-moz-box-sizing:border-box;box-sizing:border-box}.CodeMirror-Tern-completion-unknown:before{content:"?";background:#4bb}.CodeMirror-Tern-completion-object:before{content:"O";background:#77c}.CodeMirror-Tern-completion-fn:before{content:"F";background:#7c7}.CodeMirror-Tern-completion-array:before{content:"A";background:#c66}.CodeMirror-Tern-completion-number:before{content:"1";background:#999}.CodeMirror-Tern-completion-string:before{content:"S";background:#999}.CodeMirror-Tern-completion-bool:before{content:"B";background:#999}.CodeMirror-Tern-completion-guess{color:#999}.CodeMirror-Tern-tooltip{border:1px solid silver;border-radius:3px;color:#444;padding:2px 5px;font-size:90%;font-family:monospace;background-color:white;white-space:pre-wrap;max-width:40em;position:absolute;z-index:10;-webkit-box-shadow:2px 3px 5px rgba(0,0,0,.2);-moz-box-shadow:2px 3px 5px rgba(0,0,0,.2);box-shadow:2px 3px 5px rgba(0,0,0,.2);transition:opacity 1s;-moz-transition:opacity 1s;-webkit-transition:opacity 1s;-o-transition:opacity 1s;-ms-transition:opacity 1s}.CodeMirror-Tern-hint-doc{max-width:25em;margin-top:-3px}.CodeMirror-Tern-fname{color:black}.CodeMirror-Tern-farg{color:#70a}.CodeMirror-Tern-farg-current{text-decoration:underline}.CodeMirror-Tern-type{color:#07c}.CodeMirror-Tern-fhint-guess{opacity:.7}/* Copyright 2018 Google Inc. All Rights Reserved. */
+.reveal .slides section .fragment{opacity:0;visibility:hidden;-webkit-transition:all 0.2s ease;transition:all 0.2s ease}.reveal .slides section .fragment.visible{opacity:1;visibility:visible}.reveal .slides section .fragment.grow{opacity:1;visibility:visible}.reveal .slides section .fragment.grow.visible{-webkit-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3)}.reveal .slides section .fragment.shrink{opacity:1;visibility:visible}.reveal .slides section .fragment.shrink.visible{-webkit-transform:scale(0.7);-ms-transform:scale(0.7);transform:scale(0.7)}.reveal .slides section .fragment.zoom-in{-webkit-transform:scale(0.1);-ms-transform:scale(0.1);transform:scale(0.1)}.reveal .slides section .fragment.zoom-in.visible{-webkit-transform:none;-ms-transform:none;transform:none}.reveal .slides section .fragment.fade-out{opacity:1;visibility:visible}.reveal .slides section .fragment.fade-out.visible{opacity:0;visibility:hidden}.reveal .slides section .fragment.semi-fade-out{opacity:1;visibility:visible}.reveal .slides section .fragment.semi-fade-out.visible{opacity:0.5;visibility:visible}.reveal .slides section .fragment.strike{opacity:1}.reveal .slides section .fragment.strike.visible{text-decoration:line-through}.reveal .slides section .fragment.current-visible{opacity:0;visibility:hidden}.reveal .slides section .fragment.current-visible.current-fragment{opacity:1;visibility:visible}.reveal .slides section .fragment.highlight-red,.reveal .slides section .fragment.highlight-current-red,.reveal .slides section .fragment.highlight-green,.reveal .slides section .fragment.highlight-current-green,.reveal .slides section .fragment.highlight-blue,.reveal .slides section .fragment.highlight-current-blue{opacity:1;visibility:visible}.reveal .slides section .fragment.highlight-red.visible{color:#ff2c2d}.reveal .slides section .fragment.highlight-green.visible{color:#17ff2e}.reveal .slides section .fragment.highlight-blue.visible{color:#1b91ff}.reveal .slides section .fragment.highlight-current-red.current-fragment{color:#ff2c2d}.reveal .slides section .fragment.highlight-current-green.current-fragment{color:#17ff2e}.reveal .slides section .fragment.highlight-current-blue.current-fragment{color:#1b91ff}.reveal:after{content:'';font-style:italic}.reveal iframe{z-index:1}.reveal a{position:relative}.reveal .stretch{max-width:none;max-height:none}.reveal pre.stretch code{height:100%;max-height:100%;-moz-box-sizing:border-box;box-sizing:border-box}.reveal .controls{display:none;position:fixed;width:110px;height:110px;z-index:30;right:10px;bottom:10px;-webkit-user-select:none}.reveal .controls div{position:absolute;opacity:0.05;width:0;height:0;border:12px solid transparent;-webkit-transform:scale(0.9999);-ms-transform:scale(0.9999);transform:scale(0.9999);-webkit-transition:all 0.2s ease;transition:all 0.2s ease;-webkit-tap-highlight-color:rgba(0,0,0,0)}.reveal .controls div.enabled{opacity:0.7;cursor:pointer}.reveal .controls div.enabled:active{margin-top:1px}.reveal .controls div.navigate-left{top:42px;border-right-width:22px;border-right-color:#000}.reveal .controls div.navigate-left.fragmented{opacity:0.3}.reveal .controls div.navigate-right{left:74px;top:42px;border-left-width:22px;border-left-color:#000}.reveal .controls div.navigate-right.fragmented{opacity:0.3}.reveal .controls div.navigate-up{left:42px;border-bottom-width:22px;border-bottom-color:#000}.reveal .controls div.navigate-up.fragmented{opacity:0.3}.reveal .controls div.navigate-down{left:42px;top:74px;border-top-width:22px;border-top-color:#000}.reveal .controls div.navigate-down.fragmented{opacity:0.3}.reveal .progress{position:fixed;display:none;height:3px;width:100%;bottom:0;left:0;z-index:10;background-color:rgba(0,0,0,0.2)}.reveal .progress:after{content:'';display:block;position:absolute;height:20px;width:100%;top:-20px}.reveal .progress span{display:block;height:100%;width:0px;background-color:#000;-webkit-transition:width 800ms cubic-bezier(0.26,0.86,0.44,0.985);transition:width 800ms cubic-bezier(0.26,0.86,0.44,0.985)}.reveal .slide-number{position:fixed;display:block;right:15px;bottom:15px;opacity:0.5;z-index:31;font-size:12px}.reveal{position:relative;width:100%;height:100%;overflow:hidden;-ms-touch-action:none;touch-action:none}.reveal .slides{position:absolute;width:100%;height:100%;top:0;right:0;bottom:0;left:0;margin:auto;overflow:visible;z-index:1;text-align:center;-webkit-perspective:600px;perspective:600px;-webkit-perspective-origin:50% 40%;perspective-origin:50% 40%}.reveal .slides>section{-ms-perspective:600px}.reveal .slides>section,.reveal .slides>section>section{display:none;position:absolute;width:100%;padding:20px 0px;z-index:10;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transition:-webkit-transform-origin 800ms cubic-bezier(0.26,0.86,0.44,0.985),-webkit-transform 800ms cubic-bezier(0.26,0.86,0.44,0.985),visibility 800ms cubic-bezier(0.26,0.86,0.44,0.985),opacity 800ms cubic-bezier(0.26,0.86,0.44,0.985);transition:-ms-transform-origin 800ms cubic-bezier(0.26,0.86,0.44,0.985),transform 800ms cubic-bezier(0.26,0.86,0.44,0.985),visibility 800ms cubic-bezier(0.26,0.86,0.44,0.985),opacity 800ms cubic-bezier(0.26,0.86,0.44,0.985);transition:transform-origin 800ms cubic-bezier(0.26,0.86,0.44,0.985),transform 800ms cubic-bezier(0.26,0.86,0.44,0.985),visibility 800ms cubic-bezier(0.26,0.86,0.44,0.985),opacity 800ms cubic-bezier(0.26,0.86,0.44,0.985)}.reveal[data-transition-speed="fast"] .slides section{-webkit-transition-duration:400ms;transition-duration:400ms}.reveal[data-transition-speed="slow"] .slides section{-webkit-transition-duration:1200ms;transition-duration:1200ms}.reveal .slides section[data-transition-speed="fast"]{-webkit-transition-duration:400ms;transition-duration:400ms}.reveal .slides section[data-transition-speed="slow"]{-webkit-transition-duration:1200ms;transition-duration:1200ms}.reveal .slides>section.stack{padding-top:0;padding-bottom:0}.reveal .slides>section.present,.reveal .slides>section>section.present{display:block;z-index:11;opacity:1}.reveal.center,.reveal.center .slides,.reveal.center .slides section{min-height:0!important}.reveal .slides>section.future,.reveal .slides>section>section.future,.reveal .slides>section.past,.reveal .slides>section>section.past{pointer-events:none}.reveal.overview .slides>section,.reveal.overview .slides>section>section{pointer-events:auto}.reveal .slides>section.past,.reveal .slides>section.future,.reveal .slides>section>section.past,.reveal .slides>section>section.future{opacity:0}.reveal.slide section{-webkit-backface-visibility:hidden;backface-visibility:hidden}.reveal .slides>section[data-transition=slide].past,.reveal .slides>section[data-transition~=slide-out].past,.reveal.slide .slides>section:not([data-transition]).past{-webkit-transform:translate(-150%,0);-ms-transform:translate(-150%,0);transform:translate(-150%,0)}.reveal .slides>section[data-transition=slide].future,.reveal .slides>section[data-transition~=slide-in].future,.reveal.slide .slides>section:not([data-transition]).future{-webkit-transform:translate(150%,0);-ms-transform:translate(150%,0);transform:translate(150%,0)}.reveal .slides>section>section[data-transition=slide].past,.reveal .slides>section>section[data-transition~=slide-out].past,.reveal.slide .slides>section>section:not([data-transition]).past{-webkit-transform:translate(0,-150%);-ms-transform:translate(0,-150%);transform:translate(0,-150%)}.reveal .slides>section>section[data-transition=slide].future,.reveal .slides>section>section[data-transition~=slide-in].future,.reveal.slide .slides>section>section:not([data-transition]).future{-webkit-transform:translate(0,150%);-ms-transform:translate(0,150%);transform:translate(0,150%)}.reveal.linear section{-webkit-backface-visibility:hidden;backface-visibility:hidden}.reveal .slides>section[data-transition=linear].past,.reveal .slides>section[data-transition~=linear-out].past,.reveal.linear .slides>section:not([data-transition]).past{-webkit-transform:translate(-150%,0);-ms-transform:translate(-150%,0);transform:translate(-150%,0)}.reveal .slides>section[data-transition=linear].future,.reveal .slides>section[data-transition~=linear-in].future,.reveal.linear .slides>section:not([data-transition]).future{-webkit-transform:translate(150%,0);-ms-transform:translate(150%,0);transform:translate(150%,0)}.reveal .slides>section>section[data-transition=linear].past,.reveal .slides>section>section[data-transition~=linear-out].past,.reveal.linear .slides>section>section:not([data-transition]).past{-webkit-transform:translate(0,-150%);-ms-transform:translate(0,-150%);transform:translate(0,-150%)}.reveal .slides>section>section[data-transition=linear].future,.reveal .slides>section>section[data-transition~=linear-in].future,.reveal.linear .slides>section>section:not([data-transition]).future{-webkit-transform:translate(0,150%);-ms-transform:translate(0,150%);transform:translate(0,150%)}.reveal .slides>section[data-transition=default].past,.reveal .slides>section[data-transition~=default-out].past,.reveal.default .slides>section:not([data-transition]).past{-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0)}.reveal .slides>section[data-transition=default].future,.reveal .slides>section[data-transition~=default-in].future,.reveal.default .slides>section:not([data-transition]).future{-webkit-transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0)}.reveal .slides>section>section[data-transition=default].past,.reveal .slides>section>section[data-transition~=default-out].past,.reveal.default .slides>section>section:not([data-transition]).past{-webkit-transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0);transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0)}.reveal .slides>section>section[data-transition=default].future,.reveal .slides>section>section[data-transition~=default-in].future,.reveal.default .slides>section>section:not([data-transition]).future{-webkit-transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0);transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0)}.reveal .slides>section[data-transition=convex].past,.reveal .slides>section[data-transition~=convex-out].past,.reveal.convex .slides>section:not([data-transition]).past{-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0)}.reveal .slides>section[data-transition=convex].future,.reveal .slides>section[data-transition~=convex-in].future,.reveal.convex .slides>section:not([data-transition]).future{-webkit-transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0)}.reveal .slides>section>section[data-transition=convex].past,.reveal .slides>section>section[data-transition~=convex-out].past,.reveal.convex .slides>section>section:not([data-transition]).past{-webkit-transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0);transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0)}.reveal .slides>section>section[data-transition=convex].future,.reveal .slides>section>section[data-transition~=convex-in].future,.reveal.convex .slides>section>section:not([data-transition]).future{-webkit-transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0);transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0)}.reveal .slides>section[data-transition=concave].past,.reveal .slides>section[data-transition~=concave-out].past,.reveal.concave .slides>section:not([data-transition]).past{-webkit-transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0)}.reveal .slides>section[data-transition=concave].future,.reveal .slides>section[data-transition~=concave-in].future,.reveal.concave .slides>section:not([data-transition]).future{-webkit-transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0)}.reveal .slides>section>section[data-transition=concave].past,.reveal .slides>section>section[data-transition~=concave-out].past,.reveal.concave .slides>section>section:not([data-transition]).past{-webkit-transform:translate3d(0,-80%,0) rotateX(-70deg) translate3d(0,-80%,0);transform:translate3d(0,-80%,0) rotateX(-70deg) translate3d(0,-80%,0)}.reveal .slides>section>section[data-transition=concave].future,.reveal .slides>section>section[data-transition~=concave-in].future,.reveal.concave .slides>section>section:not([data-transition]).future{-webkit-transform:translate3d(0,80%,0) rotateX(70deg) translate3d(0,80%,0);transform:translate3d(0,80%,0) rotateX(70deg) translate3d(0,80%,0)}.reveal .slides>section[data-transition=zoom],.reveal.zoom .slides>section:not([data-transition]){-webkit-transition-timing-function:ease;transition-timing-function:ease}.reveal .slides>section[data-transition=zoom].past,.reveal .slides>section[data-transition~=zoom-out].past,.reveal.zoom .slides>section:not([data-transition]).past{visibility:hidden;-webkit-transform:scale(16);-ms-transform:scale(16);transform:scale(16)}.reveal .slides>section[data-transition=zoom].future,.reveal .slides>section[data-transition~=zoom-in].future,.reveal.zoom .slides>section:not([data-transition]).future{visibility:hidden;-webkit-transform:scale(0.2);-ms-transform:scale(0.2);transform:scale(0.2)}.reveal .slides>section>section[data-transition=zoom].past,.reveal .slides>section>section[data-transition~=zoom-out].past,.reveal.zoom .slides>section>section:not([data-transition]).past{-webkit-transform:translate(0,-150%);-ms-transform:translate(0,-150%);transform:translate(0,-150%)}.reveal .slides>section>section[data-transition=zoom].future,.reveal .slides>section>section[data-transition~=zoom-in].future,.reveal.zoom .slides>section>section:not([data-transition]).future{-webkit-transform:translate(0,150%);-ms-transform:translate(0,150%);transform:translate(0,150%)}.reveal.cube .slides{-webkit-perspective:1300px;perspective:1300px}.reveal.cube .slides section{padding:30px;min-height:700px;-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-box-sizing:border-box;box-sizing:border-box}.reveal.center.cube .slides section{min-height:0}.reveal.cube .slides section:not(.stack):before{content:'';position:absolute;display:block;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,0.1);border-radius:4px;-webkit-transform:translateZ(-20px);transform:translateZ(-20px)}.reveal.cube .slides section:not(.stack):after{content:'';position:absolute;display:block;width:90%;height:30px;left:5%;bottom:0;background:none;z-index:1;border-radius:4px;box-shadow:0px 95px 25px rgba(0,0,0,0.2);-webkit-transform:translateZ(-90px) rotateX(65deg);transform:translateZ(-90px) rotateX(65deg)}.reveal.cube .slides>section.stack{padding:0;background:none}.reveal.cube .slides>section.past{-webkit-transform-origin:100% 0%;-ms-transform-origin:100% 0%;transform-origin:100% 0%;-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg);transform:translate3d(-100%,0,0) rotateY(-90deg)}.reveal.cube .slides>section.future{-webkit-transform-origin:0% 0%;-ms-transform-origin:0% 0%;transform-origin:0% 0%;-webkit-transform:translate3d(100%,0,0) rotateY(90deg);transform:translate3d(100%,0,0) rotateY(90deg)}.reveal.cube .slides>section>section.past{-webkit-transform-origin:0% 100%;-ms-transform-origin:0% 100%;transform-origin:0% 100%;-webkit-transform:translate3d(0,-100%,0) rotateX(90deg);transform:translate3d(0,-100%,0) rotateX(90deg)}.reveal.cube .slides>section>section.future{-webkit-transform-origin:0% 0%;-ms-transform-origin:0% 0%;transform-origin:0% 0%;-webkit-transform:translate3d(0,100%,0) rotateX(-90deg);transform:translate3d(0,100%,0) rotateX(-90deg)}.reveal.page .slides{-webkit-perspective-origin:0% 50%;perspective-origin:0% 50%;-webkit-perspective:3000px;perspective:3000px}.reveal.page .slides section{padding:30px;min-height:700px;-moz-box-sizing:border-box;box-sizing:border-box}.reveal.page .slides section.past{z-index:12}.reveal.page .slides section:not(.stack):before{content:'';position:absolute;display:block;width:100%;height:100%;left:0;top:0;background:rgba(0,0,0,0.1);-webkit-transform:translateZ(-20px);transform:translateZ(-20px)}.reveal.page .slides section:not(.stack):after{content:'';position:absolute;display:block;width:90%;height:30px;left:5%;bottom:0;background:none;z-index:1;border-radius:4px;box-shadow:0px 95px 25px rgba(0,0,0,0.2);-webkit-transform:translateZ(-90px) rotateX(65deg)}.reveal.page .slides>section.stack{padding:0;background:none}.reveal.page .slides>section.past{-webkit-transform-origin:0% 0%;-ms-transform-origin:0% 0%;transform-origin:0% 0%;-webkit-transform:translate3d(-40%,0,0) rotateY(-80deg);transform:translate3d(-40%,0,0) rotateY(-80deg)}.reveal.page .slides>section.future{-webkit-transform-origin:100% 0%;-ms-transform-origin:100% 0%;transform-origin:100% 0%;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.reveal.page .slides>section>section.past{-webkit-transform-origin:0% 0%;-ms-transform-origin:0% 0%;transform-origin:0% 0%;-webkit-transform:translate3d(0,-40%,0) rotateX(80deg);transform:translate3d(0,-40%,0) rotateX(80deg)}.reveal.page .slides>section>section.future{-webkit-transform-origin:0% 100%;-ms-transform-origin:0% 100%;transform-origin:0% 100%;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.reveal .slides section[data-transition=fade],.reveal.fade .slides section:not([data-transition]),.reveal.fade .slides>section>section:not([data-transition]){-webkit-transform:none;-ms-transform:none;transform:none;-webkit-transition:opacity 0.5s;transition:opacity 0.5s}.reveal.fade.overview .slides section,.reveal.fade.overview .slides>section>section{-webkit-transition:none;transition:none}.reveal .slides>section[data-transition=none],.reveal.none .slides>section:not([data-transition]){-webkit-transform:none;-ms-transform:none;transform:none;-webkit-transition:none;transition:none}.reveal .pause-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:black;visibility:hidden;opacity:0;z-index:100;-webkit-transition:all 1s ease;transition:all 1s ease}.reveal.paused .pause-overlay{visibility:visible;opacity:1}.no-transforms{overflow-y:auto}.no-transforms .reveal .slides{position:relative;width:80%;height:auto!important;top:0;left:50%;margin:0;text-align:center}.no-transforms .reveal .controls,.no-transforms .reveal .progress{display:none!important}.no-transforms .reveal .slides section{display:block!important;opacity:1!important;position:relative!important;height:auto;min-height:0;top:0;left:-50%;margin:70px 0;-webkit-transform:none;-ms-transform:none;transform:none}.no-transforms .reveal .slides section section{left:0}.reveal .no-transition,.reveal .no-transition *{-webkit-transition:none!important;transition:none!important}.reveal .backgrounds{position:absolute;width:100%;height:100%;top:0;left:0;-webkit-perspective:600px;perspective:600px}.reveal .slide-background{display:none;position:absolute;width:100%;height:100%;opacity:0;visibility:hidden;background-color:rgba(0,0,0,0);background-position:50% 50%;background-repeat:no-repeat;background-size:cover;-webkit-transition:all 800ms cubic-bezier(0.26,0.86,0.44,0.985);transition:all 800ms cubic-bezier(0.26,0.86,0.44,0.985)}.reveal .slide-background.stack{display:block}.reveal .slide-background.present{opacity:1;visibility:visible}.print-pdf .reveal .slide-background{opacity:1!important;visibility:visible!important}.reveal .slide-background video{position:absolute;width:100%;height:100%;max-width:none;max-height:none;top:0;left:0}.reveal[data-background-transition=none]>.backgrounds .slide-background,.reveal>.backgrounds .slide-background[data-background-transition=none]{-webkit-transition:none;transition:none}.reveal[data-background-transition=slide]>.backgrounds .slide-background,.reveal>.backgrounds .slide-background[data-background-transition=slide]{opacity:1;-webkit-backface-visibility:hidden;backface-visibility:hidden}.reveal[data-background-transition=slide]>.backgrounds .slide-background.past,.reveal>.backgrounds .slide-background.past[data-background-transition=slide]{-webkit-transform:translate(-100%,0);-ms-transform:translate(-100%,0);transform:translate(-100%,0)}.reveal[data-background-transition=slide]>.backgrounds .slide-background.future,.reveal>.backgrounds .slide-background.future[data-background-transition=slide]{-webkit-transform:translate(100%,0);-ms-transform:translate(100%,0);transform:translate(100%,0)}.reveal[data-background-transition=slide]>.backgrounds .slide-background>.slide-background.past,.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=slide]{-webkit-transform:translate(0,-100%);-ms-transform:translate(0,-100%);transform:translate(0,-100%)}.reveal[data-background-transition=slide]>.backgrounds .slide-background>.slide-background.future,.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=slide]{-webkit-transform:translate(0,100%);-ms-transform:translate(0,100%);transform:translate(0,100%)}.reveal[data-background-transition=convex]>.backgrounds .slide-background.past,.reveal>.backgrounds .slide-background.past[data-background-transition=convex]{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0)}.reveal[data-background-transition=convex]>.backgrounds .slide-background.future,.reveal>.backgrounds .slide-background.future[data-background-transition=convex]{opacity:0;-webkit-transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0)}.reveal[data-background-transition=convex]>.backgrounds .slide-background>.slide-background.past,.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=convex]{opacity:0;-webkit-transform:translate3d(0,-100%,0) rotateX(90deg) translate3d(0,-100%,0);transform:translate3d(0,-100%,0) rotateX(90deg) translate3d(0,-100%,0)}.reveal[data-background-transition=convex]>.backgrounds .slide-background>.slide-background.future,.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=convex]{opacity:0;-webkit-transform:translate3d(0,100%,0) rotateX(-90deg) translate3d(0,100%,0);transform:translate3d(0,100%,0) rotateX(-90deg) translate3d(0,100%,0)}.reveal[data-background-transition=concave]>.backgrounds .slide-background.past,.reveal>.backgrounds .slide-background.past[data-background-transition=concave]{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0)}.reveal[data-background-transition=concave]>.backgrounds .slide-background.future,.reveal>.backgrounds .slide-background.future[data-background-transition=concave]{opacity:0;-webkit-transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0)}.reveal[data-background-transition=concave]>.backgrounds .slide-background>.slide-background.past,.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=concave]{opacity:0;-webkit-transform:translate3d(0,-100%,0) rotateX(-90deg) translate3d(0,-100%,0);transform:translate3d(0,-100%,0) rotateX(-90deg) translate3d(0,-100%,0)}.reveal[data-background-transition=concave]>.backgrounds .slide-background>.slide-background.future,.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=concave]{opacity:0;-webkit-transform:translate3d(0,100%,0) rotateX(90deg) translate3d(0,100%,0);transform:translate3d(0,100%,0) rotateX(90deg) translate3d(0,100%,0)}.reveal[data-background-transition=zoom]>.backgrounds .slide-background,.reveal>.backgrounds .slide-background[data-background-transition=zoom]{-webkit-transition-timing-function:ease;transition-timing-function:ease}.reveal[data-background-transition=zoom]>.backgrounds .slide-background.past,.reveal>.backgrounds .slide-background.past[data-background-transition=zoom]{opacity:0;visibility:hidden;-webkit-transform:scale(16);-ms-transform:scale(16);transform:scale(16)}.reveal[data-background-transition=zoom]>.backgrounds .slide-background.future,.reveal>.backgrounds .slide-background.future[data-background-transition=zoom]{opacity:0;visibility:hidden;-webkit-transform:scale(0.2);-ms-transform:scale(0.2);transform:scale(0.2)}.reveal[data-background-transition=zoom]>.backgrounds .slide-background>.slide-background.past,.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=zoom]{opacity:0;visibility:hidden;-webkit-transform:scale(16);-ms-transform:scale(16);transform:scale(16)}.reveal[data-background-transition=zoom]>.backgrounds .slide-background>.slide-background.future,.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=zoom]{opacity:0;visibility:hidden;-webkit-transform:scale(0.2);-ms-transform:scale(0.2);transform:scale(0.2)}.reveal[data-transition-speed="fast"]>.backgrounds .slide-background{-webkit-transition-duration:400ms;transition-duration:400ms}.reveal[data-transition-speed="slow"]>.backgrounds .slide-background{-webkit-transition-duration:1200ms;transition-duration:1200ms}.reveal.overview{-webkit-perspective-origin:50% 50%;perspective-origin:50% 50%;-webkit-perspective:700px;perspective:700px}.reveal.overview .slides section{height:700px;opacity:1!important;overflow:hidden;visibility:visible!important;cursor:pointer;-moz-box-sizing:border-box;box-sizing:border-box}.reveal.overview .slides section:hover,.reveal.overview .slides section.present{outline:10px solid rgba(150,150,150,0.4);outline-offset:10px}.reveal.overview .slides section .fragment{opacity:1;-webkit-transition:none;transition:none}.reveal.overview .slides section:after,.reveal.overview .slides section:before{display:none!important}.reveal.overview .slides>section.stack{padding:0;top:0!important;background:none;outline:none;overflow:visible}.reveal.overview .backgrounds{-webkit-perspective:inherit;perspective:inherit}.reveal.overview .backgrounds .slide-background{opacity:1;visibility:visible;outline:10px solid rgba(150,150,150,0.1);outline-offset:10px}.reveal.overview .slides section,.reveal.overview-deactivating .slides section{-webkit-transition:none;transition:none}.reveal.overview .backgrounds .slide-background,.reveal.overview-deactivating .backgrounds .slide-background{-webkit-transition:none;transition:none}.reveal.overview-animated .slides{-webkit-transition:-webkit-transform 0.4s ease;transition:transform 0.4s ease}.reveal.rtl .slides,.reveal.rtl .slides h1,.reveal.rtl .slides h2,.reveal.rtl .slides h3,.reveal.rtl .slides h4,.reveal.rtl .slides h5,.reveal.rtl .slides h6{direction:rtl;font-family:sans-serif}.reveal.rtl pre,.reveal.rtl code{direction:ltr}.reveal.rtl ol,.reveal.rtl ul{text-align:right}.reveal.rtl .progress span{float:right}.reveal.has-parallax-background .backgrounds{-webkit-transition:all 0.8s ease;transition:all 0.8s ease}.reveal.has-parallax-background[data-transition-speed="fast"] .backgrounds{-webkit-transition-duration:400ms;transition-duration:400ms}.reveal.has-parallax-background[data-transition-speed="slow"] .backgrounds{-webkit-transition-duration:1200ms;transition-duration:1200ms}.reveal .overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1000;background:rgba(0,0,0,0.9);opacity:0;visibility:hidden;-webkit-transition:all 0.3s ease;transition:all 0.3s ease}.reveal .overlay.visible{opacity:1;visibility:visible}.reveal .overlay .spinner{position:absolute;display:block;top:50%;left:50%;width:32px;height:32px;margin:-16px 0 0 -16px;z-index:10;background-image:url(data:image/gif;base64,R0lGODlhIAAgAPMAAJmZmf%2F%2F%2F6%2Bvr8nJybW1tcDAwOjo6Nvb26ioqKOjo7Ozs%2FLy8vz8%2FAAAAAAAAAAAACH%2FC05FVFNDQVBFMi4wAwEAAAAh%2FhpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh%2BQQJCgAAACwAAAAAIAAgAAAE5xDISWlhperN52JLhSSdRgwVo1ICQZRUsiwHpTJT4iowNS8vyW2icCF6k8HMMBkCEDskxTBDAZwuAkkqIfxIQyhBQBFvAQSDITM5VDW6XNE4KagNh6Bgwe60smQUB3d4Rz1ZBApnFASDd0hihh12BkE9kjAJVlycXIg7CQIFA6SlnJ87paqbSKiKoqusnbMdmDC2tXQlkUhziYtyWTxIfy6BE8WJt5YJvpJivxNaGmLHT0VnOgSYf0dZXS7APdpB309RnHOG5gDqXGLDaC457D1zZ%2FV%2FnmOM82XiHRLYKhKP1oZmADdEAAAh%2BQQJCgAAACwAAAAAIAAgAAAE6hDISWlZpOrNp1lGNRSdRpDUolIGw5RUYhhHukqFu8DsrEyqnWThGvAmhVlteBvojpTDDBUEIFwMFBRAmBkSgOrBFZogCASwBDEY%2FCZSg7GSE0gSCjQBMVG023xWBhklAnoEdhQEfyNqMIcKjhRsjEdnezB%2BA4k8gTwJhFuiW4dokXiloUepBAp5qaKpp6%2BHo7aWW54wl7obvEe0kRuoplCGepwSx2jJvqHEmGt6whJpGpfJCHmOoNHKaHx61WiSR92E4lbFoq%2BB6QDtuetcaBPnW6%2BO7wDHpIiK9SaVK5GgV543tzjgGcghAgAh%2BQQJCgAAACwAAAAAIAAgAAAE7hDISSkxpOrN5zFHNWRdhSiVoVLHspRUMoyUakyEe8PTPCATW9A14E0UvuAKMNAZKYUZCiBMuBakSQKG8G2FzUWox2AUtAQFcBKlVQoLgQReZhQlCIJesQXI5B0CBnUMOxMCenoCfTCEWBsJColTMANldx15BGs8B5wlCZ9Po6OJkwmRpnqkqnuSrayqfKmqpLajoiW5HJq7FL1Gr2mMMcKUMIiJgIemy7xZtJsTmsM4xHiKv5KMCXqfyUCJEonXPN2rAOIAmsfB3uPoAK%2B%2BG%2Bw48edZPK%2BM6hLJpQg484enXIdQFSS1u6UhksENEQAAIfkECQoAAAAsAAAAACAAIAAABOcQyEmpGKLqzWcZRVUQnZYg1aBSh2GUVEIQ2aQOE%2BG%2BcD4ntpWkZQj1JIiZIogDFFyHI0UxQwFugMSOFIPJftfVAEoZLBbcLEFhlQiqGp1Vd140AUklUN3eCA51C1EWMzMCezCBBmkxVIVHBWd3HHl9JQOIJSdSnJ0TDKChCwUJjoWMPaGqDKannasMo6WnM562R5YluZRwur0wpgqZE7NKUm%2BFNRPIhjBJxKZteWuIBMN4zRMIVIhffcgojwCF117i4nlLnY5ztRLsnOk%2BaV%2BoJY7V7m76PdkS4trKcdg0Zc0tTcKkRAAAIfkECQoAAAAsAAAAACAAIAAABO4QyEkpKqjqzScpRaVkXZWQEximw1BSCUEIlDohrft6cpKCk5xid5MNJTaAIkekKGQkWyKHkvhKsR7ARmitkAYDYRIbUQRQjWBwJRzChi9CRlBcY1UN4g0%2FVNB0AlcvcAYHRyZPdEQFYV8ccwR5HWxEJ02YmRMLnJ1xCYp0Y5idpQuhopmmC2KgojKasUQDk5BNAwwMOh2RtRq5uQuPZKGIJQIGwAwGf6I0JXMpC8C7kXWDBINFMxS4DKMAWVWAGYsAdNqW5uaRxkSKJOZKaU3tPOBZ4DuK2LATgJhkPJMgTwKCdFjyPHEnKxFCDhEAACH5BAkKAAAALAAAAAAgACAAAATzEMhJaVKp6s2nIkolIJ2WkBShpkVRWqqQrhLSEu9MZJKK9y1ZrqYK9WiClmvoUaF8gIQSNeF1Er4MNFn4SRSDARWroAIETg1iVwuHjYB1kYc1mwruwXKC9gmsJXliGxc%2BXiUCby9ydh1sOSdMkpMTBpaXBzsfhoc5l58Gm5yToAaZhaOUqjkDgCWNHAULCwOLaTmzswadEqggQwgHuQsHIoZCHQMMQgQGubVEcxOPFAcMDAYUA85eWARmfSRQCdcMe0zeP1AAygwLlJtPNAAL19DARdPzBOWSm1brJBi45soRAWQAAkrQIykShQ9wVhHCwCQCACH5BAkKAAAALAAAAAAgACAAAATrEMhJaVKp6s2nIkqFZF2VIBWhUsJaTokqUCoBq%2BE71SRQeyqUToLA7VxF0JDyIQh%2FMVVPMt1ECZlfcjZJ9mIKoaTl1MRIl5o4CUKXOwmyrCInCKqcWtvadL2SYhyASyNDJ0uIiRMDjI0Fd30%2FiI2UA5GSS5UDj2l6NoqgOgN4gksEBgYFf0FDqKgHnyZ9OX8HrgYHdHpcHQULXAS2qKpENRg7eAMLC7kTBaixUYFkKAzWAAnLC7FLVxLWDBLKCwaKTULgEwbLA4hJtOkSBNqITT3xEgfLpBtzE%2FjiuL04RGEBgwWhShRgQExHBAAh%2BQQJCgAAACwAAAAAIAAgAAAE7xDISWlSqerNpyJKhWRdlSAVoVLCWk6JKlAqAavhO9UkUHsqlE6CwO1cRdCQ8iEIfzFVTzLdRAmZX3I2SfZiCqGk5dTESJeaOAlClzsJsqwiJwiqnFrb2nS9kmIcgEsjQydLiIlHehhpejaIjzh9eomSjZR%2BipslWIRLAgMDOR2DOqKogTB9pCUJBagDBXR6XB0EBkIIsaRsGGMMAxoDBgYHTKJiUYEGDAzHC9EACcUGkIgFzgwZ0QsSBcXHiQvOwgDdEwfFs0sDzt4S6BK4xYjkDOzn0unFeBzOBijIm1Dgmg5YFQwsCMjp1oJ8LyIAACH5BAkKAAAALAAAAAAgACAAAATwEMhJaVKp6s2nIkqFZF2VIBWhUsJaTokqUCoBq%2BE71SRQeyqUToLA7VxF0JDyIQh%2FMVVPMt1ECZlfcjZJ9mIKoaTl1MRIl5o4CUKXOwmyrCInCKqcWtvadL2SYhyASyNDJ0uIiUd6GGl6NoiPOH16iZKNlH6KmyWFOggHhEEvAwwMA0N9GBsEC6amhnVcEwavDAazGwIDaH1ipaYLBUTCGgQDA8NdHz0FpqgTBwsLqAbWAAnIA4FWKdMLGdYGEgraigbT0OITBcg5QwPT4xLrROZL6AuQAPUS7bxLpoWidY0JtxLHKhwwMJBTHgPKdEQAACH5BAkKAAAALAAAAAAgACAAAATrEMhJaVKp6s2nIkqFZF2VIBWhUsJaTokqUCoBq%2BE71SRQeyqUToLA7VxF0JDyIQh%2FMVVPMt1ECZlfcjZJ9mIKoaTl1MRIl5o4CUKXOwmyrCInCKqcWtvadL2SYhyASyNDJ0uIiUd6GAULDJCRiXo1CpGXDJOUjY%2BYip9DhToJA4RBLwMLCwVDfRgbBAaqqoZ1XBMHswsHtxtFaH1iqaoGNgAIxRpbFAgfPQSqpbgGBqUD1wBXeCYp1AYZ19JJOYgH1KwA4UBvQwXUBxPqVD9L3sbp2BNk2xvvFPJd%2BMFCN6HAAIKgNggY0KtEBAAh%2BQQJCgAAACwAAAAAIAAgAAAE6BDISWlSqerNpyJKhWRdlSAVoVLCWk6JKlAqAavhO9UkUHsqlE6CwO1cRdCQ8iEIfzFVTzLdRAmZX3I2SfYIDMaAFdTESJeaEDAIMxYFqrOUaNW4E4ObYcCXaiBVEgULe0NJaxxtYksjh2NLkZISgDgJhHthkpU4mW6blRiYmZOlh4JWkDqILwUGBnE6TYEbCgevr0N1gH4At7gHiRpFaLNrrq8HNgAJA70AWxQIH1%2BvsYMDAzZQPC9VCNkDWUhGkuE5PxJNwiUK4UfLzOlD4WvzAHaoG9nxPi5d%2BjYUqfAhhykOFwJWiAAAIfkECQoAAAAsAAAAACAAIAAABPAQyElpUqnqzaciSoVkXVUMFaFSwlpOCcMYlErAavhOMnNLNo8KsZsMZItJEIDIFSkLGQoQTNhIsFehRww2CQLKF0tYGKYSg%2BygsZIuNqJksKgbfgIGepNo2cIUB3V1B3IvNiBYNQaDSTtfhhx0CwVPI0UJe0%2Bbm4g5VgcGoqOcnjmjqDSdnhgEoamcsZuXO1aWQy8KAwOAuTYYGwi7w5h%2BKr0SJ8MFihpNbx%2B4Erq7BYBuzsdiH1jCAzoSfl0rVirNbRXlBBlLX%2BBP0XJLAPGzTkAuAOqb0WT5AH7OcdCm5B8TgRwSRKIHQtaLCwg1RAAAOwAAAAAAAAAAAA%3D%3D);visibility:visible;opacity:0.6;-webkit-transition:all 0.3s ease;transition:all 0.3s ease}.reveal .overlay header{position:absolute;left:0;top:0;width:100%;height:40px;z-index:2;border-bottom:1px solid #222}.reveal .overlay header a{display:inline-block;width:40px;height:40px;padding:0 10px;float:right;opacity:0.6;-moz-box-sizing:border-box;box-sizing:border-box}.reveal .overlay header a:hover{opacity:1}.reveal .overlay header a .icon{display:inline-block;width:20px;height:20px;background-position:50% 50%;background-size:100%;background-repeat:no-repeat}.reveal .overlay header a.close .icon{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABkklEQVRYR8WX4VHDMAxG6wnoJrABZQPYBCaBTWAD2g1gE5gg6OOsXuxIlr40d81dfrSJ9V4c2VLK7spHuTJ/5wpM07QXuXc5X0opX2tEJcadjHuV80li/FgxTIEK/5QBCICBD6xEhSMGHgQPgBgLiYVAB1dpSqKDawxTohFw4JSEA3clzgIBPCURwE2JucBR7rhPJJv5OpJwDX+SfDjgx1wACQeJG1aChP9K/IMmdZ8DtESV1WyP3Bt4MwM6sj4NMxMYiqUWHQu4KYA/SYkIjOsm3BXYWMKFDwU2khjCQ4ELJUJ4SmClRArOCmSXGuKma0fYD5CbzHxFpCSGAhfAVSSUGDUk2BWZaff2g6GE15BsBQ9nwmpIGDiyHQddwNTMKkbZaf9fajXQca1EX44puJZUsnY0ObGmITE3GVLCbEhQUjGVt146j6oasWN+49Vph2w1pZ5EansNZqKBm1txbU57iRRcZ86RWMDdWtBJUHBHwoQPi1GV+JCbntmvok7iTX4/Up9mgyTc/FJYDTcndgH/AA5A/CHsyEkVAAAAAElFTkSuQmCC)}.reveal .overlay header a.external .icon{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAcElEQVRYR+2WSQoAIQwEzf8f7XiOMkUQxUPlGkM3hVmiQfQR9GYnH1SsAQlI4DiBqkCMoNb9y2e90IAEJPAcgdznU9+engMaeJ7Azh5Y1U67gAho4DqBqmB1buAf0MB1AlVBek83ZPkmJMGc1wAR+AAqod/B97TRpQAAAABJRU5ErkJggg==)}.reveal .overlay .viewport{position:absolute;top:40px;right:0;bottom:0;left:0}.reveal .overlay.overlay-preview .viewport iframe{width:100%;height:100%;max-width:100%;max-height:100%;border:0;opacity:0;visibility:hidden;-webkit-transition:all 0.3s ease;transition:all 0.3s ease}.reveal .overlay.overlay-preview.loaded .viewport iframe{opacity:1;visibility:visible}.reveal .overlay.overlay-preview.loaded .spinner{opacity:0;visibility:hidden;-webkit-transform:scale(0.2);-ms-transform:scale(0.2);transform:scale(0.2)}.reveal .overlay.overlay-help .viewport{overflow:auto;color:#fff}.reveal .overlay.overlay-help .viewport .viewport-inner{width:600px;margin:0 auto;padding:60px;text-align:center;letter-spacing:normal}.reveal .overlay.overlay-help .viewport .viewport-inner .title{font-size:20px}.reveal .overlay.overlay-help .viewport .viewport-inner table{border:1px solid #fff;border-collapse:collapse;font-size:14px}.reveal .overlay.overlay-help .viewport .viewport-inner table th,.reveal .overlay.overlay-help .viewport .viewport-inner table td{width:200px;padding:10px;border:1px solid #fff;vertical-align:middle}.reveal .overlay.overlay-help .viewport .viewport-inner table th{padding-top:20px;padding-bottom:20px}.reveal .playback{position:fixed;left:15px;bottom:15px;z-index:30;cursor:pointer;-webkit-transition:all 400ms ease;transition:all 400ms ease}.reveal.overview .playback{opacity:0;visibility:hidden}.reveal .roll{display:inline-block;line-height:1.2;overflow:hidden;vertical-align:top;-webkit-perspective:400px;perspective:400px;-webkit-perspective-origin:50% 50%;perspective-origin:50% 50%}.reveal .roll:hover{background:none;text-shadow:none}.reveal .roll span{display:block;position:relative;padding:0 2px;pointer-events:none;-webkit-transition:all 400ms ease;transition:all 400ms ease;-webkit-transform-origin:50% 0%;-ms-transform-origin:50% 0%;transform-origin:50% 0%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-backface-visibility:hidden;backface-visibility:hidden}.reveal .roll:hover span{background:rgba(0,0,0,0.5);-webkit-transform:translate3d(0px,0px,-45px) rotateX(90deg);transform:translate3d(0px,0px,-45px) rotateX(90deg)}.reveal .roll span:after{content:attr(data-title);display:block;position:absolute;left:0;top:0;padding:0 2px;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform-origin:50% 0%;-ms-transform-origin:50% 0%;transform-origin:50% 0%;-webkit-transform:translate3d(0px,110%,0px) rotateX(-90deg);transform:translate3d(0px,110%,0px) rotateX(-90deg)}.reveal aside.notes{display:none}.zoomed .reveal *,.zoomed .reveal *:before,.zoomed .reveal *:after{-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.zoomed .reveal .progress,.zoomed .reveal .controls{opacity:0}.zoomed .reveal .roll span{background:none}.zoomed .reveal .roll span:after{visibility:hidden}/* javascript/apps/picker/api/host_v2.css */
+/* Copyright 2011 Google Inc.  All Rights Reserved. */
+/* This CSS is used to style the Google Picker dialog.  To ensure that
+   future changes propogate, do not copy and re-serve this file. */
+
+.picker-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  overflow: hidden;
+}
+
+.picker.modal-dialog-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+}
+
+.picker.modal-dialog {
+  position: absolute;
+  top: 0;
+  /* @noflip */ left: 0;
+  background-color: #FFF;
+  border: 1px solid #ACACAC;
+  width: auto;
+  padding: 0;
+  z-index: 1001;
+  overflow: auto;
+  -moz-box-shadow: rgba(0,0,0,.2) 0 4px 16px;
+  -webkit-box-shadow: rgba(0,0,0,.2) 0 4px 16px;
+  box-shadow: rgba(0,0,0,.2) 0 4px 16px;
+  -webkit-transition: top .5s ease-in-out;
+  -moz-transition: top .5s ease-in-out;
+  -o-transition: top .5s ease-in-out;
+  transition: top .5s ease-in-out;
+}
+
+.picker-min {
+  position: absolute;
+  z-index: 1002;
+}
+
+.picker.modal-dialog-content {
+  font-size: 0;
+  padding: 0;
+}
+
+/**
+ * We are hiding the title by making it of height 0px and margin 0px, so that
+ * the close 'X' from the default modal dialog can still be displayed. This is
+ * useful when OnePick is loading. It lets the default 'X' show untill OnePick's
+ * version is loaded, so that the user can close the picker if it fails to load.
+ * The default close 'X' will be hidden on Action.LOADED even in
+ * picker.api.prototype.handlePickerAction_.
+ */
+.picker.modal-dialog-title {
+  height: 0;
+  margin: 0;
+}
+
+/**
+ * The dialog title text is used as the aria label, but we do not want to
+ * display it.
+ */
+.picker.modal-dialog-title-text {
+  display: none;
+}
+
+.picker.modal-dialog-buttons {
+  display: none;
+}
+
+
+/* javascript/closure/css/common.css */
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Cross-browser implementation of the "display: inline-block" CSS property.
+ * See http://www.w3.org/TR/CSS21/visuren.html#propdef-display for details.
+ * Tested on IE 6 & 7, FF 1.5 & 2.0, Safari 2 & 3, Webkit, and Opera 9.
+ *
+ * @author attila@google.com (Attila Bodis)
+ */
+
+/*
+ * Default rule; only Safari, Webkit, and Opera handle it without hacks.
+ */
+.goog-inline-block {
+  position: relative;
+  display: -moz-inline-box; /* Ignored by FF3 and later. */
+  display: inline-block;
+}
+
+/*
+ * Pre-IE7 IE hack.  On IE, "display: inline-block" only gives the element
+ * layout, but doesn't give it inline behavior.  Subsequently setting display
+ * to inline does the trick.
+ */
+* html .goog-inline-block {
+  display: inline;
+}
+
+/*
+ * IE7-only hack.  On IE, "display: inline-block" only gives the element
+ * layout, but doesn't give it inline behavior.  Subsequently setting display
+ * to inline does the trick.
+ */
+*:first-child+html .goog-inline-block {
+  display: inline;
+}
+
+/* javascript/closure/css/menu.css */
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Standard styling for menus created by goog.ui.MenuRenderer.
+ *
+ * @author attila@google.com (Attila Bodis)
+ */
+
+
+.goog-menu {
+  background: #fff;
+  border-color: #ccc #666 #666 #ccc;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  font: normal 13px Arial, sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 4px 0;
+  position: absolute;
+  z-index: 20000; /* Arbitrary, but some apps depend on it... */
+}
+
+/* javascript/closure/css/menubar.css */
+/*
+ * Copyright 2012 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * styling for goog.ui.menuBar and child buttons.
+ *
+ * @author tvykruta@google.com (Tomas Vykruta)
+ */
+
+
+.goog-menubar {
+  cursor: default;
+  outline: none;
+  position: relative;
+  white-space: nowrap;
+  background: #fff;
+}
+
+.goog-menubar .goog-menu-button {
+  padding: 1px 1px;
+  margin: 0px 0px;
+  outline: none;
+  border: none;
+  background: #fff;
+  /* @alternate */ border: 1px solid #fff;
+}
+
+.goog-menubar .goog-menu-button-dropdown {
+  display: none;
+}
+
+.goog-menubar .goog-menu-button-outer-box {
+  border: none;
+}
+
+.goog-menubar .goog-menu-button-inner-box {
+  border: none;
+}
+
+.goog-menubar .goog-menu-button-hover {
+  background: #eee;
+  border: 1px solid #eee;
+}
+
+.goog-menubar .goog-menu-button-open {
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.goog-menubar .goog-menu-button-disabled {
+  color: #ccc;
+}
+
+/* javascript/closure/css/menubutton.css */
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Standard styling for buttons created by goog.ui.MenuButtonRenderer.
+ *
+ * @author attila@google.com (Attila Bodis)
+ */
+
+
+/* State: resting. */
+.goog-menu-button {
+  /* Client apps may override the URL at which they serve the image. */
+  background: #ddd url(//ssl.gstatic.com/editor/button-bg.png) repeat-x top left;
+  border: 0;
+  color: #000;
+  cursor: pointer;
+  list-style: none;
+  margin: 2px;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/* Pseudo-rounded corners. */
+.goog-menu-button-outer-box,
+.goog-menu-button-inner-box {
+  border-style: solid;
+  border-color: #aaa;
+  vertical-align: top;
+}
+.goog-menu-button-outer-box {
+  margin: 0;
+  border-width: 1px 0;
+  padding: 0;
+}
+.goog-menu-button-inner-box {
+  margin: 0 -1px;
+  border-width: 0 1px;
+  padding: 3px 4px;
+}
+
+/* Pre-IE7 IE hack; ignored by IE7 and all non-IE browsers. */
+* html .goog-menu-button-inner-box {
+  /* IE6 needs to have the box shifted to make the borders line up. */
+  left: -1px;
+}
+
+/* Pre-IE7 BiDi fixes. */
+* html .goog-menu-button-rtl .goog-menu-button-outer-box {
+  /* @noflip */ left: -1px;
+  /* @noflip */ right: auto;
+}
+* html .goog-menu-button-rtl .goog-menu-button-inner-box {
+  /* @noflip */ right: auto;
+}
+
+/* IE7-only hack; ignored by all other browsers. */
+*:first-child+html .goog-menu-button-inner-box {
+  /* IE7 needs to have the box shifted to make the borders line up. */
+  left: -1px;
+}
+/* IE7 BiDi fix. */
+*:first-child+html .goog-menu-button-rtl .goog-menu-button-inner-box {
+  /* @noflip */ left: 1px;
+  /* @noflip */ right: auto;
+}
+
+/* Safari-only hacks. */
+::root .goog-menu-button,
+::root .goog-menu-button-outer-box,
+::root .goog-menu-button-inner-box {
+  /* Required to make pseudo-rounded corners work on Safari. */
+  line-height: 0;
+}
+::root .goog-menu-button-caption,
+::root .goog-menu-button-dropdown {
+  /* Required to make pseudo-rounded corners work on Safari. */
+  line-height: normal;
+}
+
+/* State: disabled. */
+.goog-menu-button-disabled {
+  background-image: none !important;
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.goog-menu-button-disabled .goog-menu-button-outer-box,
+.goog-menu-button-disabled .goog-menu-button-inner-box,
+.goog-menu-button-disabled .goog-menu-button-caption,
+.goog-menu-button-disabled .goog-menu-button-dropdown {
+  color: #333 !important;
+  border-color: #999 !important;
+}
+
+/* Pre-IE7 IE hack; ignored by IE7 and all non-IE browsers. */
+* html .goog-menu-button-disabled {
+  margin: 2px 1px !important;
+  padding: 0 1px !important;
+}
+
+/* IE7-only hack; ignored by all other browsers. */
+*:first-child+html .goog-menu-button-disabled {
+  margin: 2px 1px !important;
+  padding: 0 1px !important;
+}
+
+/* State: hover. */
+.goog-menu-button-hover .goog-menu-button-outer-box,
+.goog-menu-button-hover .goog-menu-button-inner-box {
+  border-color: #9cf #69e #69e #7af !important; /* Hover border wins. */
+}
+
+/* State: active, open. */
+.goog-menu-button-active,
+.goog-menu-button-open {
+  background-color: #bbb;
+  background-position: bottom left;
+}
+
+/* State: focused. */
+.goog-menu-button-focused .goog-menu-button-outer-box,
+.goog-menu-button-focused .goog-menu-button-inner-box {
+  border-color: orange;
+}
+
+/* Caption style. */
+.goog-menu-button-caption {
+  padding: 0 4px 0 0;
+  vertical-align: top;
+}
+
+/* Dropdown arrow style. */
+.goog-menu-button-dropdown {
+  height: 15px;
+  width: 7px;
+  /* Client apps may override the URL at which they serve the sprite. */
+  background: url(//ssl.gstatic.com/editor/editortoolbar.png) no-repeat -388px 0;
+  vertical-align: top;
+}
+
+/* Pill (collapsed border) styles. */
+/* TODO(gboyer): Remove specific menu button styles and have any button support being a menu button. */
+.goog-menu-button-collapse-right,
+.goog-menu-button-collapse-right .goog-menu-button-outer-box,
+.goog-menu-button-collapse-right .goog-menu-button-inner-box {
+  margin-right: 0;
+}
+
+.goog-menu-button-collapse-left,
+.goog-menu-button-collapse-left .goog-menu-button-outer-box,
+.goog-menu-button-collapse-left .goog-menu-button-inner-box {
+  margin-left: 0;
+}
+
+.goog-menu-button-collapse-left .goog-menu-button-inner-box  {
+  border-left: 1px solid #fff;
+}
+
+.goog-menu-button-collapse-left.goog-menu-button-checked
+.goog-menu-button-inner-box {
+  border-left: 1px solid #ddd;
+}
+
+/* javascript/closure/css/menuitem.css */
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Standard styling for menus created by goog.ui.MenuItemRenderer.
+ *
+ * @author attila@google.com (Attila Bodis)
+ */
+
+
+/**
+ * State: resting.
+ *
+ * NOTE(mleibman,chrishenry):
+ * The RTL support in Closure is provided via two mechanisms -- "rtl" CSS
+ * classes and BiDi flipping done by the CSS compiler.  Closure supports RTL
+ * with or without the use of the CSS compiler.  In order for them not
+ * to conflict with each other, the "rtl" CSS classes need to have the @noflip
+ * annotation.  The non-rtl counterparts should ideally have them as well, but,
+ * since .goog-menuitem existed without .goog-menuitem-rtl for so long before
+ * being added, there is a risk of people having templates where they are not
+ * rendering the .goog-menuitem-rtl class when in RTL and instead rely solely
+ * on the BiDi flipping by the CSS compiler.  That's why we're not adding the
+ * @noflip to .goog-menuitem.
+ */
+.goog-menuitem {
+  color: #000;
+  font: normal 13px Arial, sans-serif;
+  list-style: none;
+  margin: 0;
+  /* 28px on the left for icon or checkbox; 7em on the right for shortcut. */
+  padding: 4px 7em 4px 28px;
+  white-space: nowrap;
+}
+
+/* BiDi override for the resting state. */
+/* @noflip */
+.goog-menuitem.goog-menuitem-rtl {
+  /* Flip left/right padding for BiDi. */
+  padding-left: 7em;
+  padding-right: 28px;
+}
+
+/* If a menu doesn't have checkable items or items with icons, remove padding. */
+.goog-menu-nocheckbox .goog-menuitem,
+.goog-menu-noicon .goog-menuitem {
+  padding-left: 12px;
+}
+
+/*
+ * If a menu doesn't have items with shortcuts, leave just enough room for
+ * submenu arrows, if they are rendered.
+ */
+.goog-menu-noaccel .goog-menuitem {
+  padding-right: 20px;
+}
+
+.goog-menuitem-content {
+  color: #000;
+  font: normal 13px Arial, sans-serif;
+}
+
+/* State: disabled. */
+.goog-menuitem-disabled .goog-menuitem-accel,
+.goog-menuitem-disabled .goog-menuitem-content {
+  color: #ccc !important;
+}
+.goog-menuitem-disabled .goog-menuitem-icon {
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+/* State: hover. */
+.goog-menuitem-highlight,
+.goog-menuitem-hover {
+  background-color: #d6e9f8;
+  /* Use an explicit top and bottom border so that the selection is visible
+   * in high contrast mode. */
+  border-color: #d6e9f8;
+  border-style: dotted;
+  border-width: 1px 0;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+/* State: selected/checked. */
+.goog-menuitem-checkbox,
+.goog-menuitem-icon {
+  background-repeat: no-repeat;
+  height: 16px;
+  left: 6px;
+  position: absolute;
+  right: auto;
+  vertical-align: middle;
+  width: 16px;
+}
+
+/* BiDi override for the selected/checked state. */
+/* @noflip */
+.goog-menuitem-rtl .goog-menuitem-checkbox,
+.goog-menuitem-rtl .goog-menuitem-icon {
+  /* Flip left/right positioning. */
+  left: auto;
+  right: 6px;
+}
+
+.goog-option-selected .goog-menuitem-checkbox,
+.goog-option-selected .goog-menuitem-icon {
+  /* Client apps may override the URL at which they serve the sprite. */
+  background: url(//ssl.gstatic.com/editor/editortoolbar.png) no-repeat -512px 0;
+}
+
+/* Keyboard shortcut ("accelerator") style. */
+.goog-menuitem-accel {
+  color: #999;
+  /* Keyboard shortcuts are untranslated; always left-to-right. */
+  /* @noflip */ direction: ltr;
+  left: auto;
+  padding: 0 6px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+/* BiDi override for shortcut style. */
+/* @noflip */
+.goog-menuitem-rtl .goog-menuitem-accel {
+  /* Flip left/right positioning and text alignment. */
+  left: 0;
+  right: auto;
+  text-align: left;
+}
+
+/* Mnemonic styles. */
+.goog-menuitem-mnemonic-hint {
+  text-decoration: underline;
+}
+
+.goog-menuitem-mnemonic-separator {
+  color: #999;
+  font-size: 12px;
+  padding-left: 4px;
+}
+
+/* javascript/closure/css/menuseparator.css */
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Standard styling for menus created by goog.ui.MenuSeparatorRenderer.
+ *
+ * @author attila@google.com (Attila Bodis)
+ */
+
+
+.goog-menuseparator {
+  border-top: 1px solid #ccc;
+  margin: 4px 0;
+  padding: 0;
+}
+
+/* javascript/closure/css/submenu.css */
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Standard styling for menus created by goog.ui.SubMenuRenderer.
+ *
+ * @author attila@google.com (Attila Bodis)
+ */
+
+
+/* State: resting. */
+/* @noflip */
+.goog-submenu-arrow {
+  color: #000;
+  left: auto;
+  padding-right: 6px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+/* BiDi override. */
+/* @noflip */
+.goog-menuitem-rtl .goog-submenu-arrow {
+  text-align: left;
+  left: 0;
+  right: auto;
+  padding-left: 6px;
+}
+
+/* State: disabled. */
+.goog-menuitem-disabled .goog-submenu-arrow {
+  color: #ccc;
+}
+
+/* javascript/closure/css/toolbar.css */
+/*
+ * Copyright 2009 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/*
+ * Standard styling for toolbars and toolbar items.
+ *
+ * @author attila@google.com (Attila Bodis)
+ */
+
+
+/*
+ * Styles used by goog.ui.ToolbarRenderer.
+ */
+
+.goog-toolbar {
+  /* Client apps may override the URL at which they serve the image. */
+  background: #fafafa url(//ssl.gstatic.com/editor/toolbar-bg.png) repeat-x bottom left;
+  border-bottom: 1px solid #d5d5d5;
+  cursor: default;
+  font: normal 12px Arial, sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 2px;
+  position: relative;
+  zoom: 1; /* The toolbar element must have layout on IE. */
+}
+
+/*
+ * Styles used by goog.ui.ToolbarButtonRenderer.
+ */
+
+.goog-toolbar-button {
+  margin: 0 2px;
+  border: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: middle;
+  cursor: default;
+  outline: none;
+}
+
+/* Pseudo-rounded corners. */
+.goog-toolbar-button-outer-box,
+.goog-toolbar-button-inner-box {
+  border: 0;
+  vertical-align: top;
+}
+
+.goog-toolbar-button-outer-box {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.goog-toolbar-button-inner-box {
+  margin: 0 -1px;
+  padding: 3px 4px;
+}
+
+/* Pre-IE7 IE hack; ignored by IE7 and all non-IE browsers. */
+* html .goog-toolbar-button-inner-box {
+  /* IE6 needs to have the box shifted to make the borders line up. */
+  left: -1px;
+}
+
+/* Pre-IE7 BiDi fixes. */
+* html .goog-toolbar-button-rtl .goog-toolbar-button-outer-box {
+  /* @noflip */ left: -1px;
+}
+* html .goog-toolbar-button-rtl .goog-toolbar-button-inner-box {
+  /* @noflip */ right: auto;
+}
+
+
+/* IE7-only hack; ignored by all other browsers. */
+*:first-child+html .goog-toolbar-button-inner-box {
+  /* IE7 needs to have the box shifted to make the borders line up. */
+  left: -1px;
+}
+
+/* IE7 BiDi fix. */
+*:first-child+html .goog-toolbar-button-rtl .goog-toolbar-button-inner-box {
+  /* @noflip */ left: 1px;
+  /* @noflip */ right: auto;
+}
+
+/* Safari-only hacks. */
+::root .goog-toolbar-button,
+::root .goog-toolbar-button-outer-box {
+  /* Required to make pseudo-rounded corners work on Safari. */
+  line-height: 0;
+}
+
+::root .goog-toolbar-button-inner-box {
+  /* Required to make pseudo-rounded corners work on Safari. */
+  line-height: normal;
+}
+
+/* Disabled styles. */
+.goog-toolbar-button-disabled {
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.goog-toolbar-button-disabled .goog-toolbar-button-outer-box,
+.goog-toolbar-button-disabled .goog-toolbar-button-inner-box {
+  /* Disabled text/border color trumps everything else. */
+  color: #333 !important;
+  border-color: #999 !important;
+}
+
+/* Pre-IE7 IE hack; ignored by IE7 and all non-IE browsers. */
+* html .goog-toolbar-button-disabled {
+  /* IE can't apply alpha to an element with a transparent background... */
+  background-color: #f0f0f0;
+  margin: 0 1px;
+  padding: 0 1px;
+}
+
+/* IE7-only hack; ignored by all other browsers. */
+*:first-child+html .goog-toolbar-button-disabled {
+  /* IE can't apply alpha to an element with a transparent background... */
+  background-color: #f0f0f0;
+  margin: 0 1px;
+  padding: 0 1px;
+}
+
+/* Only draw borders when in a non-default state. */
+.goog-toolbar-button-hover .goog-toolbar-button-outer-box,
+.goog-toolbar-button-active .goog-toolbar-button-outer-box,
+.goog-toolbar-button-checked .goog-toolbar-button-outer-box,
+.goog-toolbar-button-selected .goog-toolbar-button-outer-box {
+  border-width: 1px 0;
+  border-style: solid;
+  padding: 0;
+}
+
+.goog-toolbar-button-hover .goog-toolbar-button-inner-box,
+.goog-toolbar-button-active .goog-toolbar-button-inner-box,
+.goog-toolbar-button-checked .goog-toolbar-button-inner-box,
+.goog-toolbar-button-selected .goog-toolbar-button-inner-box {
+  border-width: 0 1px;
+  border-style: solid;
+  padding: 3px;
+}
+
+/* Hover styles. */
+.goog-toolbar-button-hover .goog-toolbar-button-outer-box,
+.goog-toolbar-button-hover .goog-toolbar-button-inner-box {
+  /* Hover border style wins over active/checked/selected. */
+  border-color: #a1badf !important;
+}
+
+/* Active/checked/selected styles. */
+.goog-toolbar-button-active,
+.goog-toolbar-button-checked,
+.goog-toolbar-button-selected {
+  /* Active/checked/selected background color always wins. */
+  background-color: #dde1eb !important;
+}
+
+.goog-toolbar-button-active .goog-toolbar-button-outer-box,
+.goog-toolbar-button-active .goog-toolbar-button-inner-box,
+.goog-toolbar-button-checked .goog-toolbar-button-outer-box,
+.goog-toolbar-button-checked .goog-toolbar-button-inner-box,
+.goog-toolbar-button-selected .goog-toolbar-button-outer-box,
+.goog-toolbar-button-selected .goog-toolbar-button-inner-box {
+  border-color: #729bd1;
+}
+
+/* Pill (collapsed border) styles. */
+.goog-toolbar-button-collapse-right,
+.goog-toolbar-button-collapse-right .goog-toolbar-button-outer-box,
+.goog-toolbar-button-collapse-right .goog-toolbar-button-inner-box {
+  margin-right: 0;
+}
+
+.goog-toolbar-button-collapse-left,
+.goog-toolbar-button-collapse-left .goog-toolbar-button-outer-box,
+.goog-toolbar-button-collapse-left .goog-toolbar-button-inner-box {
+  margin-left: 0;
+}
+
+/* Pre-IE7 IE hack; ignored by IE7 and all non-IE browsers. */
+* html .goog-toolbar-button-collapse-left .goog-toolbar-button-inner-box {
+  left: 0;
+}
+
+/* IE7-only hack; ignored by all other browsers. */
+*:first-child+html .goog-toolbar-button-collapse-left
+.goog-toolbar-button-inner-box {
+  left: 0;
+}
+
+
+/*
+ * Styles used by goog.ui.ToolbarMenuButtonRenderer.
+ */
+
+.goog-toolbar-menu-button {
+  margin: 0 2px;
+  border: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-decoration: none;
+  list-style: none;
+  vertical-align: middle;
+  cursor: default;
+  outline: none;
+}
+
+/* Pseudo-rounded corners. */
+.goog-toolbar-menu-button-outer-box,
+.goog-toolbar-menu-button-inner-box {
+  border: 0;
+  vertical-align: top;
+}
+
+.goog-toolbar-menu-button-outer-box {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.goog-toolbar-menu-button-inner-box {
+  margin: 0 -1px;
+  padding: 3px 4px;
+}
+
+/* Pre-IE7 IE hack; ignored by IE7 and all non-IE browsers. */
+* html .goog-toolbar-menu-button-inner-box {
+  /* IE6 needs to have the box shifted to make the borders line up. */
+  left: -1px;
+}
+
+/* Pre-IE7 BiDi fixes. */
+* html .goog-toolbar-menu-button-rtl .goog-toolbar-menu-button-outer-box {
+  /* @noflip */ left: -1px;
+}
+* html .goog-toolbar-menu-button-rtl .goog-toolbar-menu-button-inner-box {
+  /* @noflip */ right: auto;
+}
+
+/* IE7-only hack; ignored by all other browsers. */
+*:first-child+html .goog-toolbar-menu-button-inner-box {
+  /* IE7 needs to have the box shifted to make the borders line up. */
+  left: -1px;
+}
+
+/* IE7 BiDi fix. */
+*:first-child+html .goog-toolbar-menu-button-rtl
+  .goog-toolbar-menu-button-inner-box {
+  /* @noflip */ left: 1px;
+  /* @noflip */ right: auto;
+}
+
+/* Safari-only hacks. */
+::root .goog-toolbar-menu-button,
+::root .goog-toolbar-menu-button-outer-box,
+::root .goog-toolbar-menu-button-inner-box {
+  /* Required to make pseudo-rounded corners work on Safari. */
+  line-height: 0;
+}
+
+::root .goog-toolbar-menu-button-caption,
+::root .goog-toolbar-menu-button-dropdown {
+  /* Required to make pseudo-rounded corners work on Safari. */
+  line-height: normal;
+}
+
+/* Disabled styles. */
+.goog-toolbar-menu-button-disabled {
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.goog-toolbar-menu-button-disabled .goog-toolbar-menu-button-outer-box,
+.goog-toolbar-menu-button-disabled .goog-toolbar-menu-button-inner-box {
+  /* Disabled text/border color trumps everything else. */
+  color: #333 !important;
+  border-color: #999 !important;
+}
+
+/* Pre-IE7 IE hack; ignored by IE7 and all non-IE browsers. */
+* html .goog-toolbar-menu-button-disabled {
+  /* IE can't apply alpha to an element with a transparent background... */
+  background-color: #f0f0f0;
+  margin: 0 1px;
+  padding: 0 1px;
+}
+
+/* IE7-only hack; ignored by all other browsers. */
+*:first-child+html .goog-toolbar-menu-button-disabled {
+  /* IE can't apply alpha to an element with a transparent background... */
+  background-color: #f0f0f0;
+  margin: 0 1px;
+  padding: 0 1px;
+}
+
+/* Only draw borders when in a non-default state. */
+.goog-toolbar-menu-button-hover .goog-toolbar-menu-button-outer-box,
+.goog-toolbar-menu-button-active .goog-toolbar-menu-button-outer-box,
+.goog-toolbar-menu-button-open .goog-toolbar-menu-button-outer-box {
+  border-width: 1px 0;
+  border-style: solid;
+  padding: 0;
+}
+
+.goog-toolbar-menu-button-hover .goog-toolbar-menu-button-inner-box,
+.goog-toolbar-menu-button-active .goog-toolbar-menu-button-inner-box,
+.goog-toolbar-menu-button-open .goog-toolbar-menu-button-inner-box {
+  border-width: 0 1px;
+  border-style: solid;
+  padding: 3px;
+}
+
+/* Hover styles. */
+.goog-toolbar-menu-button-hover .goog-toolbar-menu-button-outer-box,
+.goog-toolbar-menu-button-hover .goog-toolbar-menu-button-inner-box {
+  /* Hover border color trumps active/open style. */
+  border-color: #a1badf !important;
+}
+
+/* Active/open styles. */
+.goog-toolbar-menu-button-active,
+.goog-toolbar-menu-button-open {
+  /* Active/open background color wins. */
+  background-color: #dde1eb !important;
+}
+
+.goog-toolbar-menu-button-active .goog-toolbar-menu-button-outer-box,
+.goog-toolbar-menu-button-active .goog-toolbar-menu-button-inner-box,
+.goog-toolbar-menu-button-open .goog-toolbar-menu-button-outer-box,
+.goog-toolbar-menu-button-open .goog-toolbar-menu-button-inner-box {
+  border-color: #729bd1;
+}
+
+/* Menu button caption style. */
+.goog-toolbar-menu-button-caption {
+  padding: 0 4px 0 0;
+  vertical-align: middle;
+}
+
+/* Dropdown style. */
+.goog-toolbar-menu-button-dropdown {
+  width: 7px;
+  /* Client apps may override the URL at which they serve the sprite. */
+  background: url(//ssl.gstatic.com/editor/editortoolbar.png) no-repeat -388px 0;
+  vertical-align: middle;
+}
+
+
+/*
+ * Styles used by goog.ui.ToolbarSeparatorRenderer.
+ */
+
+.goog-toolbar-separator {
+  margin: 0 2px;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #f7f7f7;
+  padding: 0;
+  width: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 120%;
+  overflow: hidden;
+}
+
+
+/*
+ * Additional styling for toolbar select controls, which always have borders.
+ */
+
+.goog-toolbar-select .goog-toolbar-menu-button-outer-box {
+  border-width: 1px 0;
+  border-style: solid;
+  padding: 0;
+}
+
+.goog-toolbar-select .goog-toolbar-menu-button-inner-box {
+  border-width: 0 1px;
+  border-style: solid;
+  padding: 3px;
+}
+
+.goog-toolbar-select .goog-toolbar-menu-button-outer-box,
+.goog-toolbar-select .goog-toolbar-menu-button-inner-box {
+  border-color: #bfcbdf;
+}
+
+/* javascript/closure/css/combobox.css */
+/*
+ * Copyright 2007 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/* Author: pupius@google.com (Daniel Pupius) */
+/* Author: pallosp@google.com (Peter Pallos) */
+
+/* Styles for goog.ui.ComboBox and its derivatives. */
+
+
+.goog-combobox {
+  background: #ddd url(//ssl.gstatic.com/closure/button-bg.gif) repeat-x scroll left top;
+  border: 1px solid #b5b6b5;
+  font: normal small arial, sans-serif;
+}
+
+.goog-combobox input {
+  background-color: #fff;
+  border: 0;
+  border-right: 1px solid #b5b6b5;
+  color: #000;
+  font: normal small arial, sans-serif;
+  margin: 0;
+  padding: 0 0 0 2px;
+  vertical-align: bottom; /* override demo.css */
+  width: 200px;
+}
+
+.goog-combobox input.label-input-label {
+  background-color: #fff;
+  color: #aaa;
+}
+
+.goog-combobox .goog-menu {
+  margin-top: -1px;
+  width: 219px;  /* input width + button width + 3 * 1px border */
+  z-index: 1000;
+}
+
+.goog-combobox-button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  width: 16px;
+}
+
+/* IE6 only hack */
+* html .goog-combobox-button {
+  padding: 0 3px;
+}
+
+/* javascript/closure/css/tab.css */
+/*
+ * Copyright 2008 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/* Author: attila@google.com (Attila Bodis) */
+/* Author: eae@google.com (Emil A. Eklund) */
+
+
+/*
+ * Styles used by goog.ui.TabRenderer.
+ */
+.goog-tab {
+  position: relative;
+  padding: 4px 8px;
+  color: #00c;
+  text-decoration: underline;
+  cursor: default;
+}
+
+.goog-tab-bar-top .goog-tab {
+  margin: 1px 4px 0 0;
+  border-bottom: 0;
+  float: left;
+}
+
+.goog-tab-bar-top:after,
+.goog-tab-bar-bottom:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.goog-tab-bar-bottom .goog-tab {
+  margin: 0 4px 1px 0;
+  border-top: 0;
+  float: left;
+}
+
+.goog-tab-bar-start .goog-tab {
+  margin: 0 0 4px 1px;
+  border-right: 0;
+}
+
+.goog-tab-bar-end .goog-tab {
+  margin: 0 1px 4px 0;
+  border-left: 0;
+}
+
+/* State: Hover */
+.goog-tab-hover {
+  background: #eee;
+}
+
+/* State: Disabled */
+.goog-tab-disabled {
+  color: #666;
+}
+
+/* State: Selected */
+.goog-tab-selected {
+  color: #000;
+  background: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #6b90da;
+}
+
+.goog-tab-bar-top {
+  padding-top: 5px !important;
+  padding-left: 5px !important;
+  border-bottom: 1px solid #6b90da !important;
+}
+/*
+ * Shift selected tabs 1px towards the contents (and compensate via margin and
+ * padding) to visually merge the borders of the tab with the borders of the
+ * content area.
+ */
+.goog-tab-bar-top .goog-tab-selected {
+  top: 1px;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+.goog-tab-bar-bottom .goog-tab-selected {
+  top: -1px;
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+.goog-tab-bar-start .goog-tab-selected {
+  left: 1px;
+  margin-left: 0;
+  padding-right: 9px;
+}
+
+.goog-tab-bar-end .goog-tab-selected {
+  left: -1px;
+  margin-right: 0;
+  padding-left: 9px;
+}
+
+/* javascript/closure/css/tabbar.css */
+/*
+ * Copyright 2008 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/* Author: attila@google.com (Attila Bodis) */
+/* Author: eae@google.com (Emil A. Eklund) */
+
+
+/*
+ * Styles used by goog.ui.TabBarRenderer.
+ */
+.goog-tab-bar {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+  outline: none;
+  background: #ebeff9;
+}
+
+.goog-tab-bar-clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.goog-tab-bar-start {
+  float: left;
+}
+
+.goog-tab-bar-end {
+  float: right;
+}
+
+
+/*
+ * IE6-only hacks to fix the gap between the floated tabs and the content.
+ * IE7 and later will ignore these.
+ */
+/* @if user.agent ie6 */
+* html .goog-tab-bar-start {
+  margin-right: -3px;
+}
+
+* html .goog-tab-bar-end {
+  margin-left: -3px;
+}
+/* @endif */
+
+/* javascript/closure/css/tree.css */
+/*
+ * Copyright 2007 The Closure Library Authors. All Rights Reserved.
+ *
+ * Use of this source code is governed by the Apache License, Version 2.0.
+ * See the COPYING file for details.
+ */
+
+/* Author: arv@google.com (Erik Arvidsson) */
+/* Author: eae@google.com (Emil A Eklund) */
+/* Author: jonp@google.com (Jon Perlow) */
+
+/*
+  TODO(arv): Currently the sprite image has the height 16px. We should make the
+  image taller which would allow better flexibility when it comes to the height
+  of a tree row.
+*/
+
+.goog-tree-root:focus {
+  outline: none;
+}
+
+.goog-tree-row {
+  white-space: nowrap;
+  font: icon;
+  line-height: 16px;
+  height: 16px;
+}
+
+.goog-tree-row span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.goog-tree-children {
+  background-repeat: repeat-y;
+  background-image: url(//ssl.gstatic.com/closure/tree/I.png) !important;
+  background-position-y: 1px !important;	/* IE only */
+  font: icon;
+}
+
+.goog-tree-children-nolines {
+  font: icon;
+}
+
+.goog-tree-icon {
+  background-image: url(//ssl.gstatic.com/closure/tree/tree.png);
+}
+
+.goog-tree-expand-icon {
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  cursor: default;
+}
+
+.goog-tree-expand-icon-plus {
+  width: 19px;
+  background-position: 0 0;
+}
+
+.goog-tree-expand-icon-minus {
+  width: 19px;
+  background-position: -24px 0;
+}
+
+.goog-tree-expand-icon-tplus {
+  width: 19px;
+  background-position: -48px 0;
+}
+
+.goog-tree-expand-icon-tminus {
+  width: 19px;
+  background-position: -72px 0;
+}
+
+.goog-tree-expand-icon-lplus {
+  width: 19px;
+  background-position: -96px 0;
+}
+
+.goog-tree-expand-icon-lminus {
+  width: 19px;
+  background-position: -120px 0;
+}
+
+.goog-tree-expand-icon-t {
+  width: 19px;
+  background-position: -144px 0;
+}
+
+.goog-tree-expand-icon-l {
+  width: 19px;
+  background-position: -168px 0;
+}
+
+.goog-tree-expand-icon-blank {
+  width: 19px;
+  background-position: -168px -24px;
+}
+
+.goog-tree-collapsed-folder-icon {
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  background-position: -0px -24px;
+}
+
+.goog-tree-expanded-folder-icon {
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  background-position: -24px -24px;
+}
+
+.goog-tree-file-icon {
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  background-position: -48px -24px;
+}
+
+.goog-tree-item-label {
+  margin-left: 3px;
+  padding: 1px 2px 1px 2px;
+  text-decoration: none;
+  color: WindowText;
+  cursor: default;
+}
+
+.goog-tree-item-label:hover {
+  text-decoration: underline;
+}
+
+.selected .goog-tree-item-label {
+  background-color: ButtonFace;
+  color: ButtonText;
+}
+
+.focused .selected .goog-tree-item-label {
+  background-color: Highlight;
+  color: HighlightText;
+}
+
+.goog-tree-hide-root {
+  display: none;
+}
+
+/* javascript/apps/share/css/shareclient.css */
+.share-client-dialog {
+  max-height: 100%;
+  overflow: auto;
+  width: auto !important;
+}
+
+/** Pre-IE7 IE hack. Prevents dialog from becoming short and broken. */
+* html .share-client-dialog {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/** IE7-only IE hack. Prevents dialog from becoming short and broken. */
+*:first-child+html .share-client-dialog {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.share-client-dialog .modal-dialog-content {
+  padding: 0px;
+}
+
+.share-client-dialog iframe, .inline-share-ui-share-client iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.share-client-dialog .modal-dialog-buttons {
+  display: none;
+}
+
+.share-client-error-dialog {
+  width: 400px;
+}
+
+.share-client-error-dialog .modal-dialog-title {
+  display: none;
+}
+
+.share-client-error-dialog .modal-dialog-content {
+  padding: 8px;
+}
+
+.share-client-loading-contents {
+  height: 99px;
+  text-align: center;
+  width: 454px;
+}
+
+.share-client-spinner {
+  background-image: url(//ssl.gstatic.com/docs/documents/share/images/spinner-1.gif);
+  display: inline-block;
+  margin-top: 41px;
+  width: 16px;
+  height: 16px;
+}
+
+/** Inline container UI */
+.inline-share-ui-status {
+  font-size: 12pt;
+  font-weight: bold;
+  height: 19px;
+  padding: 5px 10px;
+  background-color: #f1f4ff;
+}
+
+.inline-share-ui-overlay {
+  position: absolute;
+  z-index: 150;
+
+  /* IE hack so that the overlay works to prevent user clicks from
+     hitting the underlying share system. */
+  background-color: #fff;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE8 */
+}
+
+/** Panel dialog container UI */
+.share-client-panel-dialog-share {
+  height: 100%;
+  width: 100%;
+}
+
+.share-client-panel-dialog-overlay {
+  position: absolute;
+  z-index: 150;
+}
+
+/* Used to position elements offscreen. */
+.share-client-offscreen {
+  position: absolute !important;
+  left: -10000px !important;
+  top: -10000px !important;
+}
+
+/* javascript/gviz/release/jsapi/packages/visualization/table/table.css */
+.google-visualization-table {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.google-visualization-table * {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.google-visualization-table > div:first-child {
+  border: solid #eee;
+  border-width: 0;
+}
+
+.google-visualization-table > div:first-child.scrolling
+  .google-visualization-table-table th,
+.google-visualization-table > div:first-child.scrolling
+  .google-visualization-table-table .frozen-column {
+  visibility: hidden;
+  opacity: 0;
+  color: transparent;
+}
+
+.google-visualization-table > div:first-child.doneScrolling
+  .google-visualization-table-table th {
+  -webkit-transition: opacity .25s ease-in .1s;
+  -o-transition: opacity .25s ease-in .1s;
+  transition: opacity 0.25s ease-in 0.1s;
+}
+
+.google-visualization-table > div:first-child.doneScrolling
+  .google-visualization-table-table .frozen-column {
+  -webkit-transition: visibility , opacity .15s ease-in .15s;
+  -o-transition: visibility , opacity .15s ease-in .15s;
+  transition: visibility,opacity 0.15s ease-in 0.15s;
+}
+
+.google-visualization-table-table {
+  font-family: arial , helvetica;
+  font-size: 10pt;
+  cursor: default;
+  margin: 0;
+  background: white;
+  border-spacing: 0;
+  /* 'collapse' exposes browser bugs */
+  border-collapse: separate;
+}
+
+.google-visualization-table-table * {
+  margin: 0;
+}
+
+.google-visualization-table .gradient {
+  background-image: url("//ssl.gstatic.com/charts/static/table-title-bg.gif")
+    repeat-x left bottom;
+   /* @alternate */ background-image: -moz-linear-gradient(top,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.7) 30%,
+    rgba(255,255,255,0.5) 60%,
+    rgba(255,255,255,0) 100%); /* FF3.6+ */
+   /* @alternate */ background-image: -webkit-gradient(linear,
+    left top, left bottom,
+    color-stop(0%, rgba(255,255,255,0.8)),
+    color-stop(30%,rgba(255,255,255,0.7)),
+    color-stop(60%,rgba(255,255,255,0.5)),
+    color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+   /* @alternate */ background-image: -webkit-linear-gradient(top,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.7) 30%,
+    rgba(255,255,255,0.5) 60%,
+    rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+   /* @alternate */ background-image: -o-linear-gradient(top,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.7) 30%,
+    rgba(255,255,255,0.5) 60%,
+    rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+   /* @alternate */ background-image: -ms-linear-gradient(top,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.7) 30%,
+    rgba(255,255,255,0.5) 60%,
+    rgba(255,255,255,0) 100%); /* IE10+ */
+   /* @alternate */ background-image: linear-gradient(to bottom,
+    rgba(255,255,255,0.8) 0%,
+    rgba(255,255,255,0.7) 30%,
+    rgba(255,255,255,0.5) 60%,
+    rgba(255,255,255,0) 100%); /* W3C */
+   /* @alternate */ filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr='#ccffffff',
+    endColorstr='#00ffffff',
+    GradientType=0 ); /* IE6-9 */
+}
+
+.google-visualization-table-tr-head {
+  background-color: rgb(228,233,244);
+  font-weight: bold;
+  text-align: center;
+}
+
+.google-visualization-table-sorthdr {
+  cursor: pointer;
+}
+
+.google-visualization-table-sortind {
+  color: #ccc;
+  padding-left: 4px;
+}
+
+.unsorted .google-visualization-table-sortind {
+  display: none;
+}
+
+.unsorted .google-visualization-table-sortind:after {
+  content: "\2003";
+}
+
+.sort-ascending .google-visualization-table-sortind:after {
+  content: "\25b2";
+}
+
+.sort-descending .google-visualization-table-sortind:after {
+  content: "\25bc";
+}
+
+.google-visualization-table-th {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.google-visualization-table-td {
+  overflow: hidden; /* workaround arabic overflowing cells */
+}
+
+.google-visualization-table-th, .google-visualization-table-td {
+  padding: 2px 0.35em;
+  /* We must inherit the background color explicitly for relative positioning */
+  background-color: inherit;
+  /* background-clip is not quite enough for border-collapse: collapse */
+  background-clip: padding-box;
+}
+
+/* More specificity for border */
+.google-visualization-table-table td,
+.google-visualization-table-table th {
+  border: solid #eee;
+  border-width: 0 1px 1px 0;
+  padding: 2px 0.35em;
+}
+
+.google-visualization-table-table th {
+  position: relative;
+  z-index: 10;
+}
+
+.google-visualization-table-table td.frozen-column {
+  position: relative;
+  z-index: 5;
+}
+
+.google-visualization-table-table thead th.frozen-column {
+  z-index: 15;
+}
+
+.google-visualization-table-table .last-frozen-column {
+  border-right: 2px ridge #eee;
+}
+
+.google-visualization-table-tr-even {
+  background-color: #fff;
+}
+
+.google-visualization-table-tr-odd {
+  background-color: #fafafa;
+}
+
+.google-visualization-table-tr-sel {
+  background-color: #d6e9f8;
+}
+
+.google-visualization-table-tr-over {
+  background-color: #e7e9f9;
+}
+
+.google-visualization-table-td.google-visualization-table-type-bool {
+  text-align: center;
+  font-family: "Arial Unicode MS", Arial, Helvetica;
+}
+
+.google-visualization-table-td.google-visualization-table-type-date {
+  text-align: center;
+}
+
+.google-visualization-table-td.google-visualization-table-type-number {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.google-visualization-table-seq {
+  text-align: right;
+  color: #666;
+}
+
+.google-visualization-table-div-page {
+  display: inline-block;
+  width: 100%;
+  padding: 1px 0 0 1px;
+  border: 0;
+  background-color: rgb(228,233,244);
+  font-family: Arial , sans-serif;
+}
+
+.google-visualization-table-div-page [role="button"] {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-family: "Arial Unicode MS", Arial, Helvetica;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.google-visualization-table-div-page [role="button"]
+ .goog-custom-button-inner-box {
+   padding: 1px 1px 2px 1px;
+}
+
+.google-visualization-table-page-prev,
+.google-visualization-table-page-next {
+}
+
+.google-visualization-table-page-prev:before {
+  content: "\25c4";
+}
+
+.google-visualization-table-page-next:before {
+  content: "\25ba";
+}
+
+.google-visualization-table-page-numbers {
+  display: inline-block;
+  zoom: 1;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.ie8 .google-visualization-table-page-numbers {
+  display: inline;
+}
+
+.google-visualization-table-page-number {
+  display: inline-block;
+  background-color: rgb(228,233,244);
+  border: 1px ButtonShadow outset;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: black;
+  font-size: 10px;
+  min-width: 10px;
+  margin: 2px;
+  padding: 0 2px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.google-visualization-table-page-number.current {
+  font-weight: bold;
+  font-size: 11px;
+  background: #fefefe;
+  border-style: inset;
+}
+
+.google-visualization-table-page-number:hover {
+  background: #fefefe;
+  border-style: inset;
+}
+
+.google-visualization-table .transparent {
+  background-image: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.google-visualization-table .transparentIE6 {
+  background: none;
+}
+
+.google-visualization-table th .transparent,
+.google-visualization-table td .transparent {
+  color: transparent;
+  opacity: 0;
+}
+
+.google-visualization-table .google-visualization-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.google-visualization-table-loadtest {
+  padding-left: 6px; /* Don't change; see table.js */
+}
+
+/* research/colab/frontend/common/components/date_picker.css */
+/* Custom component to reliably render dates as YYYY-mm-dd. */
+colab-date-input ::-webkit-datetime-edit-fields-wrapper,
+colab-date-picker ::-webkit-datetime-edit,
+colab-date-picker ::-webkit-clear-button,
+colab-date-picker ::-webkit-inner-spin-button {
+  display: none;
+}
+
+colab-date-picker ::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+colab-date-picker paper-input[type="number"] {
+  text-align: center;
+  width: 35px;
+}
+colab-date-picker paper-input[type="number"].datepicker-year {
+  width: 55px;
+}
+
+colab-date-picker paper-input paper-input-error.paper-input {
+  overflow: visible;
+}
+
+colab-date-picker > div {
+  font-size: 18px;
+  margin: 0 8px 0;
+}
+
+colab-date-picker .calendar-icon {
+  position: relative;
+}
+
+colab-date-picker input[type="date"] {
+  border: none;
+  height: 24px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.readonly colab-date-picker .calendar-icon {
+  display: none;
+}
+
+/* research/colab/frontend/common/components/input_dropdown.css */
+colab-input-dropdown {
+  position: relative;
+}
+
+colab-input-dropdown paper-menu-button.colab-input-dropdown-button {
+  bottom: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+colab-input-dropdown paper-input.colab-input-dropdown-input {
+  flex-grow: 1;
+}
+
+colab-input-dropdown paper-icon-button.dropdown-trigger {
+  height: 24px;
+  padding: 0;
+  width: 24px;
+}
+
+/* research/colab/frontend/common/components/left_pane.css */
+colab-left-pane iron-icon {
+  color: var(--paper-grey-700);
+}
+
+colab-left-pane .resizer-contents iron-icon:hover {
+  color: var(--paper-grey-900);
+}
+
+colab-left-pane .colab-left-pane-header paper-tabs {
+  flex-grow: 1;
+  height: 38px;
+}
+
+/** Need higher precedence than ".paper-tabs-<num> #selectionBar.paper-tabs" */
+colab-left-pane .colab-left-pane-header #selectionBar.paper-tabs {
+  border-color: var(--paper-grey-900);
+}
+
+.colab-left-pane-close {
+  color: black;
+  cursor: pointer;
+  right: 4px;
+  top: 4px;
+}
+
+colab-left-pane {
+  display: flex;
+  margin-top: 4px;
+  min-width: 0;
+}
+
+colab-left-pane .resizer-contents {
+  background: white;
+  box-shadow: var(--box-shadow-elevation-3dp);
+  overflow: hidden;
+}
+
+colab-left-pane .colab-left-pane-header {
+  background-color: #f6f6f6;
+  color: var(--paper-grey-900);
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+colab-left-pane h2 {
+  color: var(--paper-grey-900);
+  font-weight: 400;
+  letter-spacing: -.012em;
+  line-height: 32px;
+}
+
+/** Overlap the shadow of the notebook contents with the resizer */
+colab-left-pane .resizer-thumb {
+  margin-left: -4px;
+  z-index: 100;
+}
+
+colab-left-pane colab-resizer {
+  flex-shrink: 1;
+  min-width: 210px;
+  max-width: 800px;
+  width: 350px;
+}
+
+colab-left-pane .resizer-contents,
+colab-left-pane iron-pages {
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+}
+
+.colab-left-pane-nib {
+  background: var(--paper-grey-800);
+  border-radius: 0 3px 3px 0;
+  box-shadow: var(--box-shadow-elevation-2dp);
+  color: white;
+  cursor: pointer;
+  margin-top: 6px;
+  position: absolute;
+  transform: translateX(-4px);
+  transition: transform 200ms;
+  z-index: 1;
+}
+
+.notebook-vertical.mobile .colab-left-pane-nib {
+  display: none;
+}
+
+colab-left-pane .colab-left-pane-nib:hover {
+  transform: translateX(0);
+}
+
+colab-left-pane.colab-left-pane-open .colab-left-pane-nib {
+  transform: translateX(-110%);
+}
+
+/* research/colab/frontend/common/components/open_dialog.css */
+.colab-open-dialog iron-pages {
+  min-height: 440px;
+  min-width: 800px;
+}
+
+.colab-open-dialog paper-tabs {
+  background: var(--paper-orange-500);
+  border-top: 8px solid var(--paper-orange-700);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: var(--box-shadow-elevation-2dp);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/** Need higher precedence than ".paper-tabs-<num> #selectionBar.paper-tabs" */
+.colab-open-dialog paper-tabs #selectionBar.paper-tabs {
+  border-color: #fff;
+}
+
+.colab-open-dialog .open-github-notebook #dialog-table-filter-input {
+  display: none;
+}
+
+.colab-open-dialog .open-github-notebook .colab-notebook-list-0
+.dialog-table.colab-notebook-list {
+  height: 232px;
+}
+
+.colab-open-dialog colab-github-repo-selector {
+  margin-top: 8px;
+}
+
+.colab-open-dialog .open-piper-notebook {
+  height: 420px;
+  width: 800px;
+}
+
+.colab-open-dialog .open-piper-notebook .buttons {
+  margin: 10px 0;
+  padding-left: 8px;
+}
+
+.colab-open-dialog .open-piper-notebook-path,
+.colab-open-dialog .open-piper-notebook colab-workspace-list {
+  display: block;
+  width: 650px;
+}
+
+.colab-open-dialog .buttons paper-menu-button {
+  padding: 0;
+}
+
+.colab-open-dialog paper-menu-button .new-notebook {
+  color: var(--google-blue-500);
+  margin-top: -2px;
+}
+
+/* research/colab/frontend/common/components/panel.css */
+colab-panel {
+  position: absolute;
+}
+
+colab-panel .colab-panel-title {
+  cursor: move;
+  flex-grow: 1;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px;
+}
+
+colab-panel>.paper-material-0 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  min-height: 100px;
+  min-width: 400px;
+  overflow: hidden;
+  resize: both;
+  width: 400px;
+}
+
+colab-panel .panel-container {
+  display: flex;
+  margin: 8px;
+  overflow: auto;
+}
+
+.colab-panel-overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* To allow the last clicked panel to show above other panels regardless of */
+/* the order they were created in the DOM. We can't detach the re-add because */
+/* that will cause the iframe in it to be invalidated and refresh. */
+colab-panel.front-panel {
+  z-index: 1;
+}
+
+/* research/colab/frontend/common/components/tab_layout.css */
+colab-tab-layout {
+  display: block;
+}
+
+colab-tab-layout .tab-layout-header {
+  background-color: var(--paper-grey-200);
+  padding: 0 4px 0 8px;
+}
+
+colab-tab-layout .tab-layout-header paper-tabs {
+  height: 40px;
+}
+
+
+colab-tab-layout #tabsContainer.paper-tabs {
+  height: unset;
+}
+
+colab-tab-layout,
+colab-tab-layout paper-tab.iron-selected {
+  background-color: #fff;
+}
+
+/* Very specific style to override Polymer style */
+colab-tab-layout #tabsContainer.paper-tabs #tabsContent.paper-tabs > :not(#selectionBar) {
+  height: 34px;
+}
+
+colab-tab-layout paper-tab {
+  border: 1px solid transparent;
+  margin-top: 4px;
+}
+
+colab-tab-layout paper-tab.iron-selected {
+  border-left-color: var(--paper-grey-400);
+  border-top-color: var(--paper-grey-400);
+  border-right-color: var(--paper-grey-400);
+}
+
+colab-tab-layout:not(.tabs-editing) .tabs-add-tab,
+colab-tab-layout:not(.tabs-editing) .tabs-rename-tab {
+  display: none;
+}
+
+/* research/colab/frontend/common/components/table_of_contents.css */
+.toc-cell {
+  color: var(--paper-grey-900);
+  display: block;
+  margin: 2px 0;
+  padding: 10px 8px;
+  text-decoration: none;
+}
+
+colab-table-of-contents {
+  overflow: hidden;
+}
+
+colab-table-of-contents colab-shaded-scroller {
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.colab-toc-sections {
+  padding: 8px 2px 0 8px;
+}
+
+.toc-section .toc-section-cells {
+  margin-left: 25px;
+}
+
+.toc-add-section {
+  margin: 24px 6px;
+}
+
+.toc-section.toc-cell-focused > .toc-cell,
+.toc-cell.toc-cell-focused {
+  font-weight: bold;
+}
+
+/* research/colab/frontend/common/components/interactive_table/interactive_table.css */
+colab-interactive-table {
+  display: block;
+  position: relative;
+}
+
+colab-interactive-table .google-visualization-table-table {
+  border-bottom: 1px solid #111;
+}
+
+colab-interactive-table .google-visualization-table-table,
+colab-interactive-table .google-visualization-table .gradient,
+colab-interactive-table .google-visualization-table-tr-head {
+  background: none;
+}
+
+colab-interactive-table .google-visualization-table-table th {
+  background: none;
+  border-bottom: 1px solid #111;
+}
+
+colab-interactive-table .google-visualization-table-div-page {
+  background: none;
+  text-align: right;
+}
+
+colab-interactive-table .google-visualization-table-page-prev,
+colab-interactive-table .google-visualization-table-page-next {
+  display: none;
+}
+
+colab-interactive-table .google-visualization-table-page-number {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 2px;
+  min-width: 1.5em;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+
+colab-interactive-table .google-visualization-table-page-number.current {
+  background-color: white;
+  border: 1px solid #979797;
+  color: #333;
+}
+
+colab-interactive-table .google-visualization-table-page-number:hover {
+  background-color: #585858;
+  color: white;
+}
+
+colab-interactive-table .interactive-table-header {
+  text-align: right;
+  padding-right: 2px;
+}
+
+colab-interactive-table .collapsible-controls>div {
+  border: 1px solid #ccc;
+  margin: 8px;
+  padding: 8px;
+  position: relative;
+}
+
+colab-interactive-table .collapsible-controls .close {
+  cursor: pointer;
+  font-size: 16pt;
+  position: absolute;
+  right: 4px;
+  top: 0;
+}
+
+colab-interactive-table .column-filter {
+  display: inline-block;
+  margin: 0 32px 8px 0;
+}
+
+colab-interactive-table .column-filter label {
+  display: block;
+}
+
+colab-interactive-table .column-filter input[type="text"][name="from"],
+colab-interactive-table .column-filter input[type="text"][name="to"] {
+  width: 70px;
+}
+
+
+colab-interactive-table .num-per-page {
+  float: left;
+  margin-top: 2px;
+}
+
+colab-interactive-table .goog-custom-button-outer-box {
+  display: none;
+}
+
+/* research/colab/frontend/common/css/ansi.css */
+/** CSS values for displaying IPython text. Used in
+ *  displaying output of the code cell (e.g., errors).
+ */
+
+.ansibold {font-weight: bold;}
+
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {color: black;}
+.ansired {color: darkred;}
+.ansigreen {color: darkgreen;}
+.ansiyellow {color: brown;}
+.ansiblue {color: darkblue;}
+.ansipurple {color: darkviolet;}
+.ansicyan {color: steelblue;}
+.ansigray {color: gray;}
+
+/* and light for background, for the same reason */
+.ansibgblack {background-color: black;}
+.ansibgred {background-color: red;}
+.ansibggreen {background-color: green;}
+.ansibgyellow {background-color: yellow;}
+.ansibgblue {background-color: blue;}
+.ansibgpurple {background-color: magenta;}
+.ansibgcyan {background-color: cyan;}
+.ansibggray {background-color: gray;}
+
+/* research/colab/frontend/common/css/assist.css */
+colab-left-pane .colab-assist-pane-input {
+  margin: 14px 28px;
+}
+
+colab-assist-pane {
+  overflow: hidden;
+}
+
+.colab-assist-pane-input[focused] {
+  box-shadow: var(--box-shadow-elevation-2dp);
+}
+.colab-assist-pane-input [prefix] {
+  margin-left: 12px;
+  margin-right: 15px;
+}
+
+.colab-assist-pane-input[focused] .underline.paper-input-container {
+  display: none;
+}
+
+.colab-assist-progress {
+  height: 2px;
+  margin-right: 28px;
+  width: auto;
+  visibility: hidden;
+}
+
+.colab-assist-progress.searching {
+  visibility: visible;
+}
+
+.colab-assist-progress #primaryProgress {
+  /** Important to override Polymer's default green */
+  background: var(--paper-orange-400) !important;
+}
+
+.colab-assist-pane-results {
+  flex: none;
+  margin: 0 24px 30px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+colab-assist-pane-result {
+  border-bottom: solid 1px var(--paper-grey-200);
+  cursor: pointer;
+  display: flex;
+  padding: 6px 4px;
+}
+
+.colab-assist-pane-result-text {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+colab-assist-pane-result.selected {
+  background: var(--paper-grey-300);
+}
+
+.colab-assist-pane-details {
+  overflow: auto;
+  padding: 0 24px;
+}
+
+.colab-assist-pane-doc-header {
+  align-items: center;
+  display: flex;
+}
+
+.colab-assist-pane-doc-insert {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 0;
+  color: var(--paper-blue-400);
+}
+
+.colab-assist-pane-doc-title {
+  flex-grow: 1;
+  font-size: var(--paper-font-subhead-font-size);
+  font-weight: var(--paper-font-subhead-font-weight);
+  line-height: var(--paper-font-subhead-line-height);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.colab-assist-pane-documentation h2 {
+  font-size: 15px;
+  font-weight: var(--paper-font-subhead-font-weight);
+  line-height: var(--paper-font-body2-line-height);
+}
+
+.colab-assist-pane-documentation h3 {
+  font-size: 14px;
+  font-weight: var(--paper-font-body1-font-weight);
+  line-height: var(--paper-font-body1-line-height);
+}
+
+.colab-assist-pane-documentation h4{
+  font-size: 13px;
+  font-weight: var(--paper-font-body1-font-weight);
+  line-height: var(--paper-font-body1-line-height);
+}
+
+.colab-assist-pane-documentation h5 {
+  font-size: 11px;
+  font-weight: var(--paper-font-body1-font-weight);
+  line-height: var(--paper-font-body1-line-height);
+}
+
+.colab-assist-pane-no-selection .colab-assist-pane-code,
+.colab-assist-pane-no-selection .colab-assist-pane-doc-insert {
+  display: none;
+}
+
+.colab-assist-pane-code .CodeMirror {
+  background: var(--paper-grey-100);
+  margin-top: 24px;
+}
+
+/* Hide cursor when in readonly mode, to allow copy to work.
+ * https://github.com/codemirror/CodeMirror/issues/2568
+ */
+colab-assist-pane .CodeMirror-cursor {
+  display: none;
+}
+
+.command-palette {
+  background: white;
+  display: flex;
+  flex-flow: column;
+  max-height: 500px;
+  min-width: 300px;
+}
+
+.command-palette-results {
+  overflow: auto;
+}
+
+.command-palette-result-item {
+  cursor: pointer;
+  /* Since we're not using a flex layout, include enough padding-right to fit */
+  /* most keyboard shortcuts. */
+  padding: 2px 80px 2px 4px;
+  position: relative;
+}
+
+.command-palette-match {
+  font-weight: bold;
+}
+
+.command-palette-result-item.selected {
+  background: #e4e4e4;
+}
+
+.command-palette-result-shortcut {
+  color: #999;
+  direction: ltr;
+  left: auto;
+  padding: 0 6px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.command-palette-backdrop.opened {
+  opacity: 0;
+}
+
+/* research/colab/frontend/common/css/cell.css */
+.cell {
+  align-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imported .imported-from-banner {
+  display: block;
+}
+
+.imported.forked .imported-from-banner {
+  display: block;
+  background: lightgray;
+}
+
+.imported-from-banner {
+  display: none;
+  padding: 8px;
+}
+
+.inputarea, .text-top-div {
+  -webkit-flex-flow: row;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row;
+}
+
+.views-hide-code .inputarea,
+.views-hide-code .output-info {
+  display: none !important
+}
+
+.inputarea {
+  min-height: 24px; /* editor resizes to this height on focus*/
+  background-color: var(--code-cell-background);
+}
+
+.markdown {
+  flex: 1;
+  line-height: 1.54;
+  max-width: 1016px;
+  min-height: 28px; /* Prevent collapsing to 0 when no contents */
+  padding-left: 8px;
+  padding-right: 34px;
+}
+
+.toc .markdown {
+  /* Accommodate both the more dots menu and the TOC refresh button. */
+  padding-right: 100px;
+}
+
+/* Stop images from stretching past output area http://jsfiddle.net/Loxz2h5f/ */
+.markdown img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.markdown pre {
+  margin: 1em 2em;
+}
+
+.dragitem {
+  height: 20px;
+  visibility: hidden;
+}
+
+pre {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  white-space: pre-wrap;
+}
+
+.completions {
+  -moz-box-shadow: 0px 6px 10px -1px #adadad;
+  -webkit-box-shadow: 0px 6px 10px -1px #adadad;
+  border-radius: 4px;
+  border: 1px solid #ababab;
+  box-shadow: 0px 6px 10px -1px #adadad;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+}
+
+.code-is-running {
+  opacity: .8;
+}
+
+/**
+ * The :before selector inserts content before the selected element, allowing
+ * us to overlay the spinner on the cell block.
+ */
+.code-is-running * .editor:before {
+  background-image: url("../img/progress_spinner_color_20dp_4x.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  content: '';
+  height: 100%;
+  margin-left: 50%;
+  margin-right: 50%;
+  opacity: .6;
+  pointer-events: none;
+  position: absolute;
+  transform: translateZ(0);
+  width: 40px;
+}
+
+.code * .output-info > .output-icon {
+  display: inline-block;
+  height: 26px;
+  top: 34px;
+  width: 26px;
+}
+
+.cell.icon-scrolling .output-info > .output-icon,
+.cell.icon-scrolling .cell-execution {
+  position: sticky;
+}
+
+.code * .output-info > .output-icon-selected:only-child {
+  border: none;
+}
+
+.output-info .output-icon {
+  box-sizing: border-box;
+  height: 32px;
+  z-index: 1;
+}
+
+.output-info .collaborator {
+  border-radius: 100%;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin: 4px 3px 0 3px;
+  padding-bottom: 0;
+  width: 20px;
+}
+
+.output-info .collaborator > img {
+  border-radius: 100%;
+}
+
+.clear_outputs_enabled.output-icon:hover .collaborator {
+  display: none;
+}
+
+.output-icon [command=clear-focused-or-selected-outputs] {
+  color: var(--paper-grey-800);
+  cursor: pointer;
+  display: none;
+  margin-left: 1px;
+}
+
+.clear_outputs_enabled.output-icon:hover [command=clear-focused-or-selected-outputs] {
+  display: inline-block;
+}
+
+.code.out-of-date * .execution-count {
+  color: gray;
+}
+
+.code.up-to-date * .execution-count {
+  color: black;
+}
+
+.code .cm-matchhighlight {
+  background: #fcfad6;
+}
+
+/* selected text is highlighted different from non-highlighed match */
+.code .cm-matchhighlight.CodeMirror-selectedtext {
+    background: #CCF;
+}
+
+.cm-function {
+  color: #30A;
+}
+
+.cm-recognized-table, .cm-recognized-field {
+  color: #004b75;
+}
+
+.code div.CodeMirror-linenumber {
+  cursor: pointer;
+}
+
+.code.output-selected .output-info {
+  background: #ddd;
+}
+
+.CodeMirror-matchingbracket {
+  /* Override the default CodeMirror lime green. */
+  color: inherit !important;
+  text-decoration: underline;
+}
+
+.code .editor {
+  background: var(--code-cell-background);
+  /* Extra room on the right for the cell menu button. */
+  margin: 8px 34px 8px 4px;
+}
+
+/* The scratch cell doesn't need room for the 3 dot menu as it's hidden. */
+.scratchpad .code .editor {
+  margin-right: 4px;
+}
+
+/* Prevent min-width of code editor from affecting flexbox layout */
+.debug-editor.flex,
+.editor.flex {
+  min-width: 0;
+}
+
+.text * .editor {display: none;}
+
+.CodeMirror-activeline-background {
+  background: initial;
+}
+
+/**
+ * b/29216463- the min-height of the ruler only updates on CodeMiror.refresh, it
+ * does not update when the editor resizes itself.
+ */
+.CodeMirror-rulers {
+  /* Default is -20, which causes 4px of scrolling */
+  bottom: -16px !important;
+  min-height: initial !important;
+}
+
+.cell.focused .CodeMirror-activeline-background {
+  background: #e8f2ff;
+  opacity: 0.8;
+}
+
+/* TODO(b/78354352): Remove the .focus-with-zindex selector when this should be
+ * on by default.
+ */
+.cell.focus-with-zindex.focused{
+  z-index: 1;
+}
+
+.text.edit * .editor {
+  border-bottom: 1px dashed var(--paper-grey-600);
+  display: block;
+}
+
+.text.edit .editor-container {
+  overflow: hidden;
+}
+
+.text.edit .editor-container .text-top-div {
+  flex-shrink: 1;
+  overflow-x: auto;
+}
+
+.text.edit .editor {
+  border: none;
+}
+
+/* Side-by-side editor and markdown preview. */
+.text.edit .editor-container.horizontal .editor {
+  border-right: 1px dashed var(--paper-grey-600);
+  max-width: 50%;
+  min-width: 50%;
+}
+
+/* Render the markdown preview below editor if the preference is set. */
+.text.edit .editor-container:not(.horizontal) .editor {
+  border-bottom: 1px dashed var(--paper-grey-600);
+}
+
+.cell.text.edit.hide-preview * .text-top-div {
+  display: none;
+}
+
+.text.edit.hide-preview * .editor {
+  border-top: 0px dashed grey;
+}
+
+.main-content {
+  background: white;
+  min-height: 38px;
+  position: relative;
+  will-change: opacity;
+}
+
+.code * .main-content {border-radius: 2px;}
+
+
+.CodeMirror-dialog {
+  background: lightyellow
+}
+
+.output-content {
+  display: flex;
+  font-family: monospace;
+  font-size: 10pt;
+}
+
+.output-info {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  min-height: 24px;
+  padding: 4px 0 2px 0;
+  position: relative;
+  text-align: start;
+  width: 40px;
+}
+
+.output-iframe-container {
+  flex: 1;
+  margin-right: 1px;
+}
+
+
+.output-iframe-sizer iframe {
+  border: 0px;
+  width: 100%;
+  display: block;
+}
+
+.editor > .CodeMirror {background: transparent;}
+
+.editor {
+  font-size: 13px;
+}
+
+.CodeMirror {
+  height: auto;
+  line-height: 1.08;
+  overflow-x: hidden;
+}
+
+.CodeMirror-scroll {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* b/28041061- Sometimes there's a 1px vertical scroll to the editor. This
+   * just adds 1px to the default 30px value.
+   */
+  padding-bottom: 31px;
+}
+
+.CodeMirror-hscrollbar {overflow-x: hidden}
+
+.CodeMirror-hints {
+  max-width: 77em;
+}
+
+.CodeMirror-hint {
+  max-width: 75em;
+  /* Need to ensure display of '_' characters */
+  line-height: 1.4;
+}
+
+.CodeMirror-hint .hint-type {
+    float: right;
+    color: #520;
+    margin-left: 1em
+}
+
+.cell-collaborators {
+  position: absolute;
+  right: -30px;
+  z-index: 12; /* make sure the collaborators stays behind the header */
+}
+
+.cell-comments {
+  background: #fff;
+  border: solid 1px #cbcbcb;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  display: inline-block;
+  height: 50px;
+  padding: 0 10px 0 10px;
+  position: relative;
+  width: 130px;
+}
+
+.cell-spacer {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+}
+
+.cell-comments-area {
+  display: none;
+  position: absolute;
+  right: -200px;
+  top: 30px;
+  z-index: 12; /* make sure the collaborators stays behind the header */
+}
+
+.focused > .cell-comments-area {display: block;}
+
+.add-cell {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+  height: 16px;
+  width: 500px;
+  z-index: 20;
+}
+
+.add-cell > hr {
+  border-color: darkgrey;
+  border-style: solid;
+  border-top: none;
+  border-width: 2px;
+  margin-top: -13px;
+  transition: visibility 0s 250ms;
+  visibility: hidden;
+  width: 260px;
+}
+
+.add-cell:hover > hr {
+  visibility: visible;
+  transition: visibility 0s 0ms;
+}
+
+.add-cell-buttons {
+  margin-top: -4px;
+  opacity: 0;
+  transition: opacity 200ms 0ms;
+  visibility: hidden;
+  z-index: 20;
+}
+
+.add-cell > .add-cell-buttons {
+  transition: opacity 200ms 250ms, visibility 0s 250ms;
+}
+
+.add-cell:hover > .add-cell-buttons {
+  opacity: 1;
+  transition: opacity 200ms 200ms;
+  visibility: visible;
+}
+
+.cell>.add-cell {
+  margin-bottom: -4px;
+  margin-top: -4px;
+}
+
+.notebook-content>.add-cell {
+  margin-top: -1px;
+}
+
+.add-button paper-button {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.14) !important;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow-elevation-2dp);
+  height: 24px;
+  margin-left: 11px;
+  margin-right: 11px;
+  padding: 2px 8px;
+}
+
+.add-button paper-button:hover {
+  border: 1px solid #a1badf !important;
+  cursor: default;
+}
+
+.add-button paper-button:active {
+  background-color: lightgrey;
+}
+
+.toc-refresh-button {
+  background: white;
+  border-color: lightgray;
+  color: rgb(98, 98, 98);
+  padding: 3px 5px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.toc > .main-content {
+  padding: 4px 8px;
+}
+
+.toc-refresh-button {
+  right: 38px;
+  top: 8px;
+}
+
+.text > .main-content {
+  padding-bottom: 4px;
+}
+
+.section-header-container {
+  background: #EEE;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #C0C0C0;
+  cursor: pointer;
+  font-style: italic;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 7px;
+  padding-left: 12px;
+}
+
+.section-header-container:hover {
+  background: #DDD;
+}
+
+.notebook-busy .section-header-container {
+  cursor: progress;
+}
+
+.toc * blockquote {
+  margin: 0px 20px;
+}
+
+.toc * p {
+  margin: 0px;
+}
+
+.toc-refresh-button:hover {background: rgb(200, 200, 200);}
+
+.inputarea.form > .execution-count {
+  padding-top: 7px;
+  background: white;
+}
+
+.cell.selected * .cell-mask {
+  background: rgba(0, 156, 255, 0.35);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.cell.toc * .cell-mask {
+  left: 0px;
+  top: 0px;
+}
+
+.cell .editor .CodeMirror textarea {
+  /* This works around a bug in CodeMirror, see b/24609824 */
+  opacity: 0;
+}
+
+.cell.focused .editor .CodeMirror textarea {
+  display: block;
+}
+
+.codecell-input-output {
+  position: relative;
+}
+
+.code.focused .cell-gutter {
+  background: #ddd;
+}
+
+.code.focused.output-selected .cell-gutter {
+  background: initial;
+}
+
+.cell-gutter {
+  flex-flow: column;
+  /* The gutter needs to be tall enough to accommodate the execution div. */
+  min-height: 39px;
+  width: 40px;
+}
+
+.cell-execution {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 32px;
+  padding-top: 6px;
+  position: relative;
+  top: 0;
+  width: 40px;
+  z-index: 1;
+}
+
+.cell-execution-container {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.code-has-output .cell-execution-container {
+  /* Add space for the output icon */
+  bottom: 30px;
+}
+
+.execution-count {
+  cursor: default;
+  font-family: monospace;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.cell-execution-indicator {
+  display: none;
+  height: 28px;
+  width: 28px;
+}
+
+.code.focused .execution-count,
+.code.pending .execution-count,
+.code.running .execution-count,
+.cell-execution:hover .execution-count {
+  display: none;
+}
+
+.code.focused .cell-execution-indicator,
+.code.pending .cell-execution-indicator,
+.code.running .cell-execution-indicator,
+.cell-execution:hover .cell-execution-indicator  {
+  display: block;
+}
+
+.cell-execution .progress {
+  position: absolute;
+}
+
+.cell-execution iron-icon {
+  color: var(--paper-grey-400);
+  cursor: pointer;
+  margin-left: 2px;
+  margin-top: 2px;
+  position: absolute;
+}
+
+.code.pending .cell-execution iron-icon {
+  cursor: default;
+}
+
+.code.focused .cell-execution-indicator iron-icon {
+  color: var(--paper-grey-800);
+}
+
+.cell-execution .spinner-layer {
+  border-color: var(--paper-grey-800) !important;
+}
+
+.cell-execution .cell-spinner {
+  border-radius: 14px;
+  border: 2px dashed var(--paper-grey-400);
+  display: none;
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.code.focused .cell-execution .cell-spinner {
+  border-color: black;
+}
+
+@keyframes cell-spinner-rotate {
+  to { transform: rotate(360deg) }
+}
+
+.code.pending .cell-spinner {
+  animation: cell-spinner-rotate  5332ms steps(12) infinite;
+  border-color: black;
+  display: block;
+}
+
+/* The running indicator may have its animation paused by the debugger. */
+.code.running .cell-spinner.animating {
+  animation: cell-spinner-progress 1s steps(24) infinite;
+  border: 3px solid transparent;
+  border-bottom-color: #454545;
+  border-left-color: #454545;
+  display: block;
+  height: 22px;
+  width: 22px;
+}
+
+@keyframes cell-spinner-progress {
+  to { transform: rotate(360deg) }
+}
+
+.code.execution-error .cell-execution-indicator iron-icon {
+  color: var(--paper-red-a700);
+}
+
+.code .editor.non-trusted * .CodeMirror-gutters {
+  background: #ECC4C4;
+}
+
+.colab-tooltip {
+  max-width: 700px;
+  animation: fadeOut 400ms;
+
+  animation: fadeIn 400ms;
+  vertical-align: middle;
+  background-color: var(--paper-grey-50);
+
+  border: var(--paper-grey-500) 1px solid;
+  outline: none;
+  padding: 3px;
+  margin: 0px;
+  padding-left: 7px;
+  font-family: monospace;
+  min-height: 50px;
+  box-shadow: 0px 6px 10px -1px  var(--paper-grey-400);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 25;
+}
+
+.tooltiptext {
+  background-color: var(--paper-grey-50);
+  border: 0;
+  border-radius: 0;
+  font-size: 13px;
+  max-height: 500px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+colab-panel.scratchpad .cell {
+  width: 100%;
+}
+
+colab-panel.scratchpad .add-cell,
+colab-panel.scratchpad .cell-toolbar {
+  display: none;
+  visibility: hidden;
+}
+
+.markdown-toolbar {
+  display: none;
+}
+
+.text.edit .markdown-toolbar {
+  background-color: var(--paper-grey-100);
+  border-bottom: 1px solid var(--paper-grey-300);
+  display: block;
+  margin-bottom: 4px;
+  padding: 6px 28px 4px 4px;
+}
+
+.markdown-toolbar-preview {
+  float: right;
+}
+
+.markdown-toolbar paper-icon-button {
+  color: var(--paper-grey-800);
+  height: 28px;
+  padding: 4px 8px;
+}
+
+paper-icon-button.turn-collapsed {
+  transform: rotate(-90deg);
+}
+
+
+/* TODO(b/34123555): Remove this after the experiment. */
+.text-cell-section-header {
+  position: relative;
+}
+
+paper-icon-button.header-section-toggle {
+  color: var(--paper-grey-900);
+  height: 26px;
+  left: -30px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: calc(50% - 14px);
+  transition: transform 0.2s;
+  width: 26px;
+}
+
+/**
+ * cell.css is appended before main_base.css, so we increase specificity
+ * to override paper-button styles
+ */
+paper-button.output-show-output {
+  font-size: 12px;
+}
+
+/* Remove the focused line border when cell is not focused. */
+.monaco-editor.vs .view-overlays .current-line {
+  border: 0;
+}
+.monaco-editor.focused .view-overlays .current-line {
+  border: 2px solid #eee;
+}
+
+#context-menu .goog-menuitem {
+  /* Shrink the left padding for the context menu. We don't use checkmarks so */
+  /* it doesn't need to match the header menus. */
+  padding-left: 18px;
+  padding-right: 9em;
+}
+
+#context-menu .goog-menuitem-accel {
+  padding-right: 18px;
+}
+
+.cell-execution-schedule-toolbar {
+  background-color: #f7f7f7;
+  /* Padding for the cell toolbar which may be positioned over this space. */
+  padding-right: 100px;
+}
+
+.schedule-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  padding: 5px 7px;
+  text-align: left;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+}
+
+.schedule-collapse {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.outputview {
+  /* On iOS, this keeps the notebook element scrolling when a touch event
+     originates from within an iframe. */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* research/colab/frontend/common/css/celltoolbar.css */
+.cell-toolbar {
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: 5px;
+}
+
+.cell-toolbar .toolbar {
+  display: none;
+}
+
+.cell-toolbar > .toolbar {
+  background: transparent; /* otherwise overdraws add-cell */
+  border: 0px;
+  min-height: 25px;
+  padding: 0;
+  text-align: end;
+}
+
+.cell-toolbar-visible,
+.cell.focused .cell-toolbar {
+  display: block;
+}
+
+/**
+ * Toolbar should be visible for focused cells,
+ * or when toolbar itself is focused. The latter happen
+ * when user hovers over readonly cell and then selects
+ * dropdown menu
+ */
+.cell-toolbar-visible,
+.cell.focused .cell-toolbar .toolbar,
+.cell-toolbar .toolbar:focus {
+  /** Keeps toolbar visible while it is selected */
+  display: block;
+}
+
+.cell-toggle-button,
+.cell-clear-output-button,
+.cell-fullscreen-button
+{
+  display: none;
+}
+
+.code-has-output .cell-toggle-button,
+.code-has-output .cell-clear-output-button,
+.code-has-output .cell-fullscreen-button
+{
+  display: inline-block;
+}
+
+.cell-toolbar paper-icon-button,
+.cell-toolbar .add-form-button,
+.cell-toolbar select {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: default;
+  height: initial;
+  margin: 2px 1px 1px;
+  padding: 1px;
+  text-transform: initial;
+  vertical-align: top;
+  width: initial;
+}
+
+.cell-toolbar paper-icon-button {
+  color: #808080;
+  margin: 2px 1px;
+}
+
+.cell-toolbar paper-icon-button[disabled] {
+  opacity: 0.5;
+}
+
+.cell-toolbar .add-form-button,
+.cell-toolbar select {
+  color: #444;
+}
+
+.cell-toolbar paper-icon-button:hover,
+.cell-toolbar .add-form-button:hover,
+.cell-toolbar select:hover {
+  border-color: #a1badf;
+  color: #000;
+}
+
+.cell-toolbar paper-icon-button:active,
+.cell-toolbar .add-form-button:active {
+  background-color: #dddddd;
+}
+
+.cell-toolbar select:focus {
+  outline: none;
+}
+
+.cell-toolbar iron-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.cell-toolbar .add-form-button {
+  line-height: 25px; /* matches toolbar height */
+  margin-left: 2px;
+  user-select: none;
+}
+
+/* research/colab/frontend/common/css/colab-custom.css */
+/* Contains tweaks to colab-custom classes that can be used to control
+ * presentation from python.
+ *
+ * This class contains a few classes that power users can use to control
+ * the display of individual cells in the notebook.
+ *
+ * Some of them might eventually become available from ui.
+ *
+ */
+.slides .colab-custom-hide-code-in-slides .code,
+.slides .colab-custom-hide-code-in-slides .output-info {
+  display: None
+}
+
+/* research/colab/frontend/common/css/comments.css */
+.comment-input-text {
+  border: 1px solid #c8c8c8;
+  outline: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 4px;
+  resize: none;
+  width: 100%;
+  line-height: 1.4;
+  font-size: 9pt;
+  font-family: sans-serif;
+}
+
+.comment .comment-action-button,
+.comment .comment-action-dropdown {
+  visibility: hidden;
+ }
+
+.comment.in-drive .comment-action-button,
+.comment.in-drive .comment-action-dropdown {
+  visibility: visible;
+ }
+
+.comment-input {
+  display: none;
+}
+
+.editing > .comment-input {
+  display: block;
+}
+
+.comment-author {
+  margin-left: 32px;
+}
+
+.comment-image {
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+
+.comment-date {
+  margin-left: 32px;
+  font-size: 8pt;
+  color: #787878;
+}
+
+.comment-text {
+  overflow-wrap: break-word;
+}
+
+.comment-text.comment-collapsed-text {
+  height: 71px;
+  overflow-y: hidden;
+}
+
+/* We don't want this rule to apply to child replies of a comment, only the
+ * text of the comment itself. */
+.editing > .comment-content .comment-text {
+  display: none;
+}
+
+.comments-button {
+  color: black;
+  background-color: var(--paper-grey-100);
+  border-color: var(--paper-grey-300);
+}
+
+.comment-header {
+  padding: 4px;
+  margin-bottom: 4px;
+}
+
+.comment-text-container, .comment-input, .show-more-replies {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0px 4px 4px;
+}
+
+.comment-collapse-control {
+  color: #15c;
+  cursor: pointer;
+  font-size: 8pt;
+  padding:4px 0 2px;
+  width: 100%;
+}
+
+.comment-collapse-control:hover {
+  text-decoration: underline;
+}
+
+.reply-chain > .comment-input, .show-more-replies {
+  padding-top: 4px;
+}
+
+.show-more-replies {
+  display: block;
+  cursor: pointer;
+}
+
+.submit-button {
+  margin-right: 4px;
+}
+
+.cancel-button {
+  background-color: var(--paper-grey-100);
+  color: black;
+  border-color: var(--paper-grey-300);
+}
+
+.comment-action-button,
+.comment-action-dropdown {
+  background: transparent;
+  border: 1px solid #3079ed;
+  border-radius: 2px;
+  height: 20px;
+  margin: 0;
+  min-width: 0;
+  opacity: 0.8;
+  text-transform: none;
+}
+
+/**
+ * cell.css is appended before main_base.css, so we increase specificity
+ * to override paper-button styles
+ */
+paper-button.comment-action-button {
+  align-items: center;
+  display: flex;
+  font-size: 8pt;
+  padding: 0 5px;
+}
+
+.comment-action-dropdown {
+  padding: 0;
+  width: 20px;
+}
+
+.comment-header > .comment-buttons {
+  display: flex;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+/**
+ * Style replies
+ */
+.reply-chain {
+  background-color: rgba(247,247,247,1);
+}
+
+.focused.in-drive > .reply-chain > .comment-input,
+.reply-chain > .comment-input.text-not-empty,
+.doc-comments-area > .comment > .reply-chain > .comment-input {
+  display: block;
+}
+
+.reply-chain > .text-empty > .bottom-buttons {
+  display: none;
+}
+
+/**
+ * Style sidebar
+ */
+.sidebar {
+  flex: 0 0 180px;
+  min-height: 100px;
+  padding-right: 20px;
+  margin-right: 15px;
+}
+
+.sidebar .comment {
+  background: white;
+  font-size: 9pt;
+  font-family: sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  position: absolute;
+  width: 200px;
+  margin-bottom: 5px;
+  transform: translate(-10px,0);
+  transition: all .5s ease-in-out;
+}
+
+.sidebar .comment[elevation="0"] {
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.sidebar .comment.focused {
+  transform: translate(-43px,0);
+  transition: all .5s ease-in-out;
+  z-index: 50;
+}
+
+/**
+ * Style Document Comments View.
+ */
+.doc-comments-area {
+  background: #fff;
+  border: solid 1px #cbcbcb;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  max-height: 550px;
+  outline: none;
+  overflow-y: auto;
+  position: absolute;
+  right: 20px;
+  top: 57px;
+  width: 434px;
+  z-index: 900;
+}
+
+.doc-comments-area.has-comments {
+  padding-bottom: 18px;
+}
+
+.doc-comments-area > .comment {
+  margin: 8px 18px 18px;
+  padding: 4px;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.doc-comments-area * .reply-chain {
+  margin-left: 16px;
+}
+
+.doc-comments-buttons {
+  background: var(--paper-grey-100);
+  text-align: right;
+}
+
+.doc-comments-buttons .paper-button-0[disabled] {
+  background: unset;
+}
+
+
+/* research/colab/frontend/common/css/debugger.css */
+colab-debugger {
+  font-size: 13px;
+}
+
+colab-debugger > div {
+  background-color: var(--paper-grey-100);
+  border-top: 1px solid var(--paper-grey-300);
+}
+
+colab-debugger a,
+colab-debugger .delete-output-btn {
+  color: var(--secondary-text-color);
+}
+
+colab-debugger div.hide {
+  display: none;
+}
+
+colab-debugger .scrolling-vertical {
+  overflow-y: scroll;
+}
+
+colab-debugger .CodeMirror-scroll,
+colab-debugger .inspection-pane iron-pages {
+  height: 400px;
+}
+
+/*
+ * Polymer overrides
+ * TODO(b/64113157): Remove all occurrences of `!important` below when possible.
+ */
+
+colab-debugger paper-tabs {
+  height: 32px !important;
+}
+
+colab-debugger paper-tabs #selectionBar {
+  border-color: var(--paper-orange-400) !important;
+}
+
+colab-debugger paper-tab {
+  padding: 0 8px !important;
+}
+
+colab-debugger paper-input-container {
+  padding-top: 0px !important;
+}
+
+colab-debugger paper-listbox paper-button {
+  text-transform: none;
+}
+
+colab-debugger paper-tab:focus .tab-content {
+  font-weight: inherit !important;
+}
+
+colab-debugger paper-tab .paper-icon-button-0 {
+  height: 16px;
+  padding: 0;
+  width: 16px;
+}
+
+colab-debugger paper-icon-button.old-dbg-btn{
+  /* TODO(b/66161211): Instead of modifying look and feel of the existing
+   * polymer icon av:web-asset create a custom design for the terminal button.
+   */
+  transform: rotate(180deg);
+}
+
+colab-debugger paper-toolbar, paper-toolbar #topBar {
+  background: var(--paper-grey-800);
+  height: 32px !important;
+}
+
+colab-debugger paper-toolbar #topBar .title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+colab-debugger paper-item:hover,
+colab-debugger paper-item.selected,
+colab-debugger paper-button:hover,
+colab-debugger paper-button.selected {
+  background-color: var(--paper-grey-200);
+}
+
+/* <colab-resizer>-specific */
+
+colab-debugger .resizer-thumb {
+  background-color: var(--paper-grey-100);
+  min-height: 9px !important;
+  min-width: 9px !important;
+}
+
+/* CodeMirror-specific */
+
+.cell.focused colab-debugger .CodeMirror-gutters,
+.cell.focused colab-debugger .CodeMirror-linenumbers,
+.cell.focused colab-debugger .CodeMirror-activeline-background {
+  background: none;
+}
+
+.cell.focused colab-debugger .CodeMirror-gutters {
+  background-color: var(--paper-grey-100);
+  border: 0;
+}
+
+.cell colab-debugger .executing-line-marker,
+.cell colab-debugger .CodeMirror-activeline-background.executing-line-marker {
+  background-color: var(--paper-red-200);
+  z-index: 1;
+}
+
+colab-debugger .breakpoint-marker {
+  background-color: #822;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: x-large;
+  min-height: 13px;
+  min-width: 5px;
+  opacity: 0.5;
+}
+
+/* Exception banner */
+
+colab-debugger .exception-title {
+  background-color: var(--paper-red-200);
+  display: flex;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+
+colab-debugger .exception-type {
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+/* Source code pane */
+
+colab-debugger .source-code {
+  min-width: 200px;
+}
+
+colab-debugger .source-code paper-tab {
+  font-size: 13px;
+}
+
+/* Inspection pane */
+
+colab-debugger .inspection-pane-resizer {
+  min-width: 250px;
+  width: 40%;
+}
+
+colab-debugger .inspection-pane iron-pages {
+  background-color: white;
+  min-width: 150px;
+}
+
+colab-debugger .inspection-pane iron-pages > div {
+  height: 100%;
+}
+
+colab-debugger .inspect-stack-resizer {
+  max-height: 236px;
+  min-height: 50px;
+}
+
+colab-debugger .inspection-pane paper-item {
+  font-size: 14px;
+  min-height: 18px;
+  white-space: nowrap;
+}
+
+colab-debugger .inspection-pane paper-item paper-icon-button {
+  height: 16px;
+  padding: 2px;
+  width: 16px;
+}
+
+colab-debugger .inspect-breakpoints-add {
+  background-color: var(--paper-grey-100);
+  display: flex;
+  flex-direction: row;
+  padding: 0 8px;
+}
+
+colab-debugger .inspect-breakpoints-add .inspect-breakpoints-line-number {
+  flex: 0 0 80px;
+}
+
+/* Terminal */
+
+colab-debugger .terminal paper-input-container .focused-line {
+  display: none;
+}
+
+/* research/colab/frontend/common/css/dialog.css */
+.dialog-main-content #scrollable {
+  padding: 0;
+}
+
+.dialog-main-content #scrollable > div,
+.dialog-main-content #scrollable > iron-pages {
+  padding: 25px 24px 7px 24px;
+}
+
+.dialog-main-content ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.dialog-main-content ::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+.dialog-main-content ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-clip: border-box;
+  border-width: 1.1px 1.1px 1.1px 6px;
+  min-height: 28px;
+  padding: 0 0 0;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+colab-dialog .content-area {
+  padding: 24px;
+}
+
+colab-dialog .content-area h2:not(:last-child),
+colab-dialog .content-area > .dialog-title {
+  margin-bottom: 20px;
+}
+
+colab-dialog .buttons paper-button {
+  font-weight: 500;
+  padding: 8px;
+  color: var(--google-blue-500);
+  margin: 0 0 0 8px;
+}
+
+colab-dialog .buttons paper-button[disabled] {
+  color: var(--google-blue-100);
+  background: none;
+}
+
+colab-dialog .buttons paper-button.dismiss {
+  color: var(--paper-grey-900);
+}
+
+#manage-views-dialog {
+  overflow: visible;
+}
+
+
+#manage-views-dialog {
+  min-height: 200px;
+  min-width: 300px;
+}
+
+#manage-views-dialog .buttons {
+  margin-top: 30px;
+}
+
+#workspace-picker {
+  min-width: 500px;
+}
+
+#workspace-list {
+  min-height: 300px;
+  max-height: 400px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#piperpath-input {
+  min-width: 640px;
+}
+
+#workspace-list .workspace-item {
+  padding: 10px 0;
+  text-align: left;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.workspace-item:hover {
+  background: var(--paper-grey-50);
+}
+
+#error-dialog pre {
+  font-size: small;
+  overflow: auto;
+}
+
+#preferences-dialog .prefs {
+  margin: 0 24px;
+  min-width: 300px;
+}
+
+#preferences-dialog paper-dropdown-menu:nth-child(2) {
+  margin-left: 50px;
+}
+
+/** Match the drive sharing dialog. */
+#sharing-dialog .dialog-title {
+  color: #000;
+  font: normal 16px arial,sans-serif;
+}
+
+#sharing-dialog .copy-link {
+  color: #646464;
+  position: absolute;
+  right: 0;
+  text-transform: initial;
+  top: 0;
+}
+
+#sharing-dialog iron-icon {
+  border: 1.5px solid #cdcdcd;
+  border-radius: 20px;
+  color: #767676;
+  padding: 1px;
+}
+
+#share-placeholder {
+  margin: 10px 0;
+  min-height: 200px;
+}
+
+.shortcut-grid {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.shortcut-column {
+  flex: 1 0 0;
+}
+
+.shortcut-preference {
+  margin: 8px 0;
+  min-width: 350px;
+}
+
+.shortcut-preference-keys {
+  display: inline-block;
+  margin-right: 8px;
+  min-width: 120px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.shortcut-preference-keys input {
+  text-align: center;
+  width: 116px;
+}
+
+.shortcut-preference-description {
+  display: inline-block;
+  max-width: 215px;
+}
+
+/* research/colab/frontend/common/css/drag_drop.css */
+colab-draggable {
+  display: block;
+  padding: 4px;
+  position: relative;
+}
+
+colab-drag-drop-target {
+  display: block;
+  margin: 0 10px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+colab-drag-drop-target.drop-target-selected {
+  background-color: #ccc;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+/* research/colab/frontend/common/css/form.css */
+.formview-namelabel {
+  font-family: monospace;
+  font-size: 11pt;
+}
+
+.formview-namelabel {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+/* The edit buttons should only be visible in both view. */
+/* In form view, forms are read-only. */
+.inputarea.form .formview-edit-button {
+  display: none;
+}
+
+/* The show code button should only be visible in form view. */
+.inputarea .show-code-button {
+  display: none;
+}
+
+.inputarea.form .show-code-button {
+  display: block;
+  padding: 2px 8px;
+}
+
+.formview-edit-button {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.focused .formview-edit-button {
+  opacity: 0.25;
+}
+
+.focused .formview-edit-button:hover {
+  opacity: 1;
+}
+
+.formview-input,
+.formview-dropdown,
+.formview-slider {
+  display: block;
+  margin: 0 0 4px 16px;
+  min-height: 42px;
+}
+
+.formview-namelabel,
+.formview-valuelabel,
+.formview-content {
+  display: inline-block;
+}
+
+/** Show the full number next to the slider rather than just 3 digits. */
+.formview-slider paper-slider .slider-input.paper-slider {
+  width: auto;
+}
+
+/** INPUT */
+.formview * .floated-label-placeholder {
+  display: none;
+}
+
+.formview * paper-input-container {
+  padding: 0px;
+}
+
+.formview-stringquotes {
+  color: #BBB;
+  font-size: 150%;
+  padding: 0px 4px 0px 4px;
+  /* This should prevent the quote from being selected on Chrome. We might need
+  more if we would like to support other browsers (like Firefox). */
+  -webkit-user-select: none;
+}
+
+.input-error-area {
+  font-size: 85%;
+  max-width: 30%;
+}
+
+/** CHECKBOX */
+.formview input[type=checkbox] {
+  margin-top: 6px;
+}
+
+/** SLIDER */
+colab-form-slider.formview-slider
+#sliderContainer.editable.paper-slider {
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+/** DROPDOWN */
+.formview-dropdown select {
+  background-color: #fff;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+colab-form-dropdown > div.flex {
+  border-bottom: 1px solid var(--paper-grey-900);
+}
+
+/** Title */
+.readonly * .formview-title > paper-button,
+.commentonly * .formview-title > paper-button {
+  display: none;
+}
+
+colab-form-title {
+  margin: 0 8px 0 4px;
+}
+
+colab-form-title h3 {
+  margin-top: 5px;
+}
+
+colab-form-title paper-icon-button.formview-edit-button {
+  flex-shrink: 0;
+  margin: -4px 0 0 4px;
+}
+
+/** FormView */
+.formview {
+  padding: 6px 32px 8px 12px;
+  background: white;
+}
+
+.formview * .output-info {
+  text-align: left;
+  width: 32px;
+}
+
+.editor-form-error {
+  color: var(--paper-red-a700);
+  font-family: 'Roboto', 'Noto', sans-serif;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.editor-form-error iron-icon {
+  flex-shrink: 0;
+  height: 16px;
+  margin-right: 8px;
+  width: 16px;
+}
+
+.inputarea.code > .formview { display: none; }
+
+.colab-lasso {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lasso-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lasso-selection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 90, 255, .3);
+}
+
+.edit-form-widget-dialog .dropdown-options-container #scrollable {
+  /* The dialog is not recentered on the screen after adding an item to the
+   * scrollable area. Without a max-height, the scrollable area can grow past
+   * the bottom of the screen, pushing other UI elements off the screen as well */
+  max-height: 220px;
+}
+
+.edit-form-widget-dialog .error-content {
+  /* To match the color of invalid paper input errors */
+  color: #dd2c00;
+}
+
+.form-widget-attributes-container {
+  display: inline-block;
+  min-height: 250px;
+  min-width: 330px;
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+.edit-form-title-dialog .column {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  vertical-align: top;
+}
+
+.edit-form-title-dialog .form-width-container {
+  max-width: 225px;
+}
+
+.edit-form-title-dialog .form-width-input {
+  display: inline-block;
+  max-width: calc(100% - 40px);
+}
+
+.edit-form-title-dialog select {
+  background-color: #fff;
+  border: 1px solid transparent;
+  /* To match the font-size of the units in the output height input */
+  font-size: 16px;
+}
+
+.edit-form-title-dialog paper-checkbox {
+  display: block;
+  padding-top: 15px;
+}
+
+/* research/colab/frontend/common/css/github_saver.css */
+.github-saver {
+  width: 800px;
+}
+
+colab-github-repo-selector .github-repos {
+  margin-right: 40px;
+}
+
+colab-github-repo-selector select:hover {
+  border-color: var(--paper-grey-600);
+}
+
+colab-github-repo-selector select {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  border-bottom-color: var(--paper-grey-600);
+  cursor: default;
+  font: inherit;
+  height: initial;
+  text-transform: initial;
+  vertical-align: top;
+  width: initial;
+}
+
+colab-github-repo-selector select:focus {
+  outline: none;
+}
+
+colab-github-repo-selector a iron-icon.open-in-github {
+  color: var(--google-blue-500);
+  height: 20px;
+  margin-left: 8px;
+  width: 20px;
+}
+
+.github-saver .github-branches,
+.github-saver .github-repos {
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+
+/* research/colab/frontend/common/css/header.css */
+.top-floater
+{
+  background: white;
+  /* First item in the notebook list */
+  order: -1;
+}
+
+#colab-menu-cover {
+  height: 7px;
+  background: white;
+  position: absolute;
+  z-index: 100003;
+}
+
+.goog-submenu-arrow {
+  transition: all 0.218s;
+  font-size: 70%;
+  left: auto;
+  right: 10px;
+  padding-top: 3px;
+  padding-right: 0;
+  position: absolute;
+  text-align: right;
+  opacity: .5;
+  filter: alpha(opacity=50)
+}
+
+.goog-menuitem {
+  border-color: white;
+  border-style: dotted;
+  border-width: 1px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 9em;
+}
+
+.goog-menuitem-highlight,
+.goog-menuitem-hover {
+  background-color: var(--paper-grey-200);
+  border-color: var(--paper-grey-200);
+  border-style: dotted;
+  border-width: 1px 0;
+  padding-top: 5px;
+  padding-right: 9em;
+  padding-bottom: 5px;
+}
+
+#top-menubar .goog-menu-button-caption {
+  padding: 0 2px;
+  vertical-align: top;
+}
+
+#top-menubar .goog-menu-button-caption,
+#top-menuvar .goog-menuitem-content {
+  color: rgba(0,0,0,.87);
+}
+
+#top-menubar .goog-menuitem {
+  font: 13px Roboto,sans-serif;
+}
+
+#top-menubar {
+  cursor: default;
+  font: 13px Roboto,sans-serif;
+  outline: none;
+  white-space: nowrap;
+}
+
+.goog-menu {
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: opacity 0.218s;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  cursor: default;
+  font-size: 13px;
+  margin: 0;
+  outline: none;
+  padding: 6px 0;
+  position: absolute
+}
+
+#top-menubar .goog-menu-button-open {
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  color: black;
+  z-index: 1003
+}
+
+.goog-menuseparator {
+  border-top: 1px solid #ebebeb;
+  margin: 6px 0px;
+}
+
+.header-warning {
+  background-color: black;
+  color: white;
+  /* Include enough padding to keep text from overlapping the close button. */
+  padding: 8px 25px;
+  position: relative;
+  text-align: center;
+}
+
+.header-warning a {
+  color: rgb(238, 255, 65);
+}
+
+.private-outputs-warning.hidden {
+  display: none;
+}
+
+#header-staging {
+  color: #808080;
+  text-align: center;
+  font: 13px Roboto,sans-serif;
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+}
+
+#header-staging a {
+  color: #80bfff;
+}
+
+.top-floater #header {
+  font: normal 13px Roboto,sans-serif;
+  height: 60px;
+  text-align: left;
+  width: 100%;
+}
+
+#header-logo {
+  height: 60px;
+  width: 60px;
+  background: rgb(66, 66, 66);
+  text-align: center;
+}
+
+#header-logo > img {
+  position: relative;
+  width: 40px;
+  padding-top: 10px;
+  vertical-align: middle;
+}
+
+.notebook-vertical:not(.mobile) #header-doc-toolbar {
+  margin-left: 16px;
+  padding-top: 6px
+}
+
+#document-info {
+  height: 25px;
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.message-area {
+  font: normal 14px Roboto,sans-serif;
+  padding-right: 38px;
+  z-index: 300; /* show on top of everything */
+}
+
+.header-warning .close,
+.message-area .close {
+  color: var(--paper-grey-300);
+  height: 25px;
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+}
+
+paper-toast.message-area .close {
+  top: 11px;
+  right: 8px;
+}
+
+.notification {
+  margin-top: 20px;
+  background-color: #f9edbe;
+  border-color: #f0c36d;
+  border: 1px solid lightgrey;
+  padding: 3px;
+  position: relative;
+  top: 0;
+  max-width: 200px;
+}
+
+.doc-name {
+  background: white;
+  border: 1px solid transparent;
+  color: #222;
+  font: normal 18px Roboto,sans-serif;
+  max-width: 400px;
+  min-width: 65px;
+  padding: 0 4px 0 3px;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+
+.doc-name:hover {
+  border: 1px solid var(--paper-grey-200);
+}
+
+/* Offscreen. Used to calculate the width of the title input. */
+#doc-name-sizer {
+  left: -1000%;
+  position: absolute;
+}
+
+core-tooltip::shadow .bottom {
+    margin-top: 0px;
+}
+
+#offline-mode {
+  color: brown;
+  font-weight: bold;
+  padding-left: 4px;
+  padding-top: 5px;
+  position: relative;
+}
+
+#header-right {
+  margin-right: 16px;
+}
+
+#header-collaborators {
+  margin-top: 3px;
+}
+
+#header-right,
+#header-collaborators,
+.collaborators,
+#header-right > paper-button {
+  align-items: center;
+  display: flex;
+}
+
+.collaborator {
+  margin-right: 6px;
+}
+
+#header-right .portrait {
+  border-radius: 100%;
+  height: 27px;
+  width: 27px;
+  border: 2px solid;
+}
+
+#header-right > paper-button {
+  margin-left: 8px;
+  color: #333;
+}
+
+.collaborator-overflow {
+ line-height: 26px;
+ width: 25px;
+ text-align: center;
+ background: black;
+ color: white;
+ font-weight: bold;
+ font-size: 9pt;
+ display: inline-block;
+}
+
+.cell-collaborators .portrait {
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  padding-bottom: 4px;
+  vertical-align: middle;
+}
+
+.cell-collaborators .collaborator {
+  margin-right: 4px;
+}
+
+.collaborator-overflow > span {
+ text-align: center;
+ vertical-align: middle;
+ cursor: default;
+}
+
+#header-right > paper-button:hover, #header-right > paper-button.active {
+  text-decoration: none;
+  box-shadow: 0px 4px 10px 0 rgba(0,0,0,0.1),0px 2px 10px 0px rgba(0,0,0,0.1)
+}
+
+#header-right iron-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+#header-doc-toolbar iron-icon {
+  height: 20px;
+  width: 20px;
+}
+
+#header-doc-toolbar iron-icon.file-location-icon {
+  height: 18px;
+  margin-left: 7px;
+  margin-top: 3px;
+  width: 18px;
+}
+
+iron-icon#star-icon {
+  color: #aaa;
+  margin-left: 3px;
+  margin-top: 2px;
+}
+
+iron-icon#star-icon[icon="star"] {
+  color: rgb(255, 215, 110);
+}
+
+
+.constrained-height {
+  max-height: 400px;
+}
+
+/* Instead of using the Closure UI PNG, we insert an iron-icon with icons:check
+ * from the Javascript into the el, so suppress its visibility by default and
+ * show it only when selected. */
+.goog-menuitem-checkbox {
+  visibility: hidden;
+}
+
+.goog-option-selected .goog-menuitem-checkbox,
+.goog-option-selected .goog-icon {
+  background: none;
+  visibility: visible;
+}
+
+.goog-menuitem-checkbox iron-icon {
+  height: 16px;
+  width: 16px;
+}
+
+/* We don't render this element as it's display:hidden, but it's in the DOM
+ * causing us to download its background image anyway. Set the background to
+ * none to avoid a wasteful image download. */
+.goog-menubar .goog-menu-button-dropdown {
+  background: none;
+}
+
+.notebook-vertical.mobile .top-floater paper-menu-button paper-listbox,
+.notebook-vertical.mobile paper-menu {
+  padding: 0;
+}
+
+.notebook-vertical.mobile paper-menu-button #top-menubar {
+  min-width: 200px;
+}
+
+.notebook-vertical.mobile #top-menubar iron-collapse {
+  margin-left: 16px;
+}
+
+/** Hide unchecked checkmarks. */
+.notebook-vertical.mobile paper-item[toggles]:not([active]) iron-icon {
+  display: none;
+}
+
+
+.notebook-vertical.mobile #top-menubar paper-item[command].iron-selected {
+  font-weight: normal;
+}
+
+.notebook-vertical.mobile #document-info {
+  margin-top: 15px;
+}
+
+
+/* research/colab/frontend/common/css/ipython.css */
+@-moz-keyframes fadeOut{from{opacity:1;} to{opacity:0;}}@-webkit-keyframes fadeOut{from{opacity:1;} to{opacity:0;}}@-moz-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}@-webkit-keyframes fadeIn{from{opacity:0;} to{opacity:1;}}.bigtooltip{overflow:auto;height:200px;-webkit-transition-property:height;-webkit-transition-duration:500ms;-moz-transition-property:height;-moz-transition-duration:500ms;transition-property:height;transition-duration:500ms;}
+.smalltooltip{-webkit-transition-property:height;-webkit-transition-duration:500ms;-moz-transition-property:height;-moz-transition-duration:500ms;transition-property:height;transition-duration:500ms;text-overflow:ellipsis;overflow:hidden;height:80px;}
+.tooltipbuttons{position:absolute;padding-right:15px;top:0px;right:0px;}
+.tooltiptext{padding-right:30px;}
+
+.ipython_tooltip a{float:right;}
+
+.pretooltiparrow{left:0px;margin:0px;top:-16px;width:40px;height:16px;overflow:hidden;position:absolute;}
+.pretooltiparrow:before{background-color:#f7f7f7;border:1px #ababab solid;z-index:11;content:"";position:absolute;left:15px;top:10px;width:25px;height:25px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);}
+
+/* research/colab/frontend/common/css/main_base.css */
+/**
+ * Base main.css this is shared between
+ *  a) main.css - the colab main style file
+ *  b) main_embedded.css - the embedded version of colab.
+ *
+ * NB: Do not override styles that are likely to have conflicts with non-colab
+ * code. For example: global closure styles.
+ *
+ * Use main.css instead (or make them colab specific by requiring colab-parent)
+ */
+
+/**
+ * This style preserves the styling previous to
+ * https://github.com/PolymerElements/paper-button/pull/115
+ * This change can break the layout of paper-button content.
+ * Remove this style to apply the change, more details at b/70528356.
+ */
+paper-button, [class*=" paper-button-"] {
+  display: inline-block;
+  text-align: center;
+  font-family: inherit;
+}
+
+.thumbnail {
+  position: absolute;
+  background-color: white;
+}
+
+.thumbnail .cell {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Hide control elements in thumbnail.
+ * Hide output and img elements as we cannot render cross domain elements.
+ * Show thumbnail icon image in thumbnail.
+ */
+.thumbnail .cell-toolbar, .thumbnail .add-cell, .thumbnail .cell-collaborators,
+.thumbnail .inputarea paper-button,
+.thumbnail .output, .thumbnail img:not(.thumbnail-icon) {
+  display: none !important;
+}
+
+
+#kernel-port-input {
+  font-family: monospace;
+  font-size: 12px;
+  margin: 10px;
+  padding: 2px 5px;
+  width: 300px;
+ }
+
+input#file-name-input {
+  padding: 3px 5px;
+  margin: 10px 5px;
+  min-width: 300px;
+}
+
+/**
+ * Message and dialogs in content
+ */
+.content-message {
+  margin: 20px;
+  text-align: center;
+  width: 100%;
+ }
+
+.notebook-vertical {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+/* Non-scrolled content */
+.notebook-horizontal {
+  display: flex;
+  flex-flow: row;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.exported-html .notebook-horizontal {
+  overflow: visible;
+}
+
+/* Scrolling container */
+.notebook-container {
+  flex-basis: 50%;
+  flex-flow: column;
+  flex-grow: 1;
+  overflow-y: scroll;
+  position: relative;
+  will-change: opacity;
+  /* On iOS, this keeps this element scrolling when a touch event originates
+     from within an iframe. */
+  -webkit-overflow-scrolling: touch;
+}
+
+.notebook-container:focus {
+  outline: none;
+}
+
+.exported-html .notebook-container {
+  overflow-y: initial;
+}
+
+.exported-html .top-floater {
+  display: none;
+}
+
+/* Root of scrolled content, horizontal for notebook and left-pane. */
+.notebook-scrolling-horizontal {
+  display: flex;
+  flex-flow: row;
+}
+
+.notebook-content-background {
+  flex: auto;
+  min-width: 700px;
+}
+
+/**
+ * Page
+ */
+.notebook-content {
+  background: white;
+  border: 1px solid #dadada;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 10px 16px 5px 36px;
+  min-height: 800px; /* This is a horrible css hack to make side-by-side for
+                   * comments work. */
+  min-width: 600px;
+  padding: 0 14px 400px 18px;
+}
+
+.notebook-vertical.mobile .notebook-content {
+  margin: 4px;
+}
+
+.notebook-content.readonly {
+  /* More padding to accomodate toolbar height. */
+  padding-top: 17px;
+}
+
+.notebook-content.readonly .cell {
+  margin-top: 8px;
+}
+
+.colab-left-pane-open .notebook-content {
+  margin-left: 4px;
+}
+
+.notebook-cell-list {
+  background: white; /* In preview, it can fill the gap between cells. */
+}
+
+
+paper-toast a {
+  color:rgb(238, 255, 65);
+}
+
+
+/* Executed code view */
+.executedcode-codeblock {
+  background-color: #e5e5e5;
+  /* display: inline-flex; */
+  font-family: monospace;
+  margin: 8px;
+  padding: 8px;
+}
+
+.executedcode-codeblock p {
+  margin: 0px 14px 0px;
+  white-space: pre;
+}
+
+.executedcode-order {
+  padding-right: 8px;
+}
+
+.executedcode-kernel {
+  /* Same as CONNECTED status color */
+  color: #538928;
+}
+
+.history-view {
+  margin: 10px;
+}
+
+.history-view td {
+  padding: 8px;
+}
+
+.history-view th {
+  padding: 10px 18px;
+}
+
+.history-view td:nth-of-type(5),
+.history-view td:nth-of-type(6) {
+  /* Center the buttons. */
+  text-align: center;
+}
+
+.history-view th:nth-of-type(1) {
+  text-align: left;
+}
+
+.history-view .history-pinned-checkbox {
+  margin: 0 16px 0 8px;
+  vertical-align: middle;
+}
+
+.history-pin-text {
+  /* Displays above the interactive table */
+  height: 0;
+  margin: 10px -10px -10px 10px;
+}
+
+.code-help {
+  font-family: monospace;
+  margin: 16px;
+  white-space: pre-wrap;
+ }
+
+.code-help a:link {text-decoration: none;}
+
+.code-help a:visited {text-decoration: none;}
+
+.code-help a:hover {text-decoration: underline;}
+
+.code-help a:active {text-decoration: underline;}
+
+.notebook-container .goog-tab {
+  color: #666;
+  text-decoration: none;
+}
+
+.notebook-container .goog-tab-selected {
+  border: 1px solid #818181;
+  color: #222;
+}
+
+.notebook-container .goog-tab:hover {
+  background: whitesmoke;
+  box-shadow: inset 0 1px 5px #ccc;
+  color: #222;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.notebook-container .goog-tab-bar {background-color: whitesmoke;}
+
+.notebook-container .goog-tab-bar-top {border-bottom: 1px solid #919191!important;}
+
+.notebook-container .goog-tab-bar-top .goog-tab {
+  -moz-border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+  margin: 1px 0 0 2px;
+ }
+
+.notebook-container .goog-tab-bar-top .goog-tab-selected {
+  border-bottom: none;
+  margin-top: 0;
+  top: 1px;
+}
+
+.notebook-container .goog-tab-bar-top .goog-tab {
+  border-bottom: none;
+  margin: 1px 4px 0 0;
+}
+
+.CodeMirror-hints {
+  margin-top: 1px;
+  position: fixed;
+  z-index: 100;
+}
+
+#exported-header {
+  text-align: center;
+}
+
+.realtime-button:hover {opacity: 1;}
+
+.realtime-button:disabled { opacity: .5;}
+
+.realtime-button {
+  background-color: #4d90fe;
+  border-radius: 2px;
+  border: 1px solid #3079ed;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 0;
+  opacity: 0.9;
+  padding: 7px 8px;
+  text-transform: initial;
+  vertical-align: middle;
+}
+
+.notebook-busy {
+  cursor: progress;
+}
+
+.layout.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.layout.noshrink {
+  flex-shrink: 0;
+}
+
+.layout.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout.center {
+  align-items: center;
+}
+
+.layout.end {
+  align-items: flex-end;
+}
+
+.flex {
+  flex: 1;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+colab-shaded-scroller::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+colab-shaded-scroller::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+colab-shaded-scroller::-webkit-scrollbar-thumb {
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-width: 1.1px 1.1px 1.1px 6px;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
+              inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+              inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  min-height: 28px;
+  padding: 0;
+}
+
+.colab-large-icon {
+  height: 60px;
+  width: 40px;
+}
+
+iron-overlay-backdrop {
+  /* Must be higher than OneBar's z-index. See go/zindex. */
+  z-index: 1001 !important;
+}
+
+colab-dialog-impl, .colab-popup {
+  /* Must be higher than iron-overlay-backdrop. */
+  z-index: 1002 !important;
+}
+
+paper-item {
+  cursor: default;
+}
+
+/* research/colab/frontend/common/css/material_styles.css */
+/**
+ * Common material properties for Colab.
+ */
+:root {
+
+  /** Colab-specific variables. */
+  --code-cell-background: #f7f7f7;
+
+  /**
+   * These colors should all match the material design colors from Polymer, but
+   * are packaged separately so they can be used with standard CSS.
+   *
+   * Polymer's material styling is packaged to be consumed via HTML imports and
+   * applied specifically to Polymer elements, and cannot be applied outside of
+   * Polymer elements.
+   */
+  --paper-blue-200: #90caf9;
+  --paper-blue-400: #42a5f5;
+  --paper-blue-500: #2196f3;
+  --paper-blue-700: #1976d2;
+  --paper-blue-900: #0d47a1;
+
+  --paper-blue-a100: #82b1ff;
+  --paper-blue-a200: #448aff;
+  --paper-blue-a400: #2979ff;
+  --paper-blue-a700: #2962ff;
+
+  --paper-orange-50: #fff3e0;
+  --paper-orange-100: #ffe0b2;
+  --paper-orange-200: #ffcc80;
+  --paper-orange-300: #ffb74d;
+  --paper-orange-400: #ffa726;
+  --paper-orange-500: #ff9800;
+  --paper-orange-700: #f57c00;
+
+  --paper-grey-50: #fafafa;
+  --paper-grey-100: #f5f5f5;
+  --paper-grey-200: #eeeeee;
+  --paper-grey-300: #e0e0e0;
+  --paper-grey-400: #bdbdbd;
+  --paper-grey-500: #9e9e9e;
+  --paper-grey-600: #757575;
+  --paper-grey-700: #616161;
+  --paper-grey-800: #424242;
+  --paper-grey-900: #212121;
+
+  --paper-red-200: #ffe6e6;
+  --paper-red-a700: #d50000;
+
+  --google-blue-500: #4285f4;
+
+  --light-theme-secondary-color: #737373;  /* for secondary text and icons */
+  --secondary-text-color: var(--light-theme-secondary-color);
+
+
+  /* Variants of Polymer's --shadow-elevation-Xdp, to work without experimental
+   * @apply.
+   */
+  --box-shadow-elevation-2dp: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                              0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  --box-shadow-elevation-3dp: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                              0 1px 8px 0 rgba(0, 0, 0, 0.12),
+                              0 3px 3px -2px rgba(0, 0, 0, 0.4);
+
+  /* Variants of Polymer's --paper-font-title, to work without experimental
+   * @apply.
+   */
+  --paper-font-title-font-size: 20px;
+  --paper-font-title-font-weight: 500;
+  --paper-font-title-line-height: 28px;
+
+  /* Variants of Polymer's --paper-font-subhead, to work without experimental
+   * @apply.
+   */
+  --paper-font-subhead-font-size: 16px;
+  --paper-font-subhead-font-weight: 400;
+  --paper-font-subhead-line-height: 24px;
+
+  /* Variants of Polymer's --paper-font-body2, to work without experimental
+   * @apply.
+   */
+  --paper-font-body2-font-size: 14px;
+  --paper-font-body2-font-weight: 500;
+  --paper-font-body2-line-height: 24px;
+
+  /* Variants of Polymer's --paper-font-body1, to work without experimental
+   * @apply.
+   */
+  --paper-font-body1-font-size: 14px;
+  --paper-font-body1-font-weight: 400;
+  --paper-font-body1-line-height: 20px;
+}
+
+/* research/colab/frontend/common/css/print.css */
+@media print {
+  body {
+    overflow-y: visible;
+  }
+
+  .notebook-vertical {
+    position: static;
+    height: initial;
+  }
+
+  .cell-collaborators {
+    display: none;
+  }
+
+  .notebook-container {
+    height: initial;
+    overflow-y: initial;
+    /* Forces CodeMirror lines to be clipped. Even though this scrolling is on
+     * the container, the only horizontal scrolling is in the specific long
+     * codemirror cells.
+     */
+    overflow-x: auto;
+  }
+
+  .notebook-content {
+    border: initial;
+    margin: initial;
+  }
+
+  .cell-gutter {
+    display: none;
+  }
+
+  .top-floater {
+    display: none
+  }
+
+  colab-bottompane {
+    /* !important to override :host {display: flex} rule in
+     * colab-bottompane.html.
+     */
+    display: none !important;
+  }
+
+  colab-status-bar {
+    display: none;
+  }
+
+  .cell.focused .cell-toolbar  {
+    display: none;
+  }
+
+  .notebook-sidebar-nib {
+    display: none;
+  }
+
+  paper-material {
+    /** Drop shadows print as black lines */
+    box-shadow: none !important;
+  }
+}
+
+/* research/colab/frontend/common/css/refactor.css */
+
+.colab-find-row {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: row;
+  margin-left: 28px;
+}
+
+.colab-find-row>paper-input {
+  margin-bottom: -7px;
+  margin-right: 16px;
+  width: 300px;
+}
+
+.colab-find-row .focused-line.paper-input-container {
+  background: var(--paper-orange-400);
+}
+
+.colab-find-input {
+  margin-bottom: 2px;
+  margin-top: 19px;
+}
+
+colab-find-replace .input-content label {
+  /* Important to override Polymer's default */
+  color: var(--secondary-text-color) !important;
+}
+
+.colab-find-button {
+  margin-right: 6px;
+  min-width: 48px;
+}
+
+colab-find-replace paper-button.button {
+  align-items: center;  /* Vertically center contents */
+  background: var(--paper-grey-300);
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 31px;
+  justify-content: center;  /* Horizontally center contents */
+  padding: 0;  /* Clear padding for centering */
+}
+
+
+colab-find-replace.no-text .colab-find-button,
+colab-find-replace.no-text .colab-find-replace {
+  visibility: hidden;
+}
+
+.colab-find-suffix {
+  color: var(--paper-grey-500);
+}
+
+colab-find-replace {
+  display: flex;
+  height: 171px;
+}
+
+colab-find-replace.readonly .colab-replace-row {
+  display: none;
+}
+
+.colab-find-options {
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-left: 95px;
+  margin-top: 18px;
+}
+
+.colab-find-options paper-checkbox {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.colab-find-options paper-checkbox #checkbox {
+  /* Important to override Polymer's default */
+  border-color: var(--secondary-text-color) !important;
+}
+
+.colab-find-options paper-checkbox #checkboxLabel {
+  /* Important to override Polymer's default */
+  color: var(--secondary-text-color) !important;
+}
+
+.colab-find-options paper-ripple {
+  /* Important to override Polymer's default */
+  color: var(--paper-orange-400) !important;
+}
+
+.colab-find-options #checkbox.checked.paper-checkbox {
+  /* Important to override Polymer's default */
+  background-color: var(--paper-orange-400) !important;
+  border-color: var(--paper-orange-400) !important;
+}
+
+
+
+/* research/colab/frontend/common/css/resizer.css */
+colab-resizer {
+  display: flex;
+}
+
+colab-resizer.ew-resize, colab-resizer.we-resize {
+  flex-flow: row;
+}
+
+colab-resizer.ns-resize {
+  flex-flow: column;
+}
+
+colab-resizer>* {
+  flex-grow: 1;
+}
+
+colab-resizer.ew-resize>*, colab-resizer.we-resize>* {
+  min-width: 0;
+}
+
+.resizer-thumb {
+  flex: 0 0 5px;
+  transition: background .1s;
+}
+
+.resizer-thumb:hover {
+  background: #777;
+}
+
+colab-resizer.ew-resize>.resizer-thumb, colab-resizer.we-resize>.resizer-thumb {
+  cursor: ew-resize;
+}
+
+colab-resizer.ns-resize>.resizer-thumb {
+  cursor: ns-resize;
+  height: 5px;
+}
+
+/* research/colab/frontend/common/css/resizing_grid.css */
+colab-resizing-grid {
+  border-collapse: collapse;
+  display: table;
+  position: relative;
+  width: 100%;
+}
+
+.resizing-thumb {
+  bottom: 0;
+  /* Shown only if editing is enabled. */
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.resizing-grid-column-group {
+  display: table-column-group;
+}
+
+.resizing-grid-column {
+  display: table-column;
+}
+
+.resizing-grid-row {
+  display: table-row;
+}
+
+.resizing-grid-cell {
+  display: table-cell;
+  height: 50px;
+  padding: 2px;
+  vertical-align: top;
+}
+
+/* Controls for resizing. */
+colab-resizing-grid.resizing .resizing-thumb {
+  cursor: ew-resize;
+}
+
+colab-resizing-grid.resizing .resizing-thumb:active,
+colab-resizing-grid.resizing .resizing-thumb:hover {
+  border-left: 2px solid black;
+}
+
+colab-resizing-grid.resizing .resizing-grid-cell {
+  border: 1px dashed black;
+}
+
+colab-resizing-grid.resizing .resizing-thumb {
+  display: block;
+}
+
+/* research/colab/frontend/common/css/runtime_status_panel.css */
+colab-runtime-status-panel .buttons a {
+  color: var(--paper-blue-400);
+}
+
+colab-runtime-status-panel .buttons a paper-button {
+  /** TODO(b/64113157): Remove `!important` when possible. */
+  font-size: 14px !important;
+  padding: 6px !important;
+}
+
+colab-runtime-status-panel paper-item {
+  /** TODO(b/64113157): Remove `!important` when possible. */
+  font-size: 14px !important;
+  min-height: 24px !important;
+}
+
+colab-runtime-status-panel paper-item:nth-child(odd) {
+  background-color: var(--paper-grey-200);
+}
+
+colab-runtime-status-panel paper-item-body {
+  /** TODO(b/64113157): Remove `!important` when possible. */
+  min-height: 18px !important;
+}
+
+colab-runtime-status-panel paper-item iron-icon {
+  /** TODO(b/64113157): Remove `!important` when possible. */
+  cursor: help;
+  height: 18px !important;
+  padding: 0 !important;
+  width: 18px !important;
+}
+
+colab-runtime-status-panel paper-tooltip #tooltip {
+  /** TODO(b/64113157): Remove `!important` when possible. */
+  font-size: 12px !important;
+  max-width: 800px !important;
+}
+/* research/colab/frontend/common/css/slidesview.css */
+/* Overrides of reveal.js CSS */
+
+/* Hide add cell button, collaborator avatar, code cell toolbar and
+ * refresh button in presentation mode.
+ */
+.reveal .add-cell, .reveal .cell-collaborators,
+.reveal .cell-toolbar, .reveal .toc-refresh-button {
+  display: none !important;
+}
+
+/* Hide paper shadow effect in presentation mode. */
+.reveal paper-material {
+  box-shadow: none !important;
+}
+
+/* Make some space for scrollbar. */
+.reveal .markdown, .reveal .inputarea, .reveal .output {
+  margin-right: 15px;
+}
+
+/* Hide text editor when we in presentation mode. */
+.reveal .main-content > .editor {
+  display: none;
+}
+
+/* Recover text alignment. */
+.reveal .slides {text-align: left;}
+
+/* Recover margin. */
+.reveal .CodeMirror-sizer {margin-bottom: 0 !important;}
+
+/* Recover overflow. */
+.reveal .CodeMirror-scroll {overflow: hidden !important;}
+
+/* Hide scrollbar of large output. But still scrollable by mouse wheel. */
+.reveal .slides::-webkit-scrollbar {
+    display: none;
+}
+
+/* Enlarge the font size in presentation mode. */
+.reveal .slides {
+  font-size: 200%;
+  line-height: 130%;
+}
+
+/* In order to show animation of slides, we need to override property
+ * “display: none !important” under selector "[hidden]" in file
+ * polymer_vulcanized.html.
+ */
+.reveal * [hidden] {
+  display: block !important;
+}
+
+/* Recover Polymer element style in cells. */
+.reveal .cell * [hidden] {
+  display: none !important;
+}
+
+/* In next slide, if a cell height is out of bound, it should not affect current
+ * slide.
+ */
+.reveal .future * [hidden] {
+  top: 0px !important;
+  height: 0px !important;
+}
+
+/* In presentation, add space between cells. */
+.reveal .cell {
+  margin-bottom: 10px;
+}
+
+/* In presentation, recover padding of execution count. */
+.reveal .execution-count {
+  padding: 0px;
+}
+
+.reveal table {
+  width: 100%;
+}
+
+.reveal td {
+  vertical-align: top;
+}
+
+/* Add gray border to show slide grouping in view. */
+.show-view-slides-layout .layouts-view > * {
+  border: 2px solid lightgrey;
+  margin-bottom: 20px;
+}
+
+/* Hide slide_type toolbar in presentation mode. */
+.show-slides-layout .cell-slides-toolbar {
+  display: block;
+}
+
+/* Move toc button so that slide_type toolbar will not block it. */
+.show-slides-layout .toc-refresh-button {
+  top: 32px;
+}
+
+/* Show the border of slides. */
+.show-slides-layout .notebook-content .cell {
+  border: 2px solid lightgrey;
+  border-top: 0px;
+  box-sizing: border-box;
+}
+
+/* Add space between slides. */
+.show-slides-layout .notebook-content .cell[slidetype='slide'] {
+  border-top: 2px solid lightgrey;
+  margin-top: 40px;
+}
+
+.show-slides-layout .notebook-content .cell:first-child {
+  border-top: 2px solid lightgrey;
+  margin-top: 0px;
+}
+
+.show-slides-layout .notebook-content .cell[slidetype='skip'] .cell-mask {
+  background: rgba(200, 200, 200, 0.80);
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  padding-bottom: 8px;
+}
+
+/* Modify polymer style, consistent with form.css. */
+.cell-slides-toolbar /deep/ paper-dropdown-menu {
+  border-bottom: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 10px;
+  width: 100px;
+}
+
+.cell-slides-toolbar * .floated-label-placeholder {
+  display: none;
+}
+
+.cell-slides-toolbar * paper-menu-button,
+.cell-slides-toolbar * paper-input-container {
+  padding: 0px;
+}
+
+.cell-slides-toolbar * .underline {
+  display: none;
+}
+
+.cell-slides-toolbar * paper-menu {
+  z-index: 50 !important;
+}
+
+/* Hide slide_type toolbar in presentation mode. */
+.reveal .cell-slides-toolbar {
+  display: none !important;
+}
+
+/* Consistent with celltoolbar.css. */
+.cell-slides-toolbar {
+  display: none;
+  z-index: 21;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #CFD8DC; /* background color of top-toolbar */
+  border: 2px;
+}
+
+.cell-slides-toolbar > .goog-toolbar {
+  background: transparent; /* otherwise overdraws add-cell */
+  padding: 0px;
+  text-align: end;
+  border: 0px;
+  height: 24px;
+  font: normal 12px 'Open Sans'
+}
+
+.cell-slides-toolbar .goog-toolbar-button img {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.cell-slides-toolbar .goog-toolbar-button:hover img {
+  border-color: #a1badf;
+}
+
+.cell-slides-toolbar .goog-toolbar-button
+.goog-toolbar-button-inner-box,
+.cell-slides-toolbar .goog-toolbar-button
+.goog-toolbar-button-outer-box {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* research/colab/frontend/common/css/status_bar.css */
+colab-status-bar {
+  -webkit-transition: height .3s;
+  background: var(--paper-grey-100);
+  border-top: 1px solid var(--paper-grey-300);
+  color: var(--paper-grey-600);
+  display: flex;
+  flex-flow: column;
+  flex: none;
+  font-size: 13px;
+  height: 28px;
+}
+
+colab-status-bar.closed {
+  height: 0;
+  overflow-y: hidden;
+}
+
+colab-status-bar a {
+  text-decoration: none;
+}
+
+colab-status-bar paper-icon-button {
+  color: var(--paper-grey-600);
+  /** TODO(b/64113157): Remove `!important` when possible. */
+  height: 20px !important;
+  padding: 0 !important;
+  width: 20px !important;
+}
+
+colab-status-bar paper-tooltip #tooltip {
+  /** TODO(b/64113157): Remove `!important` when possible. */
+  font-size: 12px !important;
+}
+
+colab-status-bar .container {
+  padding: 4px;
+}
+
+colab-status-bar .contents-container {
+  overflow: hidden;
+  padding-top: 2px;
+}
+
+colab-status-bar .contents-container a {
+  color: var(--paper-grey-800);
+  text-decoration: underline;
+}
+
+colab-status-bar .contents-container a.no-link {
+  cursor: help;
+  text-decoration: none;
+}
+
+colab-status-bar .contents-container iron-icon {
+  margin: 0;
+}
+
+colab-status-bar .contents-container paper-button {
+  color: var(--paper-grey-800);
+  padding: 0 4px;
+}
+
+colab-status-bar .contents-container paper-button:first-of-type {
+  margin-left: 20px;
+}
+
+colab-status-bar .contents-container paper-button iron-icon {
+  height: 15px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+  width: 15px;
+}
+
+colab-status-bar .contents, colab-status-bar .status-bar-notification  {
+  -webkit-transition: height .3s;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+colab-status-bar .contents,
+colab-status-bar.show-notification .status-bar-notification {
+  height: 16px;
+}
+
+colab-status-bar .status-bar-notification,
+colab-status-bar.show-notification .contents {
+  height: 0;
+}
+
+colab-status-bar .status-bar-notification paper-tooltip {
+  white-space: initial;
+  width: 800px;
+}
+
+/*
+ * Color classes for icons and buttons.
+ * (Selectors are verbose to avoid `!important`)
+ */
+colab-status-bar iron-icon.okay,
+colab-status-bar paper-button.okay,
+colab-status-bar paper-icon-button.okay iron-icon {
+  color: #00c752;
+}
+
+colab-status-bar iron-icon.warning,
+colab-status-bar paper-button.warning,
+colab-status-bar paper-icon-button.warning iron-icon {
+  color: #f09300;
+}
+
+colab-status-bar iron-icon.error,
+colab-status-bar paper-button.error,
+colab-status-bar paper-icon-button.error iron-icon {
+  color: #e51c23;
+}
+
+/* research/colab/frontend/common/css/textcell.css */
+.text.edit .CodeMirror {
+  max-width: 1016px;
+}
+
+.text.edit .markdown,
+.text.edit .CodeMirror,
+.text.edit .cm-variable-2,
+.text.edit .cm-comment,
+.text.edit .cm-quote {
+  color: var(--paper-grey-800);
+  font-family: 'Roboto', 'Noto', sans-serif;
+  font-size: 14px;
+}
+
+.text.edit .markdown a,
+.text.edit .cm-link,
+.text.edit .cm-url,
+.text.edit .cm-header.cm-link,
+.text.edit .cm-header.cm-url {
+  color: #0000ee;
+}
+
+
+.markdown-toolbar-preview[active] {
+  font-weight: 700;
+}
+
+.text.edit.hide-preview * .editor {
+  border-bottom: none;
+}
+
+.text.edit .CodeMirror .markdown-mathjax {
+  color: var(--paper-grey-800);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.text.edit .CodeMirror .cm-comment {
+  font-family: monospace;
+}
+
+/* markdown table style modeled after Jupyter notebook */
+.markdown span table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+.markdown span thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+
+.markdown span tr, .markdown span th, .markdown span td {
+  border: none;
+  line-height: 1.0;
+  overflow: hidden;
+  padding: 0.5em;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.markdown span th {
+  font-weight: bold;
+}
+
+.markdown span tbody tr:nth-child(odd) {
+  background: var(--paper-grey-100);
+}
+
+.markdown span tbody tr:hover {
+  background: #e7e9f9;
+}
+
+/* research/colab/frontend/common/css/toolbar.css */
+/**
+ * CSS for Top Toolbar.
+ */
+
+#top-toolbar {
+  background-color: #f6f6f6;
+  color: black;
+  padding-left: 56px;
+  position: relative;
+  z-index: 8;
+}
+
+#top-toolbar::shadow .toolbar-tools {
+  height: 32px;
+}
+
+#top-toolbar paper-icon-button {
+  padding: 0px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+#top-toolbar paper-icon-button:hover {
+  background-color: #fbfbfb;
+}
+
+#toggle-header-button {
+  margin-right: 20px;
+}
+
+.colab-separator {
+  background: #dfdfdf;
+  width: 1px;
+  height: 24px;
+  margin-right: 9px;
+  margin-left: 9px;
+}
+
+/* research/colab/frontend/common/css/view_editor.css */
+#view-editor colab-drag-drop-target.drop-target-selected {
+  min-height: 100px;
+}
+
+/* The hidden cell pane can be dragged from but not to. */
+.hidden-cell-pane colab-drag-drop-target {
+  display: none;
+}
+
+/* The field to edit the name of the view. */
+#view-editor #view-name {
+  margin: 6px 12px 0;
+}
+
+/* Fill up entire available area to make zones easy to drag into. */
+#view-editor colab-drag-drop-zone {
+  display: block;
+  min-height: 100%;
+}
+
+/* Draw a border around tab drag-drop zones. */
+#view-editor colab-tab-layout colab-drag-drop-zone {
+  border: 1px dashed black;
+}
+
+#view-editor-hide-code-option {
+  margin: 0 20px;
+}
+
+#view-editor .edit-view-buttons {
+  background: white;
+  flex: 0 0;
+  float: left;
+  position: sticky;
+  top: 0;
+  width: 30px;
+}
+
+/* This is extremely specific because layouts can also have cells in them. */
+.draggable-cell > paper-material > .edit-view-buttons .view-layout-control,
+.draggable-tabs > paper-material > .edit-view-buttons .view-cell-control,
+.draggable-grid > paper-material > .edit-view-buttons .view-cell-control,
+.notebook-content .view-drag,
+.notebook-content .view-add,
+.hidden-cell-pane .view-move,
+.hidden-cell-pane .view-remove {
+  display: none;
+}
+
+#view-editor .draggable-content {
+  flex: 1 1;
+  margin-left: 30px;
+  min-height: 54px;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
+}
+
+#view-editor .edit-view-buttons paper-icon-button {
+  height: 20px;
+  margin: 0 4px;
+  padding: 2px;
+  width: 25px;
+}
+
+#view-editor .draggable-cell-mask {
+  cursor: move;
+}
+
+/* Draw a mask over the entire cell so that it cannot be interacted with. */
+#view-editor .draggable-cell-mask {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#view-editor .cell {
+  overflow: hidden;
+  /* Allow the cell mask to absorb clicks from children CodeMirror elements
+   * which override the z-index. */
+  z-index: 0;
+}
+
+#view-editor .notebook-content {
+  margin: 8px;
+  padding: 0 2px;
+}
+
+#view-editor .view-header {
+  margin-left: 8px;
+}
+
+#view-editor .view-header .buttons {
+  display: none;
+}
+
+.notebook-cell-list > colab-drag-drop-zone >
+colab-drag-drop-target:last-of-type {
+  min-height: 200px;
+}
+
+.view-editor-toolbar {
+  background-color: var(--paper-grey-100);
+  order: -1;
+}
+
+.cells-not-in-view {
+  overflow-y: auto;
+}
+
+.view-controls {
+  flex-grow: 1;
+  margin: 4px;
+}
+
+.view-editor-save-button,
+.view-editor-cancel-button {
+  margin: 4px;
+  padding: 13px 0;
+}
+
+.view-draggable-paper {
+  overflow: auto;
+}
+
+.hidden-cell-pane colab-resizer {
+  height: 150px;
+  min-height: 150px;
+  max-height: 500px;
+}
+
+.hidden-cell-pane .resizer-contents {
+  display: flex;
+  flex-flow: column;
+  margin-left: 18px;
+}
+
+.hidden-cell-pane-title {
+  flex-shrink: 0;
+}
+
+.hidden-cell-pane-title h2 {
+  flex-grow: 1;
+  margin: 4px 12px 0;
+}
+
+.hidden-cell-pane .cells-not-in-view {
+  overflow-y: auto;
+}
+
+.hidden-cell-pane .view-draggable-paper {
+  background: #fff;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#view-hidden-cells-button[active] {
+  font-weight: bold;
+}
+
+/* research/colab/frontend/common/css/views.css */
+.view-header {
+  margin: 0 26px 16px 40px;
+  position: relative;
+}
+
+.view-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.view-header h1 {
+  flex-grow: 1;
+}
+
+.view-header paper-button {
+  background: var(--paper-grey-50);
+  margin-top: 8px;
+}
+
+.view-header iron-icon {
+  margin: 0 8px 4px 0;
+}
+
+.embedded colab-bottompane, .embedded colab-status-bar {
+  display: none;
+}
+
+/* These elements are no longer generated but the CSS is still useful for */
+/* exported HTML. */
+.layouts-view .layout-grid table {
+  width: 100%;
+}
+
+.layouts-view .layout-grid td {
+  vertical-align: top;
+}
+
+/* Make sure images are within grid during viewing and editing. */
+.layout-grid img, .layout-tab img {
+  max-width: 100%;
+}
+
+.layouts-view colab-tab-layout {
+  margin-top: 12px;
+}
+
+/* Hide code cells with empty output when in output_only mode. */
+.views-hide-code .cell.code:not(.code-has-output),
+.layouts-view .cell-toolbar {
+  display: none;
+}
+
+/* research/colab/frontend/common/css/main.css */
+/**
+ * This file contains CSS rules that
+ * customizes global css styles (e.g. raw tags or standard closure styles)
+ *
+ * All colab specific styles should always go to main-base.css, which is shared
+ * between colab and embedded.
+ */
+
+
+/**
+ * Don't overflow to show elements below viewport when we create thumbnail.
+ */
+html {
+  height: 100%;
+}
+
+body {
+  background: #e9e9e9;
+  color: hsl(0, 0%, 13%);
+  font-family: 'Roboto', 'Noto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1.24;
+  margin: 0px;
+  overflow-y: hidden;
+}
+
+/**
+ * Scroll the body in HTML export mode.
+ */
+body.exported-html {
+  overflow-y: visible;
+}
+
+h1, h2, h3, h4, h5, h6, .text.edit .cm-header {
+  color: hsl(0, 0%, 13%);
+  font-family: 'Roboto', 'Noto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+p, ul {
+  margin-bottom: 6px;
+  margin-top: 6px;
+ }
+
+pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* Hide the OneGoogle bar until it's in the header. */
+body > .onegoogle {
+  display: none;
+}
+
+
+/**
+ * Pop-up Dialog
+ */
+.modal-dialog-bg {
+  z-index: 1000;
+}
+
+.modal-dialog {
+  box-shadow: 10px 20px 30px #888888;
+  z-index: 2000;
+}
+
+.modal-dialog > input {
+  margin: 10px;
+}
+
+.modal-dialog label {
+  margin: 0.5em;
+}
+
+.modal-dialog .preformatted {
+  white-space: pre-wrap
+}
+
+paper-tooltip .tooltip-with-shortcut {
+  line-height: 1.5;
+  text-align: center;
+}
+
